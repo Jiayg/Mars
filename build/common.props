@@ -1,0 +1,18 @@
+<Project>
+	<Import Project="version.props" />
+	<PropertyGroup>
+		<LangVersion>latest</LangVersion>
+		<EnableUnsafeBinaryFormatterSerialization>true</EnableUnsafeBinaryFormatterSerialization>
+		<Authors>Jiayg</Authors>
+		<Product>Mars</Product>
+		<PackagePrefix>WeiWan</PackagePrefix>
+		<RepositoryUrl>http://114.55.252.248:3000/Jiayg/WeiWan.Framework</RepositoryUrl>
+		<PackageProjectUrl>http://114.55.252.248</PackageProjectUrl>
+		<RepositoryType>git</RepositoryType>
+		<SatelliteResourceLanguages>zh-Hans</SatelliteResourceLanguages>
+		<SatelliteResourceLanguages>zh-Hant</SatelliteResourceLanguages>
+		<SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+		<NoWarn>$(NoWarn);1591</NoWarn>
+		<ErrorOnDuplicatePublishOutputFiles>false</ErrorOnDuplicatePublishOutputFiles>
+	</PropertyGroup> 
+</Project>

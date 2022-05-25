@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<AssemblyName>Volo.Abp.PermissionManagement.Domain</AssemblyName>
+		<PackageId>Volo.Abp.PermissionManagement.Domain</PackageId> 
+		<GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+		<GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+		<GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+		<RootNamespace />
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.Authorization" Version="5.2.2" />
+		<PackageReference Include="Volo.Abp.Caching" Version="5.2.2" />
+		<PackageReference Include="Volo.Abp.Ddd.Domain" Version="5.2.2" />
+		<PackageReference Include="Volo.Abp.Json" Version="5.2.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Volo.Abp.PermissionManagement.Domain.Shared\Volo.Abp.PermissionManagement.Domain.Shared.csproj" />
+	</ItemGroup>
+
+</Project>
