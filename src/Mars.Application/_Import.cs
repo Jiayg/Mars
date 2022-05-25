@@ -1,0 +1,13 @@
+﻿global using Mars.Application.Contracts;
+global using Mars.Domain;
+global using Volo.Abp.Account;
+global using Volo.Abp.AutoMapper;
+global using Volo.Abp.FeatureManagement;
+global using Volo.Abp.Identity;
+global using Volo.Abp.Modularity;
+global using Volo.Abp.PermissionManagement;
+global using Volo.Abp.SettingManagement;
+global using Volo.Abp.TenantManagement;
+global using AutoMapper;
+global using Mars.Domain.Shared.Localization;
+global using Volo.Abp.Application.Services;

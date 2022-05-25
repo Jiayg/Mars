@@ -1,19 +1,11 @@
-﻿using System;
-using System.IO;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Design;
-using Microsoft.Extensions.Configuration;
-
-namespace Mars.EntityFrameworkCore;
+﻿namespace Mars.EntityFrameworkCore;
 
 /* This class is needed for EF Core console commands
  * (like Add-Migration and Update-Database commands) */
 public class MarsDbContextFactory : IDesignTimeDbContextFactory<MarsDbContext>
 {
     public MarsDbContext CreateDbContext(string[] args)
-    {
-        MarsEfCoreEntityExtensionMappings.Configure();
-
+    { 
         var configuration = BuildConfiguration();
 
         var builder = new DbContextOptionsBuilder<MarsDbContext>()

@@ -1,6 +1,4 @@
-﻿using Volo.Abp.Settings;
-
-namespace Mars.Domain.Settings;
+﻿namespace Mars.Domain.Settings;
 
 public class MarsSettingDefinitionProvider : SettingDefinitionProvider
 {

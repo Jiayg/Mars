@@ -1,8 +1,4 @@
-﻿using Mars.Domain.Shared.Localization;
-using Volo.Abp.Authorization.Permissions;
-using Volo.Abp.Localization;
-
-namespace Mars.Application.Contracts.Permissions;
+﻿namespace Mars.Application.Contracts.Permissions;
 
 public class MarsPermissionDefinitionProvider : PermissionDefinitionProvider
 {

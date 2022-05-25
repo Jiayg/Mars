@@ -1,10 +1,10 @@
-﻿using Mars.Domain.Data;
+﻿using System.Threading;
+using System.Threading.Tasks;
+using Mars.Domain.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Serilog;
-using System.Threading;
-using System.Threading.Tasks;
 using Volo.Abp;
 
 namespace Mars.DbMigrator;

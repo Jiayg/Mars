@@ -1,11 +1,4 @@
-﻿using Mars.Domain.Data;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Threading.Tasks;
-using Volo.Abp.DependencyInjection;
-
-namespace Mars.EntityFrameworkCore;
+﻿namespace Mars.EntityFrameworkCore;
 
 public class EntityFrameworkCoreMarsDbSchemaMigrator
     : IMarsDbSchemaMigrator, ITransientDependency

@@ -1,7 +1,4 @@
-﻿using System.Threading.Tasks;
-using Volo.Abp.DependencyInjection;
-
-namespace Mars.Domain.Data;
+﻿namespace Mars.Domain.Data;
 
 /* This is used if database provider does't define
  * IMarsDbSchemaMigrator implementation.

@@ -1,16 +1,4 @@
-﻿using Localization.Resources.AbpUi;
-using Mars.Application.Contracts;
-using Mars.Domain.Shared.Localization;
-using Volo.Abp.Account;
-using Volo.Abp.FeatureManagement;
-using Volo.Abp.Identity;
-using Volo.Abp.Localization;
-using Volo.Abp.Modularity;
-using Volo.Abp.PermissionManagement.HttpApi;
-using Volo.Abp.SettingManagement;
-using Volo.Abp.TenantManagement;
-
-namespace Mars.HttpApi;
+﻿namespace Mars.HttpApi;
 
 [DependsOn(
     typeof(MarsApplicationContractsModule),

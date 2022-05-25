@@ -1,6 +1,4 @@
-﻿using System.Threading.Tasks;
-
-namespace Mars.Domain.Data;
+﻿namespace Mars.Domain.Data;
 
 public interface IMarsDbSchemaMigrator
 {
