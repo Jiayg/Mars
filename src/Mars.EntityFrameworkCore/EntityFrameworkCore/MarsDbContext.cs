@@ -49,9 +49,7 @@ public class MarsDbContext :
         /* Include modules to your migration db context */
 
         builder.ConfigurePermissionManagement();
-        builder.ConfigureSettingManagement();
-        builder.ConfigureBackgroundJobs();
-        builder.ConfigureAuditLogging();
+        builder.ConfigureSettingManagement();  
         builder.ConfigureIdentity();
         builder.ConfigureIdentityServer();
         builder.ConfigureFeatureManagement();

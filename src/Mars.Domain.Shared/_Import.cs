@@ -1,6 +1,4 @@
-﻿global using Mars.Domain.Shared.Localization;
-global using Volo.Abp.AuditLogging;
-global using Volo.Abp.BackgroundJobs;
+﻿global using Mars.Domain.Shared.Localization; 
 global using Volo.Abp.FeatureManagement;
 global using Volo.Abp.Identity;
 global using Volo.Abp.IdentityServer;

@@ -1,36 +1,3 @@
-using Localization.Resources.AbpUi;
-using Mars.Domain;
-using Mars.Domain.Shared;
-using Mars.Domain.Shared.Localization;
-using Mars.Domain.Shared.MultiTenancy;
-using Mars.EntityFrameworkCore;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Cors;
-using Microsoft.AspNetCore.DataProtection;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using StackExchange.Redis;
-using System;
-using System.IO;
-using System.Linq;
-using Volo.Abp;
-using Volo.Abp.Account;
-using Volo.Abp.Account.Web;
-using Volo.Abp.AspNetCore.Mvc.UI.Bundling;
-using Volo.Abp.AspNetCore.Mvc.UI.Theme.Basic;
-using Volo.Abp.AspNetCore.Mvc.UI.Theme.Basic.Bundling;
-using Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared;
-using Volo.Abp.AspNetCore.Serilog;
-using Volo.Abp.Auditing;
-using Volo.Abp.Autofac;
-using Volo.Abp.BackgroundJobs;
-using Volo.Abp.Caching;
-using Volo.Abp.Caching.StackExchangeRedis;
-using Volo.Abp.Localization;
-using Volo.Abp.Modularity;
-using Volo.Abp.UI.Navigation.Urls;
-using Volo.Abp.VirtualFileSystem;
-
 namespace Mars;
 
 [DependsOn(
