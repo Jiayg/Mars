@@ -3,8 +3,8 @@
 	<PropertyGroup>
 		<LangVersion>latest</LangVersion>
 		<TargetFramework>netstandard2.0</TargetFramework>
-		<AssemblyName>Volo.Abp.TenantManagement.Application.Contracts</AssemblyName>
-		<PackageId>Volo.Abp.TenantManagement.Application.Contracts</PackageId>
+		<AssemblyName>Volo.Abp.Identity.Application.Contracts</AssemblyName>
+		<PackageId>Volo.Abp.Identity.Application.Contracts</PackageId>
 		<AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
 		<GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
 		<GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
@@ -13,10 +13,9 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<ProjectReference Include="..\..\Volo.Abp.PermissionManagement\Volo.Abp.PermissionManagement.Application.Contracts\Volo.Abp.PermissionManagement.Application.Contracts.csproj" />
 		<ProjectReference Include="..\Volo.Abp.Identity.Domain.Shared\Volo.Abp.Identity.Domain.Shared.csproj" />
-		<!--<ProjectReference Include="..\..\..\permission-management\src\Volo.Abp.PermissionManagement.Application.Contracts\Volo.Abp.PermissionManagement.Application.Contracts.csproj" />-->
 		<!--<ProjectReference Include="..\..\..\users\src\Volo.Abp.Users.Abstractions\Volo.Abp.Users.Abstractions.csproj" />-->
-		<PackageReference Include="Volo.Abp.PermissionManagement.Application.Contracts" Version="5.2.2" />
 		<PackageReference Include="Volo.Abp.Users.Abstractions" Version="5.2.2" />
 	</ItemGroup>
 
