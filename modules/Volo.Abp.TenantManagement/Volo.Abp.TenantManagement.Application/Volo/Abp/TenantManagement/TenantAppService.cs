@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
 using Volo.Abp.Application.Dtos;
 using Volo.Abp.Data;
 using Volo.Abp.EventBus.Distributed;
@@ -10,7 +9,6 @@ using Volo.Abp.ObjectExtending;
 
 namespace Volo.Abp.TenantManagement;
 
-[Authorize(TenantManagementPermissions.Tenants.Default)]
 public class TenantAppService : TenantManagementAppServiceBase, ITenantAppService
 {
     protected IDataSeeder DataSeeder { get; }
@@ -58,7 +56,6 @@ public class TenantAppService : TenantManagementAppServiceBase, ITenantAppServic
         );
     }
 
-    [Authorize(TenantManagementPermissions.Tenants.Create)]
     public virtual async Task<TenantDto> CreateAsync(TenantCreateDto input)
     {
         var tenant = await TenantManager.CreateAsync(input.Name);
@@ -94,7 +91,6 @@ public class TenantAppService : TenantManagementAppServiceBase, ITenantAppServic
         return ObjectMapper.Map<Tenant, TenantDto>(tenant);
     }
 
-    [Authorize(TenantManagementPermissions.Tenants.Update)]
     public virtual async Task<TenantDto> UpdateAsync(Guid id, TenantUpdateDto input)
     {
         var tenant = await TenantRepository.GetAsync(id);
@@ -109,7 +105,6 @@ public class TenantAppService : TenantManagementAppServiceBase, ITenantAppServic
         return ObjectMapper.Map<Tenant, TenantDto>(tenant);
     }
 
-    [Authorize(TenantManagementPermissions.Tenants.Delete)]
     public virtual async Task DeleteAsync(Guid id)
     {
         var tenant = await TenantRepository.FindAsync(id);
@@ -121,14 +116,12 @@ public class TenantAppService : TenantManagementAppServiceBase, ITenantAppServic
         await TenantRepository.DeleteAsync(tenant);
     }
 
-    [Authorize(TenantManagementPermissions.Tenants.ManageConnectionStrings)]
     public virtual async Task<string> GetDefaultConnectionStringAsync(Guid id)
     {
         var tenant = await TenantRepository.GetAsync(id);
         return tenant?.FindDefaultConnectionString();
     }
 
-    [Authorize(TenantManagementPermissions.Tenants.ManageConnectionStrings)]
     public virtual async Task UpdateDefaultConnectionStringAsync(Guid id, string defaultConnectionString)
     {
         var tenant = await TenantRepository.GetAsync(id);
@@ -136,7 +129,6 @@ public class TenantAppService : TenantManagementAppServiceBase, ITenantAppServic
         await TenantRepository.UpdateAsync(tenant);
     }
 
-    [Authorize(TenantManagementPermissions.Tenants.ManageConnectionStrings)]
     public virtual async Task DeleteDefaultConnectionStringAsync(Guid id)
     {
         var tenant = await TenantRepository.GetAsync(id);

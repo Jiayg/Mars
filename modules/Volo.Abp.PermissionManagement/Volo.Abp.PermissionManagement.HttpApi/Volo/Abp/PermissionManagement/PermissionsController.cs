@@ -9,22 +9,22 @@ namespace Volo.Abp.PermissionManagement;
 [Route("api/permission-management/permissions")]
 public class PermissionsController : AbpControllerBase, IPermissionAppService
 {
-    protected IPermissionAppService PermissionAppService { get; }
+    private readonly IPermissionAppService _permissionAppService;
 
     public PermissionsController(IPermissionAppService permissionAppService)
     {
-        PermissionAppService = permissionAppService;
+        this._permissionAppService = permissionAppService;
     }
 
     [HttpGet]
     public virtual Task<GetPermissionListResultDto> GetAsync(string providerName, string providerKey)
     {
-        return PermissionAppService.GetAsync(providerName, providerKey);
+        return _permissionAppService.GetAsync(providerName, providerKey);
     }
 
     [HttpPut]
     public virtual Task UpdateAsync(string providerName, string providerKey, UpdatePermissionsDto input)
     {
-        return PermissionAppService.UpdateAsync(providerName, providerKey, input);
+        return _permissionAppService.UpdateAsync(providerName, providerKey, input);
     }
 }

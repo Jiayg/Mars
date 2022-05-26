@@ -92,8 +92,7 @@ public class FeatureAppService : FeatureManagementAppServiceBase, IFeatureAppSer
         }
     }
 
-    protected virtual void SetFeatureDepth(List<FeatureDto> features, string providerName, string providerKey,
-        FeatureDto parentFeature = null, int depth = 0)
+    protected virtual void SetFeatureDepth(List<FeatureDto> features, string providerName, string providerKey, FeatureDto parentFeature = null, int depth = 0)
     {
         foreach (var feature in features)
         {

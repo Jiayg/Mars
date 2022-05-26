@@ -1,4 +1,5 @@
 ﻿using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Volo.Abp.AspNetCore.Mvc;
 
@@ -29,6 +30,7 @@ public class EmailSettingsController : AbpControllerBase, IEmailSettingsAppServi
     }
 
     [HttpPost("send-test-email")]
+    [Authorize(SettingManagementPermissions.EmailingTest)]
     public Task SendTestEmailAsync(SendTestEmailInput input)
     {
         return _emailSettingsAppService.SendTestEmailAsync(input);

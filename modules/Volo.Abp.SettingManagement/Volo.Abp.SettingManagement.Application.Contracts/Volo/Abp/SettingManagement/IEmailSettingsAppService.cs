@@ -10,4 +10,5 @@ public interface IEmailSettingsAppService : IApplicationService
     Task UpdateAsync(UpdateEmailSettingsDto input);
 
     Task SendTestEmailAsync(SendTestEmailInput input);
+
 }

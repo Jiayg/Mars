@@ -9,22 +9,22 @@ namespace Volo.Abp.FeatureManagement;
 [Route("api/feature-management/features")]
 public class FeaturesController : AbpControllerBase, IFeatureAppService
 {
-    protected IFeatureAppService FeatureAppService { get; }
+    private readonly IFeatureAppService _featureAppService;
 
     public FeaturesController(IFeatureAppService featureAppService)
     {
-        FeatureAppService = featureAppService;
+        _featureAppService = featureAppService;
     }
 
     [HttpGet]
     public virtual Task<GetFeatureListResultDto> GetAsync(string providerName, string providerKey)
     {
-        return FeatureAppService.GetAsync(providerName, providerKey);
+        return _featureAppService.GetAsync(providerName, providerKey);
     }
 
     [HttpPut]
     public virtual Task UpdateAsync(string providerName, string providerKey, UpdateFeaturesDto input)
     {
-        return FeatureAppService.UpdateAsync(providerName, providerKey, input);
+        return _featureAppService.UpdateAsync(providerName, providerKey, input);
     }
 }
