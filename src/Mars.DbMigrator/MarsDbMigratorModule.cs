@@ -11,7 +11,7 @@ namespace Mars.DbMigrator;
     typeof(MarsApplicationContractsModule)
     )]
 public class MarsDbMigratorModule : AbpModule
-{
+{ 
     public override void ConfigureServices(ServiceConfigurationContext context)
     { 
     }

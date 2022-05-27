@@ -1,35 +1,3 @@
-using Mars.Application;
-using Mars.Application.Contracts;
-using Mars.Domain;
-using Mars.Domain.Shared;
-using Mars.Domain.Shared.MultiTenancy;
-using Mars.EntityFrameworkCore;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Cors;
-using Microsoft.AspNetCore.DataProtection;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.OpenApi.Models;
-using StackExchange.Redis;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using Volo.Abp;
-using Volo.Abp.AspNetCore.Mvc;
-using Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy;
-using Volo.Abp.AspNetCore.Serilog;
-using Volo.Abp.Autofac;
-using Volo.Abp.Caching;
-using Volo.Abp.Caching.StackExchangeRedis;
-using Volo.Abp.Localization;
-using Volo.Abp.Modularity;
-using Volo.Abp.Swashbuckle;
-using Volo.Abp.VirtualFileSystem;
-
 namespace Mars.HttpApi.Host;
 
 [DependsOn(
@@ -42,6 +10,7 @@ namespace Mars.HttpApi.Host;
     typeof(AbpAspNetCoreSerilogModule),
     typeof(AbpSwashbuckleModule)
 )]
+
 public class MarsHttpApiHostModule : AbpModule
 {
     public override void ConfigureServices(ServiceConfigurationContext context)
