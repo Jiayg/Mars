@@ -2378,3 +2378,1294 @@ System.ArgumentNullException: Value cannot be null. (Parameter 'key')
 2022-05-26 15:50:00.497 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 84.7203ms
 2022-05-26 15:50:01.086 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - -
 2022-05-26 15:50:01.258 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 171.3455ms
+2022-05-30 11:45:56.256 +08:00 [INF] Starting Mars.HttpApi.Host.
+2022-05-30 11:46:03.308 +08:00 [INF] Loaded ABP modules:
+2022-05-30 11:46:03.310 +08:00 [INF] - Mars.HttpApi.Host.MarsHttpApiHostModule
+2022-05-30 11:46:03.310 +08:00 [INF]   - Mars.HttpApi.MarsHttpApiModule
+2022-05-30 11:46:03.310 +08:00 [INF]     - Mars.Application.Contracts.MarsApplicationContractsModule
+2022-05-30 11:46:03.310 +08:00 [INF]       - Mars.Domain.Shared.MarsDomainSharedModule
+2022-05-30 11:46:03.310 +08:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2022-05-30 11:46:03.310 +08:00 [INF]           - Volo.Abp.Validation.AbpValidationModule
+2022-05-30 11:46:03.310 +08:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2022-05-30 11:46:03.310 +08:00 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2022-05-30 11:46:03.310 +08:00 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2022-05-30 11:46:03.310 +08:00 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2022-05-30 11:46:03.310 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2022-05-30 11:46:03.310 +08:00 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2022-05-30 11:46:03.310 +08:00 [INF]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2022-05-30 11:46:03.310 +08:00 [INF]                   - Volo.Abp.Data.AbpDataModule
+2022-05-30 11:46:03.310 +08:00 [INF]                     - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2022-05-30 11:46:03.310 +08:00 [INF]                     - Volo.Abp.Uow.AbpUnitOfWorkModule
+2022-05-30 11:46:03.310 +08:00 [INF]                     - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2022-05-30 11:46:03.310 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2022-05-30 11:46:03.310 +08:00 [INF]           - Volo.Abp.Users.AbpUsersDomainSharedModule
+2022-05-30 11:46:03.310 +08:00 [INF]           - Volo.Abp.Features.AbpFeaturesModule
+2022-05-30 11:46:03.310 +08:00 [INF]             - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2022-05-30 11:46:03.310 +08:00 [INF]         - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2022-05-30 11:46:03.310 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2022-05-30 11:46:03.310 +08:00 [INF]         - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2022-05-30 11:46:03.310 +08:00 [INF]         - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2022-05-30 11:46:03.310 +08:00 [INF]       - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2022-05-30 11:46:03.310 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2022-05-30 11:46:03.310 +08:00 [INF]           - Volo.Abp.Users.AbpUsersAbstractionModule
+2022-05-30 11:46:03.310 +08:00 [INF]             - Volo.Abp.EventBus.AbpEventBusModule
+2022-05-30 11:46:03.310 +08:00 [INF]               - Volo.Abp.Json.AbpJsonModule
+2022-05-30 11:46:03.310 +08:00 [INF]                 - Volo.Abp.Timing.AbpTimingModule
+2022-05-30 11:46:03.310 +08:00 [INF]               - Volo.Abp.Guids.AbpGuidsModule
+2022-05-30 11:46:03.310 +08:00 [INF]               - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2022-05-30 11:46:03.310 +08:00 [INF]                 - Volo.Abp.Threading.AbpThreadingModule
+2022-05-30 11:46:03.310 +08:00 [INF]               - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2022-05-30 11:46:03.310 +08:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationModule
+2022-05-30 11:46:03.310 +08:00 [INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2022-05-30 11:46:03.310 +08:00 [INF]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+2022-05-30 11:46:03.310 +08:00 [INF]               - Volo.Abp.Auditing.AbpAuditingContractsModule
+2022-05-30 11:46:03.310 +08:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2022-05-30 11:46:03.310 +08:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementApplicationContractsModule
+2022-05-30 11:46:03.310 +08:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2022-05-30 11:46:03.310 +08:00 [INF]     - Volo.Abp.Account.AbpAccountHttpApiModule
+2022-05-30 11:46:03.310 +08:00 [INF]       - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2022-05-30 11:46:03.310 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2022-05-30 11:46:03.310 +08:00 [INF]           - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2022-05-30 11:46:03.310 +08:00 [INF]             - Volo.Abp.Auditing.AbpAuditingModule
+2022-05-30 11:46:03.310 +08:00 [INF]             - Volo.Abp.Http.AbpHttpModule
+2022-05-30 11:46:03.310 +08:00 [INF]               - Volo.Abp.Http.AbpHttpAbstractionsModule
+2022-05-30 11:46:03.310 +08:00 [INF]               - Volo.Abp.Minify.AbpMinifyModule
+2022-05-30 11:46:03.310 +08:00 [INF]             - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2022-05-30 11:46:03.310 +08:00 [INF]           - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2022-05-30 11:46:03.310 +08:00 [INF]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2022-05-30 11:46:03.310 +08:00 [INF]           - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2022-05-30 11:46:03.310 +08:00 [INF]             - Volo.Abp.UI.AbpUiModule
+2022-05-30 11:46:03.310 +08:00 [INF]           - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2022-05-30 11:46:03.310 +08:00 [INF]           - Volo.Abp.Application.AbpDddApplicationModule
+2022-05-30 11:46:03.310 +08:00 [INF]             - Volo.Abp.Domain.AbpDddDomainModule
+2022-05-30 11:46:03.310 +08:00 [INF]               - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2022-05-30 11:46:03.310 +08:00 [INF]               - Volo.Abp.Specifications.AbpSpecificationsModule
+2022-05-30 11:46:03.310 +08:00 [INF]     - Volo.Abp.PermissionManagement.HttpApi.AbpPermissionManagementHttpApiModule
+2022-05-30 11:46:03.310 +08:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2022-05-30 11:46:03.310 +08:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2022-05-30 11:46:03.310 +08:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementHttpApiModule
+2022-05-30 11:46:03.310 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2022-05-30 11:46:03.310 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2022-05-30 11:46:03.310 +08:00 [INF]   - Volo.Abp.Caching.StackExchangeRedis.AbpCachingStackExchangeRedisModule
+2022-05-30 11:46:03.310 +08:00 [INF]     - Volo.Abp.Caching.AbpCachingModule
+2022-05-30 11:46:03.310 +08:00 [INF]       - Volo.Abp.Serialization.AbpSerializationModule
+2022-05-30 11:46:03.310 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2022-05-30 11:46:03.310 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2022-05-30 11:46:03.310 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2022-05-30 11:46:03.310 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2022-05-30 11:46:03.310 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2022-05-30 11:46:03.310 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2022-05-30 11:46:03.310 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2022-05-30 11:46:03.310 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2022-05-30 11:46:03.310 +08:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2022-05-30 11:46:03.310 +08:00 [INF]   - Mars.Application.MarsApplicationModule
+2022-05-30 11:46:03.310 +08:00 [INF]     - Mars.Domain.MarsDomainModule
+2022-05-30 11:46:03.310 +08:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule
+2022-05-30 11:46:03.310 +08:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainModule
+2022-05-30 11:46:03.310 +08:00 [INF]         - Volo.Abp.Users.AbpUsersDomainModule
+2022-05-30 11:46:03.310 +08:00 [INF]         - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2022-05-30 11:46:03.310 +08:00 [INF]       - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+2022-05-30 11:46:03.310 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2022-05-30 11:46:03.310 +08:00 [INF]       - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2022-05-30 11:46:03.310 +08:00 [INF]       - Volo.Abp.PermissionManagement.IdentityServer.AbpPermissionManagementDomainIdentityServerModule
+2022-05-30 11:46:03.310 +08:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2022-05-30 11:46:03.310 +08:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2022-05-30 11:46:03.310 +08:00 [INF]     - Volo.Abp.Account.AbpAccountApplicationModule
+2022-05-30 11:46:03.310 +08:00 [INF]       - Volo.Abp.Identity.AbpIdentityApplicationModule
+2022-05-30 11:46:03.310 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2022-05-30 11:46:03.310 +08:00 [INF]       - Volo.Abp.Emailing.AbpEmailingModule
+2022-05-30 11:46:03.310 +08:00 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2022-05-30 11:46:03.310 +08:00 [INF]         - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2022-05-30 11:46:03.310 +08:00 [INF]           - Volo.Abp.TextTemplating.Scriban.AbpTextTemplatingScribanModule
+2022-05-30 11:46:03.310 +08:00 [INF]             - Volo.Abp.TextTemplating.AbpTextTemplatingCoreModule
+2022-05-30 11:46:03.310 +08:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementApplicationModule
+2022-05-30 11:46:03.310 +08:00 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationModule
+2022-05-30 11:46:03.310 +08:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementApplicationModule
+2022-05-30 11:46:03.310 +08:00 [INF]   - Mars.EntityFrameworkCore.MarsEntityFrameworkCoreModule
+2022-05-30 11:46:03.310 +08:00 [INF]     - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2022-05-30 11:46:03.310 +08:00 [INF]       - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2022-05-30 11:46:03.310 +08:00 [INF]         - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2022-05-30 11:46:03.310 +08:00 [INF]     - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+2022-05-30 11:46:03.310 +08:00 [INF]     - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2022-05-30 11:46:03.310 +08:00 [INF]     - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2022-05-30 11:46:03.310 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2022-05-30 11:46:03.310 +08:00 [INF]     - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2022-05-30 11:46:03.310 +08:00 [INF]     - Volo.Abp.FeatureManagement.EntityFrameworkCore.AbpFeatureManagementEntityFrameworkCoreModule
+2022-05-30 11:46:03.310 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2022-05-30 11:46:03.310 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2022-05-30 11:46:03.433 +08:00 [DBG] Started background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2022-05-30 11:46:04.118 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-05-30 11:46:04.190 +08:00 [INF] Initialized all ABP modules.
+2022-05-30 11:46:04.274 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-30 11:46:04.274 +08:00 [INF] Hosting environment: Development
+2022-05-30 11:46:04.274 +08:00 [INF] Content root path: E:\JYGProject\Mars\src\Mars.HttpApi.Host\
+2022-05-30 11:46:04.313 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/ - -
+2022-05-30 11:46:07.544 +08:00 [INF] Executing endpoint 'Mars.HttpApi.Host.Controllers.HomeController.Index (Mars.HttpApi.Host)'
+2022-05-30 11:46:07.577 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller Mars.HttpApi.Host.Controllers.HomeController (Mars.HttpApi.Host).
+2022-05-30 11:46:07.594 +08:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2022-05-30 11:46:07.599 +08:00 [INF] Executed action Mars.HttpApi.Host.Controllers.HomeController.Index (Mars.HttpApi.Host) in 18.0928ms
+2022-05-30 11:46:07.599 +08:00 [INF] Executed endpoint 'Mars.HttpApi.Host.Controllers.HomeController.Index (Mars.HttpApi.Host)'
+2022-05-30 11:46:07.621 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/index.html - -
+2022-05-30 11:46:07.621 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/ - - - 302 - - 3308.8786ms
+2022-05-30 11:46:07.749 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/index.html - - - 200 - text/html;charset=utf-8 127.5189ms
+2022-05-30 11:46:07.756 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/ui/abp.swagger.js - -
+2022-05-30 11:46:07.756 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/ui/abp.js - -
+2022-05-30 11:46:07.763 +08:00 [INF] The file /swagger/ui/abp.swagger.js was not modified
+2022-05-30 11:46:07.763 +08:00 [INF] The file /swagger/ui/abp.js was not modified
+2022-05-30 11:46:07.763 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/ui/abp.js - - - 304 - application/javascript 7.2905ms
+2022-05-30 11:46:07.763 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/ui/abp.swagger.js - - - 304 - application/javascript 7.2906ms
+2022-05-30 11:46:07.834 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - -
+2022-05-30 11:46:07.837 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 2.9934ms
+2022-05-30 11:46:07.843 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_vs/browserLink - -
+2022-05-30 11:46:07.889 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 46.0665ms
+2022-05-30 11:46:08.062 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - -
+2022-05-30 11:46:08.206 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 143.5267ms
+2022-05-30 11:56:39.317 +08:00 [INF] Starting Mars.HttpApi.Host.
+2022-05-30 11:56:40.912 +08:00 [FTL] Host terminated unexpectedly!
+System.IO.FileNotFoundException: Could not load file or assembly 'Volo.Abp.FeatureManagement.HttpApi, Version=5.2.2.0, Culture=neutral, PublicKeyToken=null'. 系统找不到指定的文件。
+File name: 'Volo.Abp.FeatureManagement.HttpApi, Version=5.2.2.0, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.CustomAttribute._CreateCaObject(RuntimeModule pModule, RuntimeType type, IRuntimeMethodInfo pCtor, Byte** ppBlob, Byte* pEndBlob, Int32* pcNamedArgs)
+   at System.Reflection.CustomAttribute.AddCustomAttributes(ListBuilder`1& attributes, RuntimeModule decoratedModule, Int32 decoratedMetadataToken, RuntimeType attributeFilterType, Boolean mustBeInheritable, ListBuilder`1 derivedAttributes)
+   at System.Reflection.CustomAttribute.GetCustomAttributes(RuntimeType type, RuntimeType caType, Boolean inherit)
+   at System.Attribute.GetCustomAttributes(MemberInfo element, Boolean inherit)
+   at Volo.Abp.Modularity.AbpModuleHelper.FindDependedModuleTypes(Type moduleType)
+   at Volo.Abp.Modularity.AbpModuleHelper.AddModuleAndDependenciesRecursively(List`1 moduleTypes, Type moduleType, ILogger logger, Int32 depth)
+   at Volo.Abp.Modularity.AbpModuleHelper.AddModuleAndDependenciesRecursively(List`1 moduleTypes, Type moduleType, ILogger logger, Int32 depth)
+   at Volo.Abp.Modularity.AbpModuleHelper.AddModuleAndDependenciesRecursively(List`1 moduleTypes, Type moduleType, ILogger logger, Int32 depth)
+   at Volo.Abp.Modularity.AbpModuleHelper.FindAllModuleTypes(Type startupModuleType, ILogger logger)
+   at Volo.Abp.Modularity.ModuleLoader.FillModules(List`1 modules, IServiceCollection services, Type startupModuleType, PlugInSourceList plugInSources)
+   at Volo.Abp.Modularity.ModuleLoader.GetDescriptors(IServiceCollection services, Type startupModuleType, PlugInSourceList plugInSources)
+   at Volo.Abp.Modularity.ModuleLoader.LoadModules(IServiceCollection services, Type startupModuleType, PlugInSourceList plugInSources)
+   at Volo.Abp.AbpApplicationBase.LoadModules(IServiceCollection services, AbpApplicationCreationOptions options)
+   at Volo.Abp.AbpApplicationBase..ctor(Type startupModuleType, IServiceCollection services, Action`1 optionsAction)
+   at Volo.Abp.AbpApplicationWithExternalServiceProvider..ctor(Type startupModuleType, IServiceCollection services, Action`1 optionsAction)
+   at Volo.Abp.AbpApplicationFactory.Create(Type startupModuleType, IServiceCollection services, Action`1 optionsAction)
+   at Volo.Abp.AbpApplicationFactory.CreateAsync[TStartupModule](IServiceCollection services, Action`1 optionsAction)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionApplicationExtensions.AddApplicationAsync[TStartupModule](IServiceCollection services, Action`1 optionsAction)
+   at Microsoft.Extensions.DependencyInjection.WebApplicationBuilderExtensions.AddApplicationAsync[TStartupModule](WebApplicationBuilder builder, Action`1 optionsAction)
+   at Mars.HttpApi.Host.Program.Main(String[] args) in E:\JYGProject\Mars\src\Mars.HttpApi.Host\Program.cs:line 37
+2022-05-30 11:57:16.095 +08:00 [INF] Starting Mars.HttpApi.Host.
+2022-05-30 11:57:17.671 +08:00 [FTL] Host terminated unexpectedly!
+System.IO.FileNotFoundException: Could not load file or assembly 'Volo.Abp.FeatureManagement.HttpApi, Version=5.2.2.0, Culture=neutral, PublicKeyToken=null'. 系统找不到指定的文件。
+File name: 'Volo.Abp.FeatureManagement.HttpApi, Version=5.2.2.0, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.CustomAttribute._CreateCaObject(RuntimeModule pModule, RuntimeType type, IRuntimeMethodInfo pCtor, Byte** ppBlob, Byte* pEndBlob, Int32* pcNamedArgs)
+   at System.Reflection.CustomAttribute.AddCustomAttributes(ListBuilder`1& attributes, RuntimeModule decoratedModule, Int32 decoratedMetadataToken, RuntimeType attributeFilterType, Boolean mustBeInheritable, ListBuilder`1 derivedAttributes)
+   at System.Reflection.CustomAttribute.GetCustomAttributes(RuntimeType type, RuntimeType caType, Boolean inherit)
+   at System.Attribute.GetCustomAttributes(MemberInfo element, Boolean inherit)
+   at Volo.Abp.Modularity.AbpModuleHelper.FindDependedModuleTypes(Type moduleType)
+   at Volo.Abp.Modularity.AbpModuleHelper.AddModuleAndDependenciesRecursively(List`1 moduleTypes, Type moduleType, ILogger logger, Int32 depth)
+   at Volo.Abp.Modularity.AbpModuleHelper.AddModuleAndDependenciesRecursively(List`1 moduleTypes, Type moduleType, ILogger logger, Int32 depth)
+   at Volo.Abp.Modularity.AbpModuleHelper.AddModuleAndDependenciesRecursively(List`1 moduleTypes, Type moduleType, ILogger logger, Int32 depth)
+   at Volo.Abp.Modularity.AbpModuleHelper.FindAllModuleTypes(Type startupModuleType, ILogger logger)
+   at Volo.Abp.Modularity.ModuleLoader.FillModules(List`1 modules, IServiceCollection services, Type startupModuleType, PlugInSourceList plugInSources)
+   at Volo.Abp.Modularity.ModuleLoader.GetDescriptors(IServiceCollection services, Type startupModuleType, PlugInSourceList plugInSources)
+   at Volo.Abp.Modularity.ModuleLoader.LoadModules(IServiceCollection services, Type startupModuleType, PlugInSourceList plugInSources)
+   at Volo.Abp.AbpApplicationBase.LoadModules(IServiceCollection services, AbpApplicationCreationOptions options)
+   at Volo.Abp.AbpApplicationBase..ctor(Type startupModuleType, IServiceCollection services, Action`1 optionsAction)
+   at Volo.Abp.AbpApplicationWithExternalServiceProvider..ctor(Type startupModuleType, IServiceCollection services, Action`1 optionsAction)
+   at Volo.Abp.AbpApplicationFactory.Create(Type startupModuleType, IServiceCollection services, Action`1 optionsAction)
+   at Volo.Abp.AbpApplicationFactory.CreateAsync[TStartupModule](IServiceCollection services, Action`1 optionsAction)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionApplicationExtensions.AddApplicationAsync[TStartupModule](IServiceCollection services, Action`1 optionsAction)
+   at Microsoft.Extensions.DependencyInjection.WebApplicationBuilderExtensions.AddApplicationAsync[TStartupModule](WebApplicationBuilder builder, Action`1 optionsAction)
+   at Mars.HttpApi.Host.Program.Main(String[] args) in E:\JYGProject\Mars\src\Mars.HttpApi.Host\Program.cs:line 37
+2022-05-30 12:00:00.316 +08:00 [INF] Starting Mars.HttpApi.Host.
+2022-05-30 12:00:01.848 +08:00 [FTL] Host terminated unexpectedly!
+System.IO.FileNotFoundException: Could not load file or assembly 'Volo.Abp.FeatureManagement.HttpApi, Version=5.2.2.0, Culture=neutral, PublicKeyToken=null'. 系统找不到指定的文件。
+File name: 'Volo.Abp.FeatureManagement.HttpApi, Version=5.2.2.0, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.CustomAttribute._CreateCaObject(RuntimeModule pModule, RuntimeType type, IRuntimeMethodInfo pCtor, Byte** ppBlob, Byte* pEndBlob, Int32* pcNamedArgs)
+   at System.Reflection.CustomAttribute.AddCustomAttributes(ListBuilder`1& attributes, RuntimeModule decoratedModule, Int32 decoratedMetadataToken, RuntimeType attributeFilterType, Boolean mustBeInheritable, ListBuilder`1 derivedAttributes)
+   at System.Reflection.CustomAttribute.GetCustomAttributes(RuntimeType type, RuntimeType caType, Boolean inherit)
+   at System.Attribute.GetCustomAttributes(MemberInfo element, Boolean inherit)
+   at Volo.Abp.Modularity.AbpModuleHelper.FindDependedModuleTypes(Type moduleType)
+   at Volo.Abp.Modularity.AbpModuleHelper.AddModuleAndDependenciesRecursively(List`1 moduleTypes, Type moduleType, ILogger logger, Int32 depth)
+   at Volo.Abp.Modularity.AbpModuleHelper.AddModuleAndDependenciesRecursively(List`1 moduleTypes, Type moduleType, ILogger logger, Int32 depth)
+   at Volo.Abp.Modularity.AbpModuleHelper.AddModuleAndDependenciesRecursively(List`1 moduleTypes, Type moduleType, ILogger logger, Int32 depth)
+   at Volo.Abp.Modularity.AbpModuleHelper.FindAllModuleTypes(Type startupModuleType, ILogger logger)
+   at Volo.Abp.Modularity.ModuleLoader.FillModules(List`1 modules, IServiceCollection services, Type startupModuleType, PlugInSourceList plugInSources)
+   at Volo.Abp.Modularity.ModuleLoader.GetDescriptors(IServiceCollection services, Type startupModuleType, PlugInSourceList plugInSources)
+   at Volo.Abp.Modularity.ModuleLoader.LoadModules(IServiceCollection services, Type startupModuleType, PlugInSourceList plugInSources)
+   at Volo.Abp.AbpApplicationBase.LoadModules(IServiceCollection services, AbpApplicationCreationOptions options)
+   at Volo.Abp.AbpApplicationBase..ctor(Type startupModuleType, IServiceCollection services, Action`1 optionsAction)
+   at Volo.Abp.AbpApplicationWithExternalServiceProvider..ctor(Type startupModuleType, IServiceCollection services, Action`1 optionsAction)
+   at Volo.Abp.AbpApplicationFactory.Create(Type startupModuleType, IServiceCollection services, Action`1 optionsAction)
+   at Volo.Abp.AbpApplicationFactory.CreateAsync[TStartupModule](IServiceCollection services, Action`1 optionsAction)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionApplicationExtensions.AddApplicationAsync[TStartupModule](IServiceCollection services, Action`1 optionsAction)
+   at Microsoft.Extensions.DependencyInjection.WebApplicationBuilderExtensions.AddApplicationAsync[TStartupModule](WebApplicationBuilder builder, Action`1 optionsAction)
+   at Mars.HttpApi.Host.Program.Main(String[] args) in E:\JYGProject\Mars\src\Mars.HttpApi.Host\Program.cs:line 37
+2022-05-30 13:35:22.042 +08:00 [INF] Starting Mars.HttpApi.Host.
+2022-05-30 13:35:31.872 +08:00 [INF] Loaded ABP modules:
+2022-05-30 13:35:31.873 +08:00 [INF] - Mars.HttpApi.Host.MarsHttpApiHostModule
+2022-05-30 13:35:31.873 +08:00 [INF]   - Mars.HttpApi.MarsHttpApiModule
+2022-05-30 13:35:31.873 +08:00 [INF]     - Mars.Application.Contracts.MarsApplicationContractsModule
+2022-05-30 13:35:31.873 +08:00 [INF]       - Mars.Domain.Shared.MarsDomainSharedModule
+2022-05-30 13:35:31.873 +08:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2022-05-30 13:35:31.873 +08:00 [INF]           - Volo.Abp.Validation.AbpValidationModule
+2022-05-30 13:35:31.873 +08:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2022-05-30 13:35:31.873 +08:00 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2022-05-30 13:35:31.873 +08:00 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2022-05-30 13:35:31.873 +08:00 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2022-05-30 13:35:31.873 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2022-05-30 13:35:31.873 +08:00 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2022-05-30 13:35:31.873 +08:00 [INF]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2022-05-30 13:35:31.873 +08:00 [INF]                   - Volo.Abp.Data.AbpDataModule
+2022-05-30 13:35:31.873 +08:00 [INF]                     - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2022-05-30 13:35:31.873 +08:00 [INF]                     - Volo.Abp.Uow.AbpUnitOfWorkModule
+2022-05-30 13:35:31.873 +08:00 [INF]                     - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2022-05-30 13:35:31.873 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2022-05-30 13:35:31.873 +08:00 [INF]           - Volo.Abp.Users.AbpUsersDomainSharedModule
+2022-05-30 13:35:31.873 +08:00 [INF]           - Volo.Abp.Features.AbpFeaturesModule
+2022-05-30 13:35:31.873 +08:00 [INF]             - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2022-05-30 13:35:31.873 +08:00 [INF]         - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2022-05-30 13:35:31.873 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2022-05-30 13:35:31.873 +08:00 [INF]         - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2022-05-30 13:35:31.873 +08:00 [INF]         - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2022-05-30 13:35:31.873 +08:00 [INF]       - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2022-05-30 13:35:31.873 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2022-05-30 13:35:31.873 +08:00 [INF]           - Volo.Abp.Users.AbpUsersAbstractionModule
+2022-05-30 13:35:31.873 +08:00 [INF]             - Volo.Abp.EventBus.AbpEventBusModule
+2022-05-30 13:35:31.873 +08:00 [INF]               - Volo.Abp.Json.AbpJsonModule
+2022-05-30 13:35:31.873 +08:00 [INF]                 - Volo.Abp.Timing.AbpTimingModule
+2022-05-30 13:35:31.873 +08:00 [INF]               - Volo.Abp.Guids.AbpGuidsModule
+2022-05-30 13:35:31.873 +08:00 [INF]               - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2022-05-30 13:35:31.873 +08:00 [INF]                 - Volo.Abp.Threading.AbpThreadingModule
+2022-05-30 13:35:31.873 +08:00 [INF]               - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2022-05-30 13:35:31.873 +08:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationModule
+2022-05-30 13:35:31.873 +08:00 [INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2022-05-30 13:35:31.873 +08:00 [INF]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+2022-05-30 13:35:31.873 +08:00 [INF]               - Volo.Abp.Auditing.AbpAuditingContractsModule
+2022-05-30 13:35:31.873 +08:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2022-05-30 13:35:31.873 +08:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementApplicationContractsModule
+2022-05-30 13:35:31.873 +08:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2022-05-30 13:35:31.873 +08:00 [INF]     - Volo.Abp.Account.AbpAccountHttpApiModule
+2022-05-30 13:35:31.873 +08:00 [INF]       - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2022-05-30 13:35:31.873 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2022-05-30 13:35:31.873 +08:00 [INF]           - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2022-05-30 13:35:31.873 +08:00 [INF]             - Volo.Abp.Auditing.AbpAuditingModule
+2022-05-30 13:35:31.873 +08:00 [INF]             - Volo.Abp.Http.AbpHttpModule
+2022-05-30 13:35:31.873 +08:00 [INF]               - Volo.Abp.Http.AbpHttpAbstractionsModule
+2022-05-30 13:35:31.873 +08:00 [INF]               - Volo.Abp.Minify.AbpMinifyModule
+2022-05-30 13:35:31.873 +08:00 [INF]             - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2022-05-30 13:35:31.873 +08:00 [INF]           - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2022-05-30 13:35:31.873 +08:00 [INF]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2022-05-30 13:35:31.873 +08:00 [INF]           - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2022-05-30 13:35:31.873 +08:00 [INF]             - Volo.Abp.UI.AbpUiModule
+2022-05-30 13:35:31.873 +08:00 [INF]           - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2022-05-30 13:35:31.873 +08:00 [INF]           - Volo.Abp.Application.AbpDddApplicationModule
+2022-05-30 13:35:31.873 +08:00 [INF]             - Volo.Abp.Domain.AbpDddDomainModule
+2022-05-30 13:35:31.873 +08:00 [INF]               - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2022-05-30 13:35:31.873 +08:00 [INF]               - Volo.Abp.Specifications.AbpSpecificationsModule
+2022-05-30 13:35:31.873 +08:00 [INF]     - Volo.Abp.PermissionManagement.HttpApi.AbpPermissionManagementHttpApiModule
+2022-05-30 13:35:31.873 +08:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2022-05-30 13:35:31.873 +08:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2022-05-30 13:35:31.873 +08:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementHttpApiModule
+2022-05-30 13:35:31.873 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2022-05-30 13:35:31.873 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2022-05-30 13:35:31.873 +08:00 [INF]   - Volo.Abp.Caching.StackExchangeRedis.AbpCachingStackExchangeRedisModule
+2022-05-30 13:35:31.873 +08:00 [INF]     - Volo.Abp.Caching.AbpCachingModule
+2022-05-30 13:35:31.873 +08:00 [INF]       - Volo.Abp.Serialization.AbpSerializationModule
+2022-05-30 13:35:31.873 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2022-05-30 13:35:31.873 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2022-05-30 13:35:31.873 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2022-05-30 13:35:31.873 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2022-05-30 13:35:31.873 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2022-05-30 13:35:31.873 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2022-05-30 13:35:31.873 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2022-05-30 13:35:31.873 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2022-05-30 13:35:31.873 +08:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2022-05-30 13:35:31.873 +08:00 [INF]   - Mars.Application.MarsApplicationModule
+2022-05-30 13:35:31.873 +08:00 [INF]     - Mars.Domain.MarsDomainModule
+2022-05-30 13:35:31.873 +08:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule
+2022-05-30 13:35:31.873 +08:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainModule
+2022-05-30 13:35:31.873 +08:00 [INF]         - Volo.Abp.Users.AbpUsersDomainModule
+2022-05-30 13:35:31.873 +08:00 [INF]         - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2022-05-30 13:35:31.873 +08:00 [INF]       - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+2022-05-30 13:35:31.873 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2022-05-30 13:35:31.873 +08:00 [INF]       - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2022-05-30 13:35:31.873 +08:00 [INF]       - Volo.Abp.PermissionManagement.IdentityServer.AbpPermissionManagementDomainIdentityServerModule
+2022-05-30 13:35:31.873 +08:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2022-05-30 13:35:31.873 +08:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2022-05-30 13:35:31.873 +08:00 [INF]     - Volo.Abp.Account.AbpAccountApplicationModule
+2022-05-30 13:35:31.873 +08:00 [INF]       - Volo.Abp.Identity.AbpIdentityApplicationModule
+2022-05-30 13:35:31.873 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2022-05-30 13:35:31.873 +08:00 [INF]       - Volo.Abp.Emailing.AbpEmailingModule
+2022-05-30 13:35:31.873 +08:00 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2022-05-30 13:35:31.873 +08:00 [INF]         - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2022-05-30 13:35:31.873 +08:00 [INF]           - Volo.Abp.TextTemplating.Scriban.AbpTextTemplatingScribanModule
+2022-05-30 13:35:31.873 +08:00 [INF]             - Volo.Abp.TextTemplating.AbpTextTemplatingCoreModule
+2022-05-30 13:35:31.873 +08:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementApplicationModule
+2022-05-30 13:35:31.873 +08:00 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationModule
+2022-05-30 13:35:31.873 +08:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementApplicationModule
+2022-05-30 13:35:31.873 +08:00 [INF]   - Mars.EntityFrameworkCore.MarsEntityFrameworkCoreModule
+2022-05-30 13:35:31.873 +08:00 [INF]     - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2022-05-30 13:35:31.873 +08:00 [INF]       - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2022-05-30 13:35:31.873 +08:00 [INF]         - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2022-05-30 13:35:31.873 +08:00 [INF]     - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+2022-05-30 13:35:31.873 +08:00 [INF]     - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2022-05-30 13:35:31.873 +08:00 [INF]     - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2022-05-30 13:35:31.873 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2022-05-30 13:35:31.873 +08:00 [INF]     - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2022-05-30 13:35:31.873 +08:00 [INF]     - Volo.Abp.FeatureManagement.EntityFrameworkCore.AbpFeatureManagementEntityFrameworkCoreModule
+2022-05-30 13:35:31.873 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2022-05-30 13:35:31.873 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2022-05-30 13:35:31.938 +08:00 [DBG] Started background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2022-05-30 13:35:32.551 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-05-30 13:35:32.613 +08:00 [INF] Initialized all ABP modules.
+2022-05-30 13:35:32.657 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-30 13:35:32.657 +08:00 [INF] Hosting environment: Development
+2022-05-30 13:35:32.657 +08:00 [INF] Content root path: E:\JYGProject\Mars\src\Mars.HttpApi.Host\
+2022-05-30 13:35:32.673 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/ - -
+2022-05-30 13:35:36.973 +08:00 [INF] Executing endpoint 'Mars.HttpApi.Host.Controllers.HomeController.Index (Mars.HttpApi.Host)'
+2022-05-30 13:35:36.994 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller Mars.HttpApi.Host.Controllers.HomeController (Mars.HttpApi.Host).
+2022-05-30 13:35:37.025 +08:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2022-05-30 13:35:37.030 +08:00 [INF] Executed action Mars.HttpApi.Host.Controllers.HomeController.Index (Mars.HttpApi.Host) in 32.5842ms
+2022-05-30 13:35:37.030 +08:00 [INF] Executed endpoint 'Mars.HttpApi.Host.Controllers.HomeController.Index (Mars.HttpApi.Host)'
+2022-05-30 13:35:37.049 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/index.html - -
+2022-05-30 13:35:37.051 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/ - - - 302 - - 4378.2797ms
+2022-05-30 13:35:37.142 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/index.html - - - 200 - text/html;charset=utf-8 93.2233ms
+2022-05-30 13:35:37.150 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - -
+2022-05-30 13:35:37.155 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 4.6702ms
+2022-05-30 13:35:37.224 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_vs/browserLink - -
+2022-05-30 13:35:37.253 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 29.1857ms
+2022-05-30 13:35:37.416 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - -
+2022-05-30 13:35:37.579 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 163.6444ms
+2022-05-30 13:36:01.064 +08:00 [INF] Starting Mars.HttpApi.Host.
+2022-05-30 13:36:02.430 +08:00 [INF] Loaded ABP modules:
+2022-05-30 13:36:02.432 +08:00 [INF] - Mars.HttpApi.Host.MarsHttpApiHostModule
+2022-05-30 13:36:02.432 +08:00 [INF]   - Mars.HttpApi.MarsHttpApiModule
+2022-05-30 13:36:02.432 +08:00 [INF]     - Mars.Application.Contracts.MarsApplicationContractsModule
+2022-05-30 13:36:02.432 +08:00 [INF]       - Mars.Domain.Shared.MarsDomainSharedModule
+2022-05-30 13:36:02.432 +08:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2022-05-30 13:36:02.432 +08:00 [INF]           - Volo.Abp.Validation.AbpValidationModule
+2022-05-30 13:36:02.432 +08:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2022-05-30 13:36:02.432 +08:00 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2022-05-30 13:36:02.432 +08:00 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2022-05-30 13:36:02.432 +08:00 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2022-05-30 13:36:02.432 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2022-05-30 13:36:02.432 +08:00 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2022-05-30 13:36:02.432 +08:00 [INF]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2022-05-30 13:36:02.432 +08:00 [INF]                   - Volo.Abp.Data.AbpDataModule
+2022-05-30 13:36:02.432 +08:00 [INF]                     - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2022-05-30 13:36:02.432 +08:00 [INF]                     - Volo.Abp.Uow.AbpUnitOfWorkModule
+2022-05-30 13:36:02.432 +08:00 [INF]                     - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2022-05-30 13:36:02.432 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2022-05-30 13:36:02.432 +08:00 [INF]           - Volo.Abp.Users.AbpUsersDomainSharedModule
+2022-05-30 13:36:02.432 +08:00 [INF]           - Volo.Abp.Features.AbpFeaturesModule
+2022-05-30 13:36:02.432 +08:00 [INF]             - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2022-05-30 13:36:02.432 +08:00 [INF]         - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2022-05-30 13:36:02.432 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2022-05-30 13:36:02.432 +08:00 [INF]         - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2022-05-30 13:36:02.432 +08:00 [INF]         - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2022-05-30 13:36:02.432 +08:00 [INF]       - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2022-05-30 13:36:02.432 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2022-05-30 13:36:02.432 +08:00 [INF]           - Volo.Abp.Users.AbpUsersAbstractionModule
+2022-05-30 13:36:02.432 +08:00 [INF]             - Volo.Abp.EventBus.AbpEventBusModule
+2022-05-30 13:36:02.432 +08:00 [INF]               - Volo.Abp.Json.AbpJsonModule
+2022-05-30 13:36:02.432 +08:00 [INF]                 - Volo.Abp.Timing.AbpTimingModule
+2022-05-30 13:36:02.432 +08:00 [INF]               - Volo.Abp.Guids.AbpGuidsModule
+2022-05-30 13:36:02.432 +08:00 [INF]               - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2022-05-30 13:36:02.432 +08:00 [INF]                 - Volo.Abp.Threading.AbpThreadingModule
+2022-05-30 13:36:02.432 +08:00 [INF]               - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2022-05-30 13:36:02.432 +08:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationModule
+2022-05-30 13:36:02.432 +08:00 [INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2022-05-30 13:36:02.432 +08:00 [INF]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+2022-05-30 13:36:02.432 +08:00 [INF]               - Volo.Abp.Auditing.AbpAuditingContractsModule
+2022-05-30 13:36:02.432 +08:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2022-05-30 13:36:02.432 +08:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementApplicationContractsModule
+2022-05-30 13:36:02.432 +08:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2022-05-30 13:36:02.432 +08:00 [INF]     - Volo.Abp.Account.AbpAccountHttpApiModule
+2022-05-30 13:36:02.432 +08:00 [INF]       - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2022-05-30 13:36:02.432 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2022-05-30 13:36:02.432 +08:00 [INF]           - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2022-05-30 13:36:02.432 +08:00 [INF]             - Volo.Abp.Auditing.AbpAuditingModule
+2022-05-30 13:36:02.432 +08:00 [INF]             - Volo.Abp.Http.AbpHttpModule
+2022-05-30 13:36:02.432 +08:00 [INF]               - Volo.Abp.Http.AbpHttpAbstractionsModule
+2022-05-30 13:36:02.432 +08:00 [INF]               - Volo.Abp.Minify.AbpMinifyModule
+2022-05-30 13:36:02.432 +08:00 [INF]             - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2022-05-30 13:36:02.432 +08:00 [INF]           - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2022-05-30 13:36:02.432 +08:00 [INF]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2022-05-30 13:36:02.432 +08:00 [INF]           - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2022-05-30 13:36:02.432 +08:00 [INF]             - Volo.Abp.UI.AbpUiModule
+2022-05-30 13:36:02.432 +08:00 [INF]           - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2022-05-30 13:36:02.432 +08:00 [INF]           - Volo.Abp.Application.AbpDddApplicationModule
+2022-05-30 13:36:02.432 +08:00 [INF]             - Volo.Abp.Domain.AbpDddDomainModule
+2022-05-30 13:36:02.432 +08:00 [INF]               - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2022-05-30 13:36:02.432 +08:00 [INF]               - Volo.Abp.Specifications.AbpSpecificationsModule
+2022-05-30 13:36:02.432 +08:00 [INF]     - Volo.Abp.PermissionManagement.HttpApi.AbpPermissionManagementHttpApiModule
+2022-05-30 13:36:02.432 +08:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2022-05-30 13:36:02.432 +08:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2022-05-30 13:36:02.432 +08:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementHttpApiModule
+2022-05-30 13:36:02.432 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2022-05-30 13:36:02.432 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2022-05-30 13:36:02.432 +08:00 [INF]   - Volo.Abp.Caching.StackExchangeRedis.AbpCachingStackExchangeRedisModule
+2022-05-30 13:36:02.432 +08:00 [INF]     - Volo.Abp.Caching.AbpCachingModule
+2022-05-30 13:36:02.432 +08:00 [INF]       - Volo.Abp.Serialization.AbpSerializationModule
+2022-05-30 13:36:02.432 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2022-05-30 13:36:02.432 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2022-05-30 13:36:02.432 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2022-05-30 13:36:02.432 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2022-05-30 13:36:02.432 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2022-05-30 13:36:02.432 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2022-05-30 13:36:02.432 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2022-05-30 13:36:02.432 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2022-05-30 13:36:02.432 +08:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2022-05-30 13:36:02.432 +08:00 [INF]   - Mars.Application.MarsApplicationModule
+2022-05-30 13:36:02.432 +08:00 [INF]     - Mars.Domain.MarsDomainModule
+2022-05-30 13:36:02.432 +08:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule
+2022-05-30 13:36:02.432 +08:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainModule
+2022-05-30 13:36:02.432 +08:00 [INF]         - Volo.Abp.Users.AbpUsersDomainModule
+2022-05-30 13:36:02.432 +08:00 [INF]         - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2022-05-30 13:36:02.432 +08:00 [INF]       - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+2022-05-30 13:36:02.432 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2022-05-30 13:36:02.432 +08:00 [INF]       - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2022-05-30 13:36:02.432 +08:00 [INF]       - Volo.Abp.PermissionManagement.IdentityServer.AbpPermissionManagementDomainIdentityServerModule
+2022-05-30 13:36:02.432 +08:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2022-05-30 13:36:02.432 +08:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2022-05-30 13:36:02.432 +08:00 [INF]     - Volo.Abp.Account.AbpAccountApplicationModule
+2022-05-30 13:36:02.432 +08:00 [INF]       - Volo.Abp.Identity.AbpIdentityApplicationModule
+2022-05-30 13:36:02.432 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2022-05-30 13:36:02.432 +08:00 [INF]       - Volo.Abp.Emailing.AbpEmailingModule
+2022-05-30 13:36:02.432 +08:00 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2022-05-30 13:36:02.432 +08:00 [INF]         - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2022-05-30 13:36:02.432 +08:00 [INF]           - Volo.Abp.TextTemplating.Scriban.AbpTextTemplatingScribanModule
+2022-05-30 13:36:02.432 +08:00 [INF]             - Volo.Abp.TextTemplating.AbpTextTemplatingCoreModule
+2022-05-30 13:36:02.432 +08:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementApplicationModule
+2022-05-30 13:36:02.432 +08:00 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationModule
+2022-05-30 13:36:02.432 +08:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementApplicationModule
+2022-05-30 13:36:02.432 +08:00 [INF]   - Mars.EntityFrameworkCore.MarsEntityFrameworkCoreModule
+2022-05-30 13:36:02.432 +08:00 [INF]     - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2022-05-30 13:36:02.432 +08:00 [INF]       - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2022-05-30 13:36:02.432 +08:00 [INF]         - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2022-05-30 13:36:02.432 +08:00 [INF]     - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+2022-05-30 13:36:02.432 +08:00 [INF]     - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2022-05-30 13:36:02.432 +08:00 [INF]     - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2022-05-30 13:36:02.432 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2022-05-30 13:36:02.432 +08:00 [INF]     - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2022-05-30 13:36:02.432 +08:00 [INF]     - Volo.Abp.FeatureManagement.EntityFrameworkCore.AbpFeatureManagementEntityFrameworkCoreModule
+2022-05-30 13:36:02.432 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2022-05-30 13:36:02.432 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2022-05-30 13:36:02.496 +08:00 [DBG] Started background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2022-05-30 13:36:02.682 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-05-30 13:36:02.748 +08:00 [INF] Initialized all ABP modules.
+2022-05-30 13:36:02.798 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-30 13:36:02.798 +08:00 [INF] Hosting environment: Development
+2022-05-30 13:36:02.798 +08:00 [INF] Content root path: E:\JYGProject\Mars\src\Mars.HttpApi.Host\
+2022-05-30 13:36:02.814 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/index.html - -
+2022-05-30 13:36:03.908 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - -
+2022-05-30 13:36:03.908 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_vs/browserLink - -
+2022-05-30 13:36:03.909 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/index.html - - - 200 - text/html;charset=utf-8 1095.4244ms
+2022-05-30 13:36:03.911 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 3.1581ms
+2022-05-30 13:36:03.942 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 33.6523ms
+2022-05-30 13:36:04.075 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - -
+2022-05-30 13:36:04.264 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 188.6026ms
+2022-05-30 13:36:06.814 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/index.html - -
+2022-05-30 13:36:06.825 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/index.html - - - 200 - text/html;charset=utf-8 11.1690ms
+2022-05-30 13:36:06.837 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_vs/browserLink - -
+2022-05-30 13:36:06.837 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - -
+2022-05-30 13:36:06.838 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 1.2222ms
+2022-05-30 13:36:06.863 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 26.3206ms
+2022-05-30 13:36:06.980 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - -
+2022-05-30 13:36:07.038 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 58.0194ms
+2022-05-30 13:36:32.968 +08:00 [INF] Starting Mars.HttpApi.Host.
+2022-05-30 13:36:33.161 +08:00 [FTL] Host terminated unexpectedly!
+System.IO.FileNotFoundException: Could not load file or assembly 'Volo.Abp.FeatureManagement.Domain.Shared, Version=5.2.2.0, Culture=neutral, PublicKeyToken=null'. 系统找不到指定的文件。
+File name: 'Volo.Abp.FeatureManagement.Domain.Shared, Version=5.2.2.0, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.CustomAttribute._CreateCaObject(RuntimeModule pModule, RuntimeType type, IRuntimeMethodInfo pCtor, Byte** ppBlob, Byte* pEndBlob, Int32* pcNamedArgs)
+   at System.Reflection.CustomAttribute.CreateCaObject(RuntimeModule module, RuntimeType type, IRuntimeMethodInfo ctor, IntPtr& blob, IntPtr blobEnd, Int32& namedArgs)
+   at System.Reflection.CustomAttribute.AddCustomAttributes(ListBuilder`1& attributes, RuntimeModule decoratedModule, Int32 decoratedMetadataToken, RuntimeType attributeFilterType, Boolean mustBeInheritable, ListBuilder`1 derivedAttributes)
+   at System.Reflection.CustomAttribute.GetCustomAttributes(RuntimeType type, RuntimeType caType, Boolean inherit)
+   at System.RuntimeType.GetCustomAttributes(Type attributeType, Boolean inherit)
+   at System.Attribute.GetCustomAttributes(MemberInfo element, Boolean inherit)
+   at Volo.Abp.Modularity.AbpModuleHelper.FindDependedModuleTypes(Type moduleType)
+   at Volo.Abp.Modularity.AbpModuleHelper.AddModuleAndDependenciesRecursively(List`1 moduleTypes, Type moduleType, ILogger logger, Int32 depth)
+   at Volo.Abp.Modularity.AbpModuleHelper.AddModuleAndDependenciesRecursively(List`1 moduleTypes, Type moduleType, ILogger logger, Int32 depth)
+   at Volo.Abp.Modularity.AbpModuleHelper.AddModuleAndDependenciesRecursively(List`1 moduleTypes, Type moduleType, ILogger logger, Int32 depth)
+   at Volo.Abp.Modularity.AbpModuleHelper.AddModuleAndDependenciesRecursively(List`1 moduleTypes, Type moduleType, ILogger logger, Int32 depth)
+   at Volo.Abp.Modularity.AbpModuleHelper.FindAllModuleTypes(Type startupModuleType, ILogger logger)
+   at Volo.Abp.Modularity.ModuleLoader.FillModules(List`1 modules, IServiceCollection services, Type startupModuleType, PlugInSourceList plugInSources)
+   at Volo.Abp.Modularity.ModuleLoader.GetDescriptors(IServiceCollection services, Type startupModuleType, PlugInSourceList plugInSources)
+   at Volo.Abp.Modularity.ModuleLoader.LoadModules(IServiceCollection services, Type startupModuleType, PlugInSourceList plugInSources)
+   at Volo.Abp.AbpApplicationBase.LoadModules(IServiceCollection services, AbpApplicationCreationOptions options)
+   at Volo.Abp.AbpApplicationBase..ctor(Type startupModuleType, IServiceCollection services, Action`1 optionsAction)
+   at Volo.Abp.AbpApplicationWithExternalServiceProvider..ctor(Type startupModuleType, IServiceCollection services, Action`1 optionsAction)
+   at Volo.Abp.AbpApplicationFactory.Create(Type startupModuleType, IServiceCollection services, Action`1 optionsAction)
+   at Volo.Abp.AbpApplicationFactory.CreateAsync[TStartupModule](IServiceCollection services, Action`1 optionsAction)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionApplicationExtensions.AddApplicationAsync[TStartupModule](IServiceCollection services, Action`1 optionsAction)
+   at Microsoft.Extensions.DependencyInjection.WebApplicationBuilderExtensions.AddApplicationAsync[TStartupModule](WebApplicationBuilder builder, Action`1 optionsAction)
+   at Mars.HttpApi.Host.Program.Main(String[] args) in E:\JYGProject\Mars\src\Mars.HttpApi.Host\Program.cs:line 37
+2022-05-30 13:37:01.175 +08:00 [INF] Starting Mars.HttpApi.Host.
+2022-05-30 13:37:01.270 +08:00 [FTL] Host terminated unexpectedly!
+System.IO.FileNotFoundException: Could not load file or assembly 'Volo.Abp.FeatureManagement.Domain.Shared, Version=5.2.2.0, Culture=neutral, PublicKeyToken=null'. 系统找不到指定的文件。
+File name: 'Volo.Abp.FeatureManagement.Domain.Shared, Version=5.2.2.0, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.CustomAttribute._CreateCaObject(RuntimeModule pModule, RuntimeType type, IRuntimeMethodInfo pCtor, Byte** ppBlob, Byte* pEndBlob, Int32* pcNamedArgs)
+   at System.Reflection.CustomAttribute.CreateCaObject(RuntimeModule module, RuntimeType type, IRuntimeMethodInfo ctor, IntPtr& blob, IntPtr blobEnd, Int32& namedArgs)
+   at System.Reflection.CustomAttribute.AddCustomAttributes(ListBuilder`1& attributes, RuntimeModule decoratedModule, Int32 decoratedMetadataToken, RuntimeType attributeFilterType, Boolean mustBeInheritable, ListBuilder`1 derivedAttributes)
+   at System.Reflection.CustomAttribute.GetCustomAttributes(RuntimeType type, RuntimeType caType, Boolean inherit)
+   at System.RuntimeType.GetCustomAttributes(Type attributeType, Boolean inherit)
+   at System.Attribute.GetCustomAttributes(MemberInfo element, Boolean inherit)
+   at Volo.Abp.Modularity.AbpModuleHelper.FindDependedModuleTypes(Type moduleType)
+   at Volo.Abp.Modularity.AbpModuleHelper.AddModuleAndDependenciesRecursively(List`1 moduleTypes, Type moduleType, ILogger logger, Int32 depth)
+   at Volo.Abp.Modularity.AbpModuleHelper.AddModuleAndDependenciesRecursively(List`1 moduleTypes, Type moduleType, ILogger logger, Int32 depth)
+   at Volo.Abp.Modularity.AbpModuleHelper.AddModuleAndDependenciesRecursively(List`1 moduleTypes, Type moduleType, ILogger logger, Int32 depth)
+   at Volo.Abp.Modularity.AbpModuleHelper.AddModuleAndDependenciesRecursively(List`1 moduleTypes, Type moduleType, ILogger logger, Int32 depth)
+   at Volo.Abp.Modularity.AbpModuleHelper.FindAllModuleTypes(Type startupModuleType, ILogger logger)
+   at Volo.Abp.Modularity.ModuleLoader.FillModules(List`1 modules, IServiceCollection services, Type startupModuleType, PlugInSourceList plugInSources)
+   at Volo.Abp.Modularity.ModuleLoader.GetDescriptors(IServiceCollection services, Type startupModuleType, PlugInSourceList plugInSources)
+   at Volo.Abp.Modularity.ModuleLoader.LoadModules(IServiceCollection services, Type startupModuleType, PlugInSourceList plugInSources)
+   at Volo.Abp.AbpApplicationBase.LoadModules(IServiceCollection services, AbpApplicationCreationOptions options)
+   at Volo.Abp.AbpApplicationBase..ctor(Type startupModuleType, IServiceCollection services, Action`1 optionsAction)
+   at Volo.Abp.AbpApplicationWithExternalServiceProvider..ctor(Type startupModuleType, IServiceCollection services, Action`1 optionsAction)
+   at Volo.Abp.AbpApplicationFactory.Create(Type startupModuleType, IServiceCollection services, Action`1 optionsAction)
+   at Volo.Abp.AbpApplicationFactory.CreateAsync[TStartupModule](IServiceCollection services, Action`1 optionsAction)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionApplicationExtensions.AddApplicationAsync[TStartupModule](IServiceCollection services, Action`1 optionsAction)
+   at Microsoft.Extensions.DependencyInjection.WebApplicationBuilderExtensions.AddApplicationAsync[TStartupModule](WebApplicationBuilder builder, Action`1 optionsAction)
+   at Mars.HttpApi.Host.Program.Main(String[] args) in E:\JYGProject\Mars\src\Mars.HttpApi.Host\Program.cs:line 37
+2022-05-30 13:37:33.393 +08:00 [INF] Starting Mars.HttpApi.Host.
+2022-05-30 13:37:34.827 +08:00 [INF] Loaded ABP modules:
+2022-05-30 13:37:34.828 +08:00 [INF] - Mars.HttpApi.Host.MarsHttpApiHostModule
+2022-05-30 13:37:34.829 +08:00 [INF]   - Mars.HttpApi.MarsHttpApiModule
+2022-05-30 13:37:34.829 +08:00 [INF]     - Mars.Application.Contracts.MarsApplicationContractsModule
+2022-05-30 13:37:34.829 +08:00 [INF]       - Mars.Domain.Shared.MarsDomainSharedModule
+2022-05-30 13:37:34.829 +08:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2022-05-30 13:37:34.829 +08:00 [INF]           - Volo.Abp.Validation.AbpValidationModule
+2022-05-30 13:37:34.829 +08:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2022-05-30 13:37:34.829 +08:00 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2022-05-30 13:37:34.829 +08:00 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2022-05-30 13:37:34.829 +08:00 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2022-05-30 13:37:34.829 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2022-05-30 13:37:34.829 +08:00 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2022-05-30 13:37:34.829 +08:00 [INF]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2022-05-30 13:37:34.829 +08:00 [INF]                   - Volo.Abp.Data.AbpDataModule
+2022-05-30 13:37:34.829 +08:00 [INF]                     - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2022-05-30 13:37:34.829 +08:00 [INF]                     - Volo.Abp.Uow.AbpUnitOfWorkModule
+2022-05-30 13:37:34.829 +08:00 [INF]                     - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2022-05-30 13:37:34.829 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2022-05-30 13:37:34.829 +08:00 [INF]           - Volo.Abp.Users.AbpUsersDomainSharedModule
+2022-05-30 13:37:34.829 +08:00 [INF]           - Volo.Abp.Features.AbpFeaturesModule
+2022-05-30 13:37:34.829 +08:00 [INF]             - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2022-05-30 13:37:34.829 +08:00 [INF]         - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2022-05-30 13:37:34.829 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2022-05-30 13:37:34.829 +08:00 [INF]         - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2022-05-30 13:37:34.829 +08:00 [INF]         - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2022-05-30 13:37:34.829 +08:00 [INF]       - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2022-05-30 13:37:34.829 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2022-05-30 13:37:34.829 +08:00 [INF]           - Volo.Abp.Users.AbpUsersAbstractionModule
+2022-05-30 13:37:34.829 +08:00 [INF]             - Volo.Abp.EventBus.AbpEventBusModule
+2022-05-30 13:37:34.829 +08:00 [INF]               - Volo.Abp.Json.AbpJsonModule
+2022-05-30 13:37:34.829 +08:00 [INF]                 - Volo.Abp.Timing.AbpTimingModule
+2022-05-30 13:37:34.829 +08:00 [INF]               - Volo.Abp.Guids.AbpGuidsModule
+2022-05-30 13:37:34.829 +08:00 [INF]               - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2022-05-30 13:37:34.829 +08:00 [INF]                 - Volo.Abp.Threading.AbpThreadingModule
+2022-05-30 13:37:34.829 +08:00 [INF]               - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2022-05-30 13:37:34.829 +08:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationModule
+2022-05-30 13:37:34.829 +08:00 [INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2022-05-30 13:37:34.829 +08:00 [INF]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+2022-05-30 13:37:34.829 +08:00 [INF]               - Volo.Abp.Auditing.AbpAuditingContractsModule
+2022-05-30 13:37:34.829 +08:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2022-05-30 13:37:34.829 +08:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementApplicationContractsModule
+2022-05-30 13:37:34.829 +08:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2022-05-30 13:37:34.829 +08:00 [INF]     - Volo.Abp.Account.AbpAccountHttpApiModule
+2022-05-30 13:37:34.829 +08:00 [INF]       - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2022-05-30 13:37:34.829 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2022-05-30 13:37:34.829 +08:00 [INF]           - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2022-05-30 13:37:34.829 +08:00 [INF]             - Volo.Abp.Auditing.AbpAuditingModule
+2022-05-30 13:37:34.829 +08:00 [INF]             - Volo.Abp.Http.AbpHttpModule
+2022-05-30 13:37:34.829 +08:00 [INF]               - Volo.Abp.Http.AbpHttpAbstractionsModule
+2022-05-30 13:37:34.829 +08:00 [INF]               - Volo.Abp.Minify.AbpMinifyModule
+2022-05-30 13:37:34.829 +08:00 [INF]             - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2022-05-30 13:37:34.829 +08:00 [INF]           - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2022-05-30 13:37:34.829 +08:00 [INF]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2022-05-30 13:37:34.829 +08:00 [INF]           - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2022-05-30 13:37:34.829 +08:00 [INF]             - Volo.Abp.UI.AbpUiModule
+2022-05-30 13:37:34.829 +08:00 [INF]           - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2022-05-30 13:37:34.829 +08:00 [INF]           - Volo.Abp.Application.AbpDddApplicationModule
+2022-05-30 13:37:34.829 +08:00 [INF]             - Volo.Abp.Domain.AbpDddDomainModule
+2022-05-30 13:37:34.829 +08:00 [INF]               - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2022-05-30 13:37:34.829 +08:00 [INF]               - Volo.Abp.Specifications.AbpSpecificationsModule
+2022-05-30 13:37:34.829 +08:00 [INF]     - Volo.Abp.PermissionManagement.HttpApi.AbpPermissionManagementHttpApiModule
+2022-05-30 13:37:34.829 +08:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2022-05-30 13:37:34.829 +08:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2022-05-30 13:37:34.829 +08:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementHttpApiModule
+2022-05-30 13:37:34.829 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2022-05-30 13:37:34.829 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2022-05-30 13:37:34.829 +08:00 [INF]   - Volo.Abp.Caching.StackExchangeRedis.AbpCachingStackExchangeRedisModule
+2022-05-30 13:37:34.829 +08:00 [INF]     - Volo.Abp.Caching.AbpCachingModule
+2022-05-30 13:37:34.829 +08:00 [INF]       - Volo.Abp.Serialization.AbpSerializationModule
+2022-05-30 13:37:34.829 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2022-05-30 13:37:34.829 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2022-05-30 13:37:34.829 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2022-05-30 13:37:34.829 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2022-05-30 13:37:34.829 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2022-05-30 13:37:34.829 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2022-05-30 13:37:34.829 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2022-05-30 13:37:34.829 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2022-05-30 13:37:34.829 +08:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2022-05-30 13:37:34.829 +08:00 [INF]   - Mars.Application.MarsApplicationModule
+2022-05-30 13:37:34.829 +08:00 [INF]     - Mars.Domain.MarsDomainModule
+2022-05-30 13:37:34.829 +08:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule
+2022-05-30 13:37:34.829 +08:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainModule
+2022-05-30 13:37:34.829 +08:00 [INF]         - Volo.Abp.Users.AbpUsersDomainModule
+2022-05-30 13:37:34.829 +08:00 [INF]         - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2022-05-30 13:37:34.829 +08:00 [INF]       - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+2022-05-30 13:37:34.829 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2022-05-30 13:37:34.829 +08:00 [INF]       - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2022-05-30 13:37:34.829 +08:00 [INF]       - Volo.Abp.PermissionManagement.IdentityServer.AbpPermissionManagementDomainIdentityServerModule
+2022-05-30 13:37:34.829 +08:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2022-05-30 13:37:34.829 +08:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2022-05-30 13:37:34.829 +08:00 [INF]     - Volo.Abp.Account.AbpAccountApplicationModule
+2022-05-30 13:37:34.829 +08:00 [INF]       - Volo.Abp.Identity.AbpIdentityApplicationModule
+2022-05-30 13:37:34.829 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2022-05-30 13:37:34.829 +08:00 [INF]       - Volo.Abp.Emailing.AbpEmailingModule
+2022-05-30 13:37:34.829 +08:00 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2022-05-30 13:37:34.829 +08:00 [INF]         - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2022-05-30 13:37:34.829 +08:00 [INF]           - Volo.Abp.TextTemplating.Scriban.AbpTextTemplatingScribanModule
+2022-05-30 13:37:34.829 +08:00 [INF]             - Volo.Abp.TextTemplating.AbpTextTemplatingCoreModule
+2022-05-30 13:37:34.829 +08:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementApplicationModule
+2022-05-30 13:37:34.829 +08:00 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationModule
+2022-05-30 13:37:34.829 +08:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementApplicationModule
+2022-05-30 13:37:34.829 +08:00 [INF]   - Mars.EntityFrameworkCore.MarsEntityFrameworkCoreModule
+2022-05-30 13:37:34.829 +08:00 [INF]     - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2022-05-30 13:37:34.829 +08:00 [INF]       - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2022-05-30 13:37:34.829 +08:00 [INF]         - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2022-05-30 13:37:34.829 +08:00 [INF]     - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+2022-05-30 13:37:34.829 +08:00 [INF]     - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2022-05-30 13:37:34.829 +08:00 [INF]     - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2022-05-30 13:37:34.829 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2022-05-30 13:37:34.829 +08:00 [INF]     - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2022-05-30 13:37:34.829 +08:00 [INF]     - Volo.Abp.FeatureManagement.EntityFrameworkCore.AbpFeatureManagementEntityFrameworkCoreModule
+2022-05-30 13:37:34.829 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2022-05-30 13:37:34.829 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2022-05-30 13:37:34.909 +08:00 [DBG] Started background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2022-05-30 13:37:35.110 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-05-30 13:37:35.182 +08:00 [INF] Initialized all ABP modules.
+2022-05-30 13:37:35.233 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-30 13:37:35.233 +08:00 [INF] Hosting environment: Development
+2022-05-30 13:37:35.233 +08:00 [INF] Content root path: E:\JYGProject\Mars\src\Mars.HttpApi.Host\
+2022-05-30 13:37:35.249 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/ - -
+2022-05-30 13:37:36.433 +08:00 [INF] Executing endpoint 'Mars.HttpApi.Host.Controllers.HomeController.Index (Mars.HttpApi.Host)'
+2022-05-30 13:37:36.450 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller Mars.HttpApi.Host.Controllers.HomeController (Mars.HttpApi.Host).
+2022-05-30 13:37:36.472 +08:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2022-05-30 13:37:36.477 +08:00 [INF] Executed action Mars.HttpApi.Host.Controllers.HomeController.Index (Mars.HttpApi.Host) in 20.2116ms
+2022-05-30 13:37:36.477 +08:00 [INF] Executed endpoint 'Mars.HttpApi.Host.Controllers.HomeController.Index (Mars.HttpApi.Host)'
+2022-05-30 13:37:36.495 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/index.html - -
+2022-05-30 13:37:36.498 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/ - - - 302 - - 1249.8818ms
+2022-05-30 13:37:36.601 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/index.html - - - 200 - text/html;charset=utf-8 106.4013ms
+2022-05-30 13:37:36.613 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - -
+2022-05-30 13:37:36.626 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 12.8509ms
+2022-05-30 13:37:36.693 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_vs/browserLink - -
+2022-05-30 13:37:36.798 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 104.7934ms
+2022-05-30 13:37:36.854 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - -
+2022-05-30 13:37:37.054 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 199.4284ms
+2022-05-30 13:38:03.004 +08:00 [INF] Starting Mars.HttpApi.Host.
+2022-05-30 13:38:03.160 +08:00 [FTL] Host terminated unexpectedly!
+System.IO.FileNotFoundException: Could not load file or assembly 'Volo.Abp.FeatureManagement.Domain.Shared, Version=5.2.2.0, Culture=neutral, PublicKeyToken=null'. 系统找不到指定的文件。
+File name: 'Volo.Abp.FeatureManagement.Domain.Shared, Version=5.2.2.0, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.CustomAttribute._CreateCaObject(RuntimeModule pModule, RuntimeType type, IRuntimeMethodInfo pCtor, Byte** ppBlob, Byte* pEndBlob, Int32* pcNamedArgs)
+   at System.Reflection.CustomAttribute.CreateCaObject(RuntimeModule module, RuntimeType type, IRuntimeMethodInfo ctor, IntPtr& blob, IntPtr blobEnd, Int32& namedArgs)
+   at System.Reflection.CustomAttribute.AddCustomAttributes(ListBuilder`1& attributes, RuntimeModule decoratedModule, Int32 decoratedMetadataToken, RuntimeType attributeFilterType, Boolean mustBeInheritable, ListBuilder`1 derivedAttributes)
+   at System.Reflection.CustomAttribute.GetCustomAttributes(RuntimeType type, RuntimeType caType, Boolean inherit)
+   at System.RuntimeType.GetCustomAttributes(Type attributeType, Boolean inherit)
+   at System.Attribute.GetCustomAttributes(MemberInfo element, Boolean inherit)
+   at Volo.Abp.Modularity.AbpModuleHelper.FindDependedModuleTypes(Type moduleType)
+   at Volo.Abp.Modularity.AbpModuleHelper.AddModuleAndDependenciesRecursively(List`1 moduleTypes, Type moduleType, ILogger logger, Int32 depth)
+   at Volo.Abp.Modularity.AbpModuleHelper.AddModuleAndDependenciesRecursively(List`1 moduleTypes, Type moduleType, ILogger logger, Int32 depth)
+   at Volo.Abp.Modularity.AbpModuleHelper.AddModuleAndDependenciesRecursively(List`1 moduleTypes, Type moduleType, ILogger logger, Int32 depth)
+   at Volo.Abp.Modularity.AbpModuleHelper.AddModuleAndDependenciesRecursively(List`1 moduleTypes, Type moduleType, ILogger logger, Int32 depth)
+   at Volo.Abp.Modularity.AbpModuleHelper.FindAllModuleTypes(Type startupModuleType, ILogger logger)
+   at Volo.Abp.Modularity.ModuleLoader.FillModules(List`1 modules, IServiceCollection services, Type startupModuleType, PlugInSourceList plugInSources)
+   at Volo.Abp.Modularity.ModuleLoader.GetDescriptors(IServiceCollection services, Type startupModuleType, PlugInSourceList plugInSources)
+   at Volo.Abp.Modularity.ModuleLoader.LoadModules(IServiceCollection services, Type startupModuleType, PlugInSourceList plugInSources)
+   at Volo.Abp.AbpApplicationBase.LoadModules(IServiceCollection services, AbpApplicationCreationOptions options)
+   at Volo.Abp.AbpApplicationBase..ctor(Type startupModuleType, IServiceCollection services, Action`1 optionsAction)
+   at Volo.Abp.AbpApplicationWithExternalServiceProvider..ctor(Type startupModuleType, IServiceCollection services, Action`1 optionsAction)
+   at Volo.Abp.AbpApplicationFactory.Create(Type startupModuleType, IServiceCollection services, Action`1 optionsAction)
+   at Volo.Abp.AbpApplicationFactory.CreateAsync[TStartupModule](IServiceCollection services, Action`1 optionsAction)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionApplicationExtensions.AddApplicationAsync[TStartupModule](IServiceCollection services, Action`1 optionsAction)
+   at Microsoft.Extensions.DependencyInjection.WebApplicationBuilderExtensions.AddApplicationAsync[TStartupModule](WebApplicationBuilder builder, Action`1 optionsAction)
+   at Mars.HttpApi.Host.Program.Main(String[] args) in E:\JYGProject\Mars\src\Mars.HttpApi.Host\Program.cs:line 37
+2022-05-30 13:39:35.821 +08:00 [INF] Starting Mars.HttpApi.Host.
+2022-05-30 13:39:37.108 +08:00 [FTL] Host terminated unexpectedly!
+System.IO.FileNotFoundException: Could not load file or assembly 'Volo.Abp.FeatureManagement.Domain.Shared, Version=5.2.2.0, Culture=neutral, PublicKeyToken=null'. 系统找不到指定的文件。
+File name: 'Volo.Abp.FeatureManagement.Domain.Shared, Version=5.2.2.0, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.CustomAttribute._CreateCaObject(RuntimeModule pModule, RuntimeType type, IRuntimeMethodInfo pCtor, Byte** ppBlob, Byte* pEndBlob, Int32* pcNamedArgs)
+   at System.Reflection.CustomAttribute.AddCustomAttributes(ListBuilder`1& attributes, RuntimeModule decoratedModule, Int32 decoratedMetadataToken, RuntimeType attributeFilterType, Boolean mustBeInheritable, ListBuilder`1 derivedAttributes)
+   at System.Reflection.CustomAttribute.GetCustomAttributes(RuntimeType type, RuntimeType caType, Boolean inherit)
+   at System.Attribute.GetCustomAttributes(MemberInfo element, Boolean inherit)
+   at Volo.Abp.Modularity.AbpModuleHelper.FindDependedModuleTypes(Type moduleType)
+   at Volo.Abp.Modularity.AbpModuleHelper.AddModuleAndDependenciesRecursively(List`1 moduleTypes, Type moduleType, ILogger logger, Int32 depth)
+   at Volo.Abp.Modularity.AbpModuleHelper.AddModuleAndDependenciesRecursively(List`1 moduleTypes, Type moduleType, ILogger logger, Int32 depth)
+   at Volo.Abp.Modularity.AbpModuleHelper.AddModuleAndDependenciesRecursively(List`1 moduleTypes, Type moduleType, ILogger logger, Int32 depth)
+   at Volo.Abp.Modularity.AbpModuleHelper.AddModuleAndDependenciesRecursively(List`1 moduleTypes, Type moduleType, ILogger logger, Int32 depth)
+   at Volo.Abp.Modularity.AbpModuleHelper.FindAllModuleTypes(Type startupModuleType, ILogger logger)
+   at Volo.Abp.Modularity.ModuleLoader.FillModules(List`1 modules, IServiceCollection services, Type startupModuleType, PlugInSourceList plugInSources)
+   at Volo.Abp.Modularity.ModuleLoader.GetDescriptors(IServiceCollection services, Type startupModuleType, PlugInSourceList plugInSources)
+   at Volo.Abp.Modularity.ModuleLoader.LoadModules(IServiceCollection services, Type startupModuleType, PlugInSourceList plugInSources)
+   at Volo.Abp.AbpApplicationBase.LoadModules(IServiceCollection services, AbpApplicationCreationOptions options)
+   at Volo.Abp.AbpApplicationBase..ctor(Type startupModuleType, IServiceCollection services, Action`1 optionsAction)
+   at Volo.Abp.AbpApplicationWithExternalServiceProvider..ctor(Type startupModuleType, IServiceCollection services, Action`1 optionsAction)
+   at Volo.Abp.AbpApplicationFactory.Create(Type startupModuleType, IServiceCollection services, Action`1 optionsAction)
+   at Volo.Abp.AbpApplicationFactory.CreateAsync[TStartupModule](IServiceCollection services, Action`1 optionsAction)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionApplicationExtensions.AddApplicationAsync[TStartupModule](IServiceCollection services, Action`1 optionsAction)
+   at Microsoft.Extensions.DependencyInjection.WebApplicationBuilderExtensions.AddApplicationAsync[TStartupModule](WebApplicationBuilder builder, Action`1 optionsAction)
+   at Mars.HttpApi.Host.Program.Main(String[] args) in E:\JYGProject\Mars\src\Mars.HttpApi.Host\Program.cs:line 37
+2022-05-30 13:40:58.141 +08:00 [INF] Starting Mars.HttpApi.Host.
+2022-05-30 13:40:58.738 +08:00 [FTL] Host terminated unexpectedly!
+System.IO.FileNotFoundException: Could not load file or assembly 'Volo.Abp.FeatureManagement.HttpApi, Version=5.2.2.0, Culture=neutral, PublicKeyToken=null'. 系统找不到指定的文件。
+File name: 'Volo.Abp.FeatureManagement.HttpApi, Version=5.2.2.0, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.CustomAttribute._CreateCaObject(RuntimeModule pModule, RuntimeType type, IRuntimeMethodInfo pCtor, Byte** ppBlob, Byte* pEndBlob, Int32* pcNamedArgs)
+   at System.Reflection.CustomAttribute.CreateCaObject(RuntimeModule module, RuntimeType type, IRuntimeMethodInfo ctor, IntPtr& blob, IntPtr blobEnd, Int32& namedArgs)
+   at System.Reflection.CustomAttribute.AddCustomAttributes(ListBuilder`1& attributes, RuntimeModule decoratedModule, Int32 decoratedMetadataToken, RuntimeType attributeFilterType, Boolean mustBeInheritable, ListBuilder`1 derivedAttributes)
+   at System.Reflection.CustomAttribute.GetCustomAttributes(RuntimeType type, RuntimeType caType, Boolean inherit)
+   at System.RuntimeType.GetCustomAttributes(Type attributeType, Boolean inherit)
+   at System.Attribute.GetCustomAttributes(MemberInfo element, Boolean inherit)
+   at Volo.Abp.Modularity.AbpModuleHelper.FindDependedModuleTypes(Type moduleType)
+   at Volo.Abp.Modularity.AbpModuleHelper.AddModuleAndDependenciesRecursively(List`1 moduleTypes, Type moduleType, ILogger logger, Int32 depth)
+   at Volo.Abp.Modularity.AbpModuleHelper.AddModuleAndDependenciesRecursively(List`1 moduleTypes, Type moduleType, ILogger logger, Int32 depth)
+   at Volo.Abp.Modularity.AbpModuleHelper.AddModuleAndDependenciesRecursively(List`1 moduleTypes, Type moduleType, ILogger logger, Int32 depth)
+   at Volo.Abp.Modularity.AbpModuleHelper.FindAllModuleTypes(Type startupModuleType, ILogger logger)
+   at Volo.Abp.Modularity.ModuleLoader.FillModules(List`1 modules, IServiceCollection services, Type startupModuleType, PlugInSourceList plugInSources)
+   at Volo.Abp.Modularity.ModuleLoader.GetDescriptors(IServiceCollection services, Type startupModuleType, PlugInSourceList plugInSources)
+   at Volo.Abp.Modularity.ModuleLoader.LoadModules(IServiceCollection services, Type startupModuleType, PlugInSourceList plugInSources)
+   at Volo.Abp.AbpApplicationBase.LoadModules(IServiceCollection services, AbpApplicationCreationOptions options)
+   at Volo.Abp.AbpApplicationBase..ctor(Type startupModuleType, IServiceCollection services, Action`1 optionsAction)
+   at Volo.Abp.AbpApplicationWithExternalServiceProvider..ctor(Type startupModuleType, IServiceCollection services, Action`1 optionsAction)
+   at Volo.Abp.AbpApplicationFactory.Create(Type startupModuleType, IServiceCollection services, Action`1 optionsAction)
+   at Volo.Abp.AbpApplicationFactory.CreateAsync[TStartupModule](IServiceCollection services, Action`1 optionsAction)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionApplicationExtensions.AddApplicationAsync[TStartupModule](IServiceCollection services, Action`1 optionsAction)
+   at Microsoft.Extensions.DependencyInjection.WebApplicationBuilderExtensions.AddApplicationAsync[TStartupModule](WebApplicationBuilder builder, Action`1 optionsAction)
+   at Mars.HttpApi.Host.Program.Main(String[] args) in E:\JYGProject\Mars\src\Mars.HttpApi.Host\Program.cs:line 37
+2022-05-30 13:42:57.620 +08:00 [INF] Starting Mars.HttpApi.Host.
+2022-05-30 13:43:03.448 +08:00 [INF] Loaded ABP modules:
+2022-05-30 13:43:03.449 +08:00 [INF] - Mars.HttpApi.Host.MarsHttpApiHostModule
+2022-05-30 13:43:03.449 +08:00 [INF]   - Mars.HttpApi.MarsHttpApiModule
+2022-05-30 13:43:03.449 +08:00 [INF]     - Mars.Application.Contracts.MarsApplicationContractsModule
+2022-05-30 13:43:03.449 +08:00 [INF]       - Mars.Domain.Shared.MarsDomainSharedModule
+2022-05-30 13:43:03.449 +08:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2022-05-30 13:43:03.449 +08:00 [INF]           - Volo.Abp.Validation.AbpValidationModule
+2022-05-30 13:43:03.449 +08:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2022-05-30 13:43:03.449 +08:00 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2022-05-30 13:43:03.449 +08:00 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2022-05-30 13:43:03.449 +08:00 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2022-05-30 13:43:03.449 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2022-05-30 13:43:03.449 +08:00 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2022-05-30 13:43:03.449 +08:00 [INF]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2022-05-30 13:43:03.449 +08:00 [INF]                   - Volo.Abp.Data.AbpDataModule
+2022-05-30 13:43:03.449 +08:00 [INF]                     - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2022-05-30 13:43:03.449 +08:00 [INF]                     - Volo.Abp.Uow.AbpUnitOfWorkModule
+2022-05-30 13:43:03.449 +08:00 [INF]                     - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2022-05-30 13:43:03.449 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2022-05-30 13:43:03.449 +08:00 [INF]           - Volo.Abp.Users.AbpUsersDomainSharedModule
+2022-05-30 13:43:03.449 +08:00 [INF]           - Volo.Abp.Features.AbpFeaturesModule
+2022-05-30 13:43:03.449 +08:00 [INF]             - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2022-05-30 13:43:03.449 +08:00 [INF]         - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2022-05-30 13:43:03.449 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2022-05-30 13:43:03.449 +08:00 [INF]         - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2022-05-30 13:43:03.449 +08:00 [INF]         - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2022-05-30 13:43:03.449 +08:00 [INF]       - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2022-05-30 13:43:03.449 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2022-05-30 13:43:03.449 +08:00 [INF]           - Volo.Abp.Users.AbpUsersAbstractionModule
+2022-05-30 13:43:03.449 +08:00 [INF]             - Volo.Abp.EventBus.AbpEventBusModule
+2022-05-30 13:43:03.449 +08:00 [INF]               - Volo.Abp.Json.AbpJsonModule
+2022-05-30 13:43:03.449 +08:00 [INF]                 - Volo.Abp.Timing.AbpTimingModule
+2022-05-30 13:43:03.449 +08:00 [INF]               - Volo.Abp.Guids.AbpGuidsModule
+2022-05-30 13:43:03.449 +08:00 [INF]               - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2022-05-30 13:43:03.449 +08:00 [INF]                 - Volo.Abp.Threading.AbpThreadingModule
+2022-05-30 13:43:03.449 +08:00 [INF]               - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2022-05-30 13:43:03.449 +08:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationModule
+2022-05-30 13:43:03.449 +08:00 [INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2022-05-30 13:43:03.449 +08:00 [INF]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+2022-05-30 13:43:03.449 +08:00 [INF]               - Volo.Abp.Auditing.AbpAuditingContractsModule
+2022-05-30 13:43:03.449 +08:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2022-05-30 13:43:03.449 +08:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementApplicationContractsModule
+2022-05-30 13:43:03.449 +08:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2022-05-30 13:43:03.449 +08:00 [INF]     - Volo.Abp.Account.AbpAccountHttpApiModule
+2022-05-30 13:43:03.449 +08:00 [INF]       - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2022-05-30 13:43:03.449 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2022-05-30 13:43:03.449 +08:00 [INF]           - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2022-05-30 13:43:03.449 +08:00 [INF]             - Volo.Abp.Auditing.AbpAuditingModule
+2022-05-30 13:43:03.449 +08:00 [INF]             - Volo.Abp.Http.AbpHttpModule
+2022-05-30 13:43:03.449 +08:00 [INF]               - Volo.Abp.Http.AbpHttpAbstractionsModule
+2022-05-30 13:43:03.449 +08:00 [INF]               - Volo.Abp.Minify.AbpMinifyModule
+2022-05-30 13:43:03.449 +08:00 [INF]             - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2022-05-30 13:43:03.449 +08:00 [INF]           - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2022-05-30 13:43:03.449 +08:00 [INF]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2022-05-30 13:43:03.449 +08:00 [INF]           - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2022-05-30 13:43:03.449 +08:00 [INF]             - Volo.Abp.UI.AbpUiModule
+2022-05-30 13:43:03.449 +08:00 [INF]           - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2022-05-30 13:43:03.449 +08:00 [INF]           - Volo.Abp.Application.AbpDddApplicationModule
+2022-05-30 13:43:03.449 +08:00 [INF]             - Volo.Abp.Domain.AbpDddDomainModule
+2022-05-30 13:43:03.449 +08:00 [INF]               - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2022-05-30 13:43:03.449 +08:00 [INF]               - Volo.Abp.Specifications.AbpSpecificationsModule
+2022-05-30 13:43:03.449 +08:00 [INF]     - Volo.Abp.PermissionManagement.HttpApi.AbpPermissionManagementHttpApiModule
+2022-05-30 13:43:03.449 +08:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2022-05-30 13:43:03.449 +08:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2022-05-30 13:43:03.449 +08:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementHttpApiModule
+2022-05-30 13:43:03.449 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2022-05-30 13:43:03.449 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2022-05-30 13:43:03.449 +08:00 [INF]   - Volo.Abp.Caching.StackExchangeRedis.AbpCachingStackExchangeRedisModule
+2022-05-30 13:43:03.449 +08:00 [INF]     - Volo.Abp.Caching.AbpCachingModule
+2022-05-30 13:43:03.449 +08:00 [INF]       - Volo.Abp.Serialization.AbpSerializationModule
+2022-05-30 13:43:03.449 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2022-05-30 13:43:03.449 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2022-05-30 13:43:03.449 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2022-05-30 13:43:03.449 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2022-05-30 13:43:03.449 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2022-05-30 13:43:03.449 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2022-05-30 13:43:03.449 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2022-05-30 13:43:03.449 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2022-05-30 13:43:03.449 +08:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2022-05-30 13:43:03.449 +08:00 [INF]   - Mars.Application.MarsApplicationModule
+2022-05-30 13:43:03.449 +08:00 [INF]     - Mars.Domain.MarsDomainModule
+2022-05-30 13:43:03.449 +08:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule
+2022-05-30 13:43:03.449 +08:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainModule
+2022-05-30 13:43:03.449 +08:00 [INF]         - Volo.Abp.Users.AbpUsersDomainModule
+2022-05-30 13:43:03.449 +08:00 [INF]         - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2022-05-30 13:43:03.449 +08:00 [INF]       - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+2022-05-30 13:43:03.449 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2022-05-30 13:43:03.449 +08:00 [INF]       - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2022-05-30 13:43:03.449 +08:00 [INF]       - Volo.Abp.PermissionManagement.IdentityServer.AbpPermissionManagementDomainIdentityServerModule
+2022-05-30 13:43:03.449 +08:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2022-05-30 13:43:03.449 +08:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2022-05-30 13:43:03.449 +08:00 [INF]     - Volo.Abp.Account.AbpAccountApplicationModule
+2022-05-30 13:43:03.449 +08:00 [INF]       - Volo.Abp.Identity.AbpIdentityApplicationModule
+2022-05-30 13:43:03.449 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2022-05-30 13:43:03.449 +08:00 [INF]       - Volo.Abp.Emailing.AbpEmailingModule
+2022-05-30 13:43:03.449 +08:00 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2022-05-30 13:43:03.449 +08:00 [INF]         - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2022-05-30 13:43:03.449 +08:00 [INF]           - Volo.Abp.TextTemplating.Scriban.AbpTextTemplatingScribanModule
+2022-05-30 13:43:03.449 +08:00 [INF]             - Volo.Abp.TextTemplating.AbpTextTemplatingCoreModule
+2022-05-30 13:43:03.449 +08:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementApplicationModule
+2022-05-30 13:43:03.449 +08:00 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationModule
+2022-05-30 13:43:03.449 +08:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementApplicationModule
+2022-05-30 13:43:03.449 +08:00 [INF]   - Mars.EntityFrameworkCore.MarsEntityFrameworkCoreModule
+2022-05-30 13:43:03.449 +08:00 [INF]     - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2022-05-30 13:43:03.449 +08:00 [INF]       - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2022-05-30 13:43:03.449 +08:00 [INF]         - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2022-05-30 13:43:03.449 +08:00 [INF]     - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+2022-05-30 13:43:03.449 +08:00 [INF]     - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2022-05-30 13:43:03.449 +08:00 [INF]     - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2022-05-30 13:43:03.449 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2022-05-30 13:43:03.449 +08:00 [INF]     - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2022-05-30 13:43:03.449 +08:00 [INF]     - Volo.Abp.FeatureManagement.EntityFrameworkCore.AbpFeatureManagementEntityFrameworkCoreModule
+2022-05-30 13:43:03.449 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2022-05-30 13:43:03.449 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2022-05-30 13:43:03.549 +08:00 [DBG] Started background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2022-05-30 13:43:04.168 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-05-30 13:43:04.231 +08:00 [INF] Initialized all ABP modules.
+2022-05-30 13:43:04.277 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-30 13:43:04.277 +08:00 [INF] Hosting environment: Development
+2022-05-30 13:43:04.277 +08:00 [INF] Content root path: E:\JYGProject\Mars\src\Mars.HttpApi.Host\
+2022-05-30 13:43:04.292 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/ - -
+2022-05-30 13:43:05.537 +08:00 [INF] Executing endpoint 'Mars.HttpApi.Host.Controllers.HomeController.Index (Mars.HttpApi.Host)'
+2022-05-30 13:43:05.549 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller Mars.HttpApi.Host.Controllers.HomeController (Mars.HttpApi.Host).
+2022-05-30 13:43:05.566 +08:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2022-05-30 13:43:05.570 +08:00 [INF] Executed action Mars.HttpApi.Host.Controllers.HomeController.Index (Mars.HttpApi.Host) in 17.5424ms
+2022-05-30 13:43:05.570 +08:00 [INF] Executed endpoint 'Mars.HttpApi.Host.Controllers.HomeController.Index (Mars.HttpApi.Host)'
+2022-05-30 13:43:05.589 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/index.html - -
+2022-05-30 13:43:05.590 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/ - - - 302 - - 1298.2153ms
+2022-05-30 13:43:05.677 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/index.html - - - 200 - text/html;charset=utf-8 88.0313ms
+2022-05-30 13:43:05.759 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - -
+2022-05-30 13:43:05.762 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_vs/browserLink - -
+2022-05-30 13:43:05.762 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 2.8502ms
+2022-05-30 13:43:05.791 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 28.9210ms
+2022-05-30 13:43:05.925 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - -
+2022-05-30 13:43:06.101 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 175.9037ms
+2022-05-30 13:45:13.701 +08:00 [INF] Starting Mars.HttpApi.Host.
+2022-05-30 13:45:15.072 +08:00 [INF] Loaded ABP modules:
+2022-05-30 13:45:15.073 +08:00 [INF] - Mars.HttpApi.Host.MarsHttpApiHostModule
+2022-05-30 13:45:15.073 +08:00 [INF]   - Mars.HttpApi.MarsHttpApiModule
+2022-05-30 13:45:15.073 +08:00 [INF]     - Mars.Application.Contracts.MarsApplicationContractsModule
+2022-05-30 13:45:15.073 +08:00 [INF]       - Mars.Domain.Shared.MarsDomainSharedModule
+2022-05-30 13:45:15.073 +08:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2022-05-30 13:45:15.073 +08:00 [INF]           - Volo.Abp.Validation.AbpValidationModule
+2022-05-30 13:45:15.073 +08:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2022-05-30 13:45:15.073 +08:00 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2022-05-30 13:45:15.073 +08:00 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2022-05-30 13:45:15.073 +08:00 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2022-05-30 13:45:15.073 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2022-05-30 13:45:15.073 +08:00 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2022-05-30 13:45:15.073 +08:00 [INF]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2022-05-30 13:45:15.073 +08:00 [INF]                   - Volo.Abp.Data.AbpDataModule
+2022-05-30 13:45:15.073 +08:00 [INF]                     - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2022-05-30 13:45:15.073 +08:00 [INF]                     - Volo.Abp.Uow.AbpUnitOfWorkModule
+2022-05-30 13:45:15.073 +08:00 [INF]                     - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2022-05-30 13:45:15.073 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2022-05-30 13:45:15.073 +08:00 [INF]           - Volo.Abp.Users.AbpUsersDomainSharedModule
+2022-05-30 13:45:15.073 +08:00 [INF]           - Volo.Abp.Features.AbpFeaturesModule
+2022-05-30 13:45:15.073 +08:00 [INF]             - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2022-05-30 13:45:15.073 +08:00 [INF]         - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2022-05-30 13:45:15.073 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2022-05-30 13:45:15.073 +08:00 [INF]         - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2022-05-30 13:45:15.073 +08:00 [INF]         - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2022-05-30 13:45:15.073 +08:00 [INF]       - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2022-05-30 13:45:15.073 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2022-05-30 13:45:15.073 +08:00 [INF]           - Volo.Abp.Users.AbpUsersAbstractionModule
+2022-05-30 13:45:15.073 +08:00 [INF]             - Volo.Abp.EventBus.AbpEventBusModule
+2022-05-30 13:45:15.073 +08:00 [INF]               - Volo.Abp.Json.AbpJsonModule
+2022-05-30 13:45:15.073 +08:00 [INF]                 - Volo.Abp.Timing.AbpTimingModule
+2022-05-30 13:45:15.073 +08:00 [INF]               - Volo.Abp.Guids.AbpGuidsModule
+2022-05-30 13:45:15.073 +08:00 [INF]               - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2022-05-30 13:45:15.073 +08:00 [INF]                 - Volo.Abp.Threading.AbpThreadingModule
+2022-05-30 13:45:15.073 +08:00 [INF]               - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2022-05-30 13:45:15.073 +08:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationModule
+2022-05-30 13:45:15.073 +08:00 [INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2022-05-30 13:45:15.073 +08:00 [INF]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+2022-05-30 13:45:15.073 +08:00 [INF]               - Volo.Abp.Auditing.AbpAuditingContractsModule
+2022-05-30 13:45:15.073 +08:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2022-05-30 13:45:15.073 +08:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementApplicationContractsModule
+2022-05-30 13:45:15.073 +08:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2022-05-30 13:45:15.073 +08:00 [INF]     - Volo.Abp.Account.AbpAccountHttpApiModule
+2022-05-30 13:45:15.073 +08:00 [INF]       - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2022-05-30 13:45:15.073 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2022-05-30 13:45:15.073 +08:00 [INF]           - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2022-05-30 13:45:15.073 +08:00 [INF]             - Volo.Abp.Auditing.AbpAuditingModule
+2022-05-30 13:45:15.073 +08:00 [INF]             - Volo.Abp.Http.AbpHttpModule
+2022-05-30 13:45:15.073 +08:00 [INF]               - Volo.Abp.Http.AbpHttpAbstractionsModule
+2022-05-30 13:45:15.073 +08:00 [INF]               - Volo.Abp.Minify.AbpMinifyModule
+2022-05-30 13:45:15.073 +08:00 [INF]             - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2022-05-30 13:45:15.073 +08:00 [INF]           - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2022-05-30 13:45:15.073 +08:00 [INF]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2022-05-30 13:45:15.073 +08:00 [INF]           - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2022-05-30 13:45:15.073 +08:00 [INF]             - Volo.Abp.UI.AbpUiModule
+2022-05-30 13:45:15.073 +08:00 [INF]           - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2022-05-30 13:45:15.073 +08:00 [INF]           - Volo.Abp.Application.AbpDddApplicationModule
+2022-05-30 13:45:15.073 +08:00 [INF]             - Volo.Abp.Domain.AbpDddDomainModule
+2022-05-30 13:45:15.073 +08:00 [INF]               - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2022-05-30 13:45:15.073 +08:00 [INF]               - Volo.Abp.Specifications.AbpSpecificationsModule
+2022-05-30 13:45:15.073 +08:00 [INF]     - Volo.Abp.PermissionManagement.HttpApi.AbpPermissionManagementHttpApiModule
+2022-05-30 13:45:15.073 +08:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2022-05-30 13:45:15.073 +08:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2022-05-30 13:45:15.073 +08:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementHttpApiModule
+2022-05-30 13:45:15.073 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2022-05-30 13:45:15.073 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2022-05-30 13:45:15.073 +08:00 [INF]   - Volo.Abp.Caching.StackExchangeRedis.AbpCachingStackExchangeRedisModule
+2022-05-30 13:45:15.073 +08:00 [INF]     - Volo.Abp.Caching.AbpCachingModule
+2022-05-30 13:45:15.073 +08:00 [INF]       - Volo.Abp.Serialization.AbpSerializationModule
+2022-05-30 13:45:15.073 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2022-05-30 13:45:15.073 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2022-05-30 13:45:15.073 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2022-05-30 13:45:15.073 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2022-05-30 13:45:15.073 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2022-05-30 13:45:15.073 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2022-05-30 13:45:15.073 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2022-05-30 13:45:15.073 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2022-05-30 13:45:15.073 +08:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2022-05-30 13:45:15.073 +08:00 [INF]   - Mars.Application.MarsApplicationModule
+2022-05-30 13:45:15.073 +08:00 [INF]     - Mars.Domain.MarsDomainModule
+2022-05-30 13:45:15.073 +08:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule
+2022-05-30 13:45:15.073 +08:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainModule
+2022-05-30 13:45:15.073 +08:00 [INF]         - Volo.Abp.Users.AbpUsersDomainModule
+2022-05-30 13:45:15.073 +08:00 [INF]         - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2022-05-30 13:45:15.073 +08:00 [INF]       - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+2022-05-30 13:45:15.073 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2022-05-30 13:45:15.073 +08:00 [INF]       - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2022-05-30 13:45:15.073 +08:00 [INF]       - Volo.Abp.PermissionManagement.IdentityServer.AbpPermissionManagementDomainIdentityServerModule
+2022-05-30 13:45:15.073 +08:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2022-05-30 13:45:15.073 +08:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2022-05-30 13:45:15.073 +08:00 [INF]     - Volo.Abp.Account.AbpAccountApplicationModule
+2022-05-30 13:45:15.073 +08:00 [INF]       - Volo.Abp.Identity.AbpIdentityApplicationModule
+2022-05-30 13:45:15.073 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2022-05-30 13:45:15.073 +08:00 [INF]       - Volo.Abp.Emailing.AbpEmailingModule
+2022-05-30 13:45:15.073 +08:00 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2022-05-30 13:45:15.073 +08:00 [INF]         - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2022-05-30 13:45:15.073 +08:00 [INF]           - Volo.Abp.TextTemplating.Scriban.AbpTextTemplatingScribanModule
+2022-05-30 13:45:15.073 +08:00 [INF]             - Volo.Abp.TextTemplating.AbpTextTemplatingCoreModule
+2022-05-30 13:45:15.073 +08:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementApplicationModule
+2022-05-30 13:45:15.073 +08:00 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationModule
+2022-05-30 13:45:15.073 +08:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementApplicationModule
+2022-05-30 13:45:15.073 +08:00 [INF]   - Mars.EntityFrameworkCore.MarsEntityFrameworkCoreModule
+2022-05-30 13:45:15.073 +08:00 [INF]     - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2022-05-30 13:45:15.073 +08:00 [INF]       - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2022-05-30 13:45:15.073 +08:00 [INF]         - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2022-05-30 13:45:15.073 +08:00 [INF]     - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+2022-05-30 13:45:15.073 +08:00 [INF]     - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2022-05-30 13:45:15.073 +08:00 [INF]     - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2022-05-30 13:45:15.073 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2022-05-30 13:45:15.073 +08:00 [INF]     - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2022-05-30 13:45:15.073 +08:00 [INF]     - Volo.Abp.FeatureManagement.EntityFrameworkCore.AbpFeatureManagementEntityFrameworkCoreModule
+2022-05-30 13:45:15.073 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2022-05-30 13:45:15.073 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2022-05-30 13:45:15.135 +08:00 [DBG] Started background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2022-05-30 13:45:15.319 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-05-30 13:45:15.384 +08:00 [INF] Initialized all ABP modules.
+2022-05-30 13:45:15.430 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-30 13:45:15.430 +08:00 [INF] Hosting environment: Development
+2022-05-30 13:45:15.430 +08:00 [INF] Content root path: E:\JYGProject\Mars\src\Mars.HttpApi.Host\
+2022-05-30 13:45:15.446 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/ - -
+2022-05-30 13:45:16.371 +08:00 [INF] Executing endpoint 'Mars.HttpApi.Host.Controllers.HomeController.Index (Mars.HttpApi.Host)'
+2022-05-30 13:45:16.385 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller Mars.HttpApi.Host.Controllers.HomeController (Mars.HttpApi.Host).
+2022-05-30 13:45:16.402 +08:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2022-05-30 13:45:16.406 +08:00 [INF] Executed action Mars.HttpApi.Host.Controllers.HomeController.Index (Mars.HttpApi.Host) in 17.6962ms
+2022-05-30 13:45:16.406 +08:00 [INF] Executed endpoint 'Mars.HttpApi.Host.Controllers.HomeController.Index (Mars.HttpApi.Host)'
+2022-05-30 13:45:16.424 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/index.html - -
+2022-05-30 13:45:16.425 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/ - - - 302 - - 980.1296ms
+2022-05-30 13:45:16.519 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/index.html - - - 200 - text/html;charset=utf-8 94.6117ms
+2022-05-30 13:45:16.525 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - -
+2022-05-30 13:45:16.528 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 3.2204ms
+2022-05-30 13:45:16.598 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_vs/browserLink - -
+2022-05-30 13:45:16.627 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 29.1252ms
+2022-05-30 13:45:16.729 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - -
+2022-05-30 13:45:16.903 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 174.2174ms
+2022-05-30 13:49:38.056 +08:00 [INF] Starting Mars.HttpApi.Host.
+2022-05-30 13:49:43.664 +08:00 [INF] Loaded ABP modules:
+2022-05-30 13:49:43.665 +08:00 [INF] - Mars.HttpApi.Host.MarsHttpApiHostModule
+2022-05-30 13:49:43.665 +08:00 [INF]   - Mars.HttpApi.MarsHttpApiModule
+2022-05-30 13:49:43.665 +08:00 [INF]     - Mars.Application.Contracts.MarsApplicationContractsModule
+2022-05-30 13:49:43.665 +08:00 [INF]       - Mars.Domain.Shared.MarsDomainSharedModule
+2022-05-30 13:49:43.665 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2022-05-30 13:49:43.665 +08:00 [INF]           - Volo.Abp.Users.AbpUsersDomainSharedModule
+2022-05-30 13:49:43.665 +08:00 [INF]           - Volo.Abp.Validation.AbpValidationModule
+2022-05-30 13:49:43.665 +08:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2022-05-30 13:49:43.665 +08:00 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2022-05-30 13:49:43.665 +08:00 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2022-05-30 13:49:43.665 +08:00 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2022-05-30 13:49:43.665 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2022-05-30 13:49:43.665 +08:00 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2022-05-30 13:49:43.665 +08:00 [INF]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2022-05-30 13:49:43.665 +08:00 [INF]                   - Volo.Abp.Data.AbpDataModule
+2022-05-30 13:49:43.665 +08:00 [INF]                     - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2022-05-30 13:49:43.665 +08:00 [INF]                     - Volo.Abp.Uow.AbpUnitOfWorkModule
+2022-05-30 13:49:43.665 +08:00 [INF]                     - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2022-05-30 13:49:43.665 +08:00 [INF]           - Volo.Abp.Features.AbpFeaturesModule
+2022-05-30 13:49:43.665 +08:00 [INF]             - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2022-05-30 13:49:43.665 +08:00 [INF]         - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2022-05-30 13:49:43.665 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2022-05-30 13:49:43.665 +08:00 [INF]         - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2022-05-30 13:49:43.665 +08:00 [INF]         - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2022-05-30 13:49:43.665 +08:00 [INF]       - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2022-05-30 13:49:43.665 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2022-05-30 13:49:43.665 +08:00 [INF]           - Volo.Abp.Users.AbpUsersAbstractionModule
+2022-05-30 13:49:43.665 +08:00 [INF]             - Volo.Abp.EventBus.AbpEventBusModule
+2022-05-30 13:49:43.665 +08:00 [INF]               - Volo.Abp.Json.AbpJsonModule
+2022-05-30 13:49:43.665 +08:00 [INF]                 - Volo.Abp.Timing.AbpTimingModule
+2022-05-30 13:49:43.665 +08:00 [INF]               - Volo.Abp.Guids.AbpGuidsModule
+2022-05-30 13:49:43.665 +08:00 [INF]               - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2022-05-30 13:49:43.665 +08:00 [INF]                 - Volo.Abp.Threading.AbpThreadingModule
+2022-05-30 13:49:43.665 +08:00 [INF]               - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2022-05-30 13:49:43.665 +08:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationModule
+2022-05-30 13:49:43.665 +08:00 [INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2022-05-30 13:49:43.665 +08:00 [INF]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+2022-05-30 13:49:43.665 +08:00 [INF]               - Volo.Abp.Auditing.AbpAuditingContractsModule
+2022-05-30 13:49:43.665 +08:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementApplicationContractsModule
+2022-05-30 13:49:43.665 +08:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2022-05-30 13:49:43.665 +08:00 [INF]     - Volo.Abp.Account.AbpAccountHttpApiModule
+2022-05-30 13:49:43.665 +08:00 [INF]       - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2022-05-30 13:49:43.665 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2022-05-30 13:49:43.665 +08:00 [INF]           - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2022-05-30 13:49:43.665 +08:00 [INF]             - Volo.Abp.Auditing.AbpAuditingModule
+2022-05-30 13:49:43.665 +08:00 [INF]             - Volo.Abp.Http.AbpHttpModule
+2022-05-30 13:49:43.665 +08:00 [INF]               - Volo.Abp.Http.AbpHttpAbstractionsModule
+2022-05-30 13:49:43.665 +08:00 [INF]               - Volo.Abp.Minify.AbpMinifyModule
+2022-05-30 13:49:43.665 +08:00 [INF]             - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2022-05-30 13:49:43.665 +08:00 [INF]           - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2022-05-30 13:49:43.665 +08:00 [INF]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2022-05-30 13:49:43.665 +08:00 [INF]           - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2022-05-30 13:49:43.665 +08:00 [INF]             - Volo.Abp.UI.AbpUiModule
+2022-05-30 13:49:43.665 +08:00 [INF]           - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2022-05-30 13:49:43.665 +08:00 [INF]           - Volo.Abp.Application.AbpDddApplicationModule
+2022-05-30 13:49:43.665 +08:00 [INF]             - Volo.Abp.Domain.AbpDddDomainModule
+2022-05-30 13:49:43.665 +08:00 [INF]               - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2022-05-30 13:49:43.665 +08:00 [INF]               - Volo.Abp.Specifications.AbpSpecificationsModule
+2022-05-30 13:49:43.665 +08:00 [INF]     - Volo.Abp.PermissionManagement.HttpApi.AbpPermissionManagementHttpApiModule
+2022-05-30 13:49:43.665 +08:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2022-05-30 13:49:43.665 +08:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementHttpApiModule
+2022-05-30 13:49:43.665 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2022-05-30 13:49:43.665 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2022-05-30 13:49:43.665 +08:00 [INF]   - Volo.Abp.Caching.StackExchangeRedis.AbpCachingStackExchangeRedisModule
+2022-05-30 13:49:43.665 +08:00 [INF]     - Volo.Abp.Caching.AbpCachingModule
+2022-05-30 13:49:43.665 +08:00 [INF]       - Volo.Abp.Serialization.AbpSerializationModule
+2022-05-30 13:49:43.665 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2022-05-30 13:49:43.665 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2022-05-30 13:49:43.665 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2022-05-30 13:49:43.665 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2022-05-30 13:49:43.665 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2022-05-30 13:49:43.665 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2022-05-30 13:49:43.665 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2022-05-30 13:49:43.665 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2022-05-30 13:49:43.665 +08:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2022-05-30 13:49:43.665 +08:00 [INF]   - Mars.Application.MarsApplicationModule
+2022-05-30 13:49:43.665 +08:00 [INF]     - Mars.Domain.MarsDomainModule
+2022-05-30 13:49:43.665 +08:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainModule
+2022-05-30 13:49:43.665 +08:00 [INF]         - Volo.Abp.Users.AbpUsersDomainModule
+2022-05-30 13:49:43.665 +08:00 [INF]         - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2022-05-30 13:49:43.665 +08:00 [INF]       - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+2022-05-30 13:49:43.665 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2022-05-30 13:49:43.665 +08:00 [INF]       - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2022-05-30 13:49:43.665 +08:00 [INF]       - Volo.Abp.PermissionManagement.IdentityServer.AbpPermissionManagementDomainIdentityServerModule
+2022-05-30 13:49:43.665 +08:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2022-05-30 13:49:43.665 +08:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2022-05-30 13:49:43.665 +08:00 [INF]     - Volo.Abp.Account.AbpAccountApplicationModule
+2022-05-30 13:49:43.665 +08:00 [INF]       - Volo.Abp.Identity.AbpIdentityApplicationModule
+2022-05-30 13:49:43.665 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2022-05-30 13:49:43.665 +08:00 [INF]       - Volo.Abp.Emailing.AbpEmailingModule
+2022-05-30 13:49:43.665 +08:00 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2022-05-30 13:49:43.665 +08:00 [INF]         - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2022-05-30 13:49:43.665 +08:00 [INF]           - Volo.Abp.TextTemplating.Scriban.AbpTextTemplatingScribanModule
+2022-05-30 13:49:43.665 +08:00 [INF]             - Volo.Abp.TextTemplating.AbpTextTemplatingCoreModule
+2022-05-30 13:49:43.665 +08:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementApplicationModule
+2022-05-30 13:49:43.665 +08:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementApplicationModule
+2022-05-30 13:49:43.665 +08:00 [INF]   - Mars.EntityFrameworkCore.MarsEntityFrameworkCoreModule
+2022-05-30 13:49:43.665 +08:00 [INF]     - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2022-05-30 13:49:43.665 +08:00 [INF]       - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2022-05-30 13:49:43.665 +08:00 [INF]         - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2022-05-30 13:49:43.665 +08:00 [INF]     - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+2022-05-30 13:49:43.665 +08:00 [INF]     - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2022-05-30 13:49:43.665 +08:00 [INF]     - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2022-05-30 13:49:43.665 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2022-05-30 13:49:43.665 +08:00 [INF]     - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2022-05-30 13:49:43.665 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2022-05-30 13:49:43.665 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2022-05-30 13:49:43.734 +08:00 [DBG] Started background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2022-05-30 13:49:44.668 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-05-30 13:49:44.731 +08:00 [INF] Initialized all ABP modules.
+2022-05-30 13:49:44.779 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-30 13:49:44.779 +08:00 [INF] Hosting environment: Development
+2022-05-30 13:49:44.779 +08:00 [INF] Content root path: E:\JYGProject\Mars\src\Mars.HttpApi.Host\
+2022-05-30 13:49:44.796 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/ - -
+2022-05-30 13:49:46.203 +08:00 [INF] Executing endpoint 'Mars.HttpApi.Host.Controllers.HomeController.Index (Mars.HttpApi.Host)'
+2022-05-30 13:49:46.216 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller Mars.HttpApi.Host.Controllers.HomeController (Mars.HttpApi.Host).
+2022-05-30 13:49:46.232 +08:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2022-05-30 13:49:46.236 +08:00 [INF] Executed action Mars.HttpApi.Host.Controllers.HomeController.Index (Mars.HttpApi.Host) in 17.0478ms
+2022-05-30 13:49:46.236 +08:00 [INF] Executed endpoint 'Mars.HttpApi.Host.Controllers.HomeController.Index (Mars.HttpApi.Host)'
+2022-05-30 13:49:46.255 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/index.html - -
+2022-05-30 13:49:46.257 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/ - - - 302 - - 1460.9977ms
+2022-05-30 13:49:46.375 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/index.html - - - 200 - text/html;charset=utf-8 119.6459ms
+2022-05-30 13:49:46.457 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - -
+2022-05-30 13:49:46.460 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 2.7412ms
+2022-05-30 13:49:46.462 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_vs/browserLink - -
+2022-05-30 13:49:46.509 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 47.3934ms
+2022-05-30 13:49:46.620 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - -
+2022-05-30 13:49:46.775 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 155.0624ms
+2022-05-30 13:51:03.572 +08:00 [INF] Starting Mars.HttpApi.Host.
+2022-05-30 13:51:04.690 +08:00 [INF] Loaded ABP modules:
+2022-05-30 13:51:04.692 +08:00 [INF] - Mars.HttpApi.Host.MarsHttpApiHostModule
+2022-05-30 13:51:04.692 +08:00 [INF]   - Mars.HttpApi.MarsHttpApiModule
+2022-05-30 13:51:04.692 +08:00 [INF]     - Mars.Application.Contracts.MarsApplicationContractsModule
+2022-05-30 13:51:04.692 +08:00 [INF]       - Mars.Domain.Shared.MarsDomainSharedModule
+2022-05-30 13:51:04.692 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2022-05-30 13:51:04.692 +08:00 [INF]           - Volo.Abp.Users.AbpUsersDomainSharedModule
+2022-05-30 13:51:04.692 +08:00 [INF]           - Volo.Abp.Validation.AbpValidationModule
+2022-05-30 13:51:04.692 +08:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2022-05-30 13:51:04.692 +08:00 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2022-05-30 13:51:04.692 +08:00 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2022-05-30 13:51:04.692 +08:00 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2022-05-30 13:51:04.692 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2022-05-30 13:51:04.692 +08:00 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2022-05-30 13:51:04.692 +08:00 [INF]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2022-05-30 13:51:04.692 +08:00 [INF]                   - Volo.Abp.Data.AbpDataModule
+2022-05-30 13:51:04.692 +08:00 [INF]                     - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2022-05-30 13:51:04.692 +08:00 [INF]                     - Volo.Abp.Uow.AbpUnitOfWorkModule
+2022-05-30 13:51:04.692 +08:00 [INF]                     - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2022-05-30 13:51:04.692 +08:00 [INF]           - Volo.Abp.Features.AbpFeaturesModule
+2022-05-30 13:51:04.692 +08:00 [INF]             - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2022-05-30 13:51:04.692 +08:00 [INF]         - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2022-05-30 13:51:04.692 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2022-05-30 13:51:04.692 +08:00 [INF]         - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2022-05-30 13:51:04.692 +08:00 [INF]         - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2022-05-30 13:51:04.692 +08:00 [INF]       - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2022-05-30 13:51:04.692 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2022-05-30 13:51:04.692 +08:00 [INF]           - Volo.Abp.Users.AbpUsersAbstractionModule
+2022-05-30 13:51:04.692 +08:00 [INF]             - Volo.Abp.EventBus.AbpEventBusModule
+2022-05-30 13:51:04.692 +08:00 [INF]               - Volo.Abp.Json.AbpJsonModule
+2022-05-30 13:51:04.692 +08:00 [INF]                 - Volo.Abp.Timing.AbpTimingModule
+2022-05-30 13:51:04.692 +08:00 [INF]               - Volo.Abp.Guids.AbpGuidsModule
+2022-05-30 13:51:04.692 +08:00 [INF]               - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2022-05-30 13:51:04.692 +08:00 [INF]                 - Volo.Abp.Threading.AbpThreadingModule
+2022-05-30 13:51:04.692 +08:00 [INF]               - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2022-05-30 13:51:04.692 +08:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationModule
+2022-05-30 13:51:04.692 +08:00 [INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2022-05-30 13:51:04.692 +08:00 [INF]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+2022-05-30 13:51:04.692 +08:00 [INF]               - Volo.Abp.Auditing.AbpAuditingContractsModule
+2022-05-30 13:51:04.692 +08:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementApplicationContractsModule
+2022-05-30 13:51:04.692 +08:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2022-05-30 13:51:04.692 +08:00 [INF]     - Volo.Abp.Account.AbpAccountHttpApiModule
+2022-05-30 13:51:04.692 +08:00 [INF]       - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2022-05-30 13:51:04.692 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2022-05-30 13:51:04.692 +08:00 [INF]           - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2022-05-30 13:51:04.692 +08:00 [INF]             - Volo.Abp.Auditing.AbpAuditingModule
+2022-05-30 13:51:04.692 +08:00 [INF]             - Volo.Abp.Http.AbpHttpModule
+2022-05-30 13:51:04.692 +08:00 [INF]               - Volo.Abp.Http.AbpHttpAbstractionsModule
+2022-05-30 13:51:04.692 +08:00 [INF]               - Volo.Abp.Minify.AbpMinifyModule
+2022-05-30 13:51:04.692 +08:00 [INF]             - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2022-05-30 13:51:04.692 +08:00 [INF]           - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2022-05-30 13:51:04.692 +08:00 [INF]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2022-05-30 13:51:04.692 +08:00 [INF]           - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2022-05-30 13:51:04.692 +08:00 [INF]             - Volo.Abp.UI.AbpUiModule
+2022-05-30 13:51:04.692 +08:00 [INF]           - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2022-05-30 13:51:04.692 +08:00 [INF]           - Volo.Abp.Application.AbpDddApplicationModule
+2022-05-30 13:51:04.692 +08:00 [INF]             - Volo.Abp.Domain.AbpDddDomainModule
+2022-05-30 13:51:04.692 +08:00 [INF]               - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2022-05-30 13:51:04.692 +08:00 [INF]               - Volo.Abp.Specifications.AbpSpecificationsModule
+2022-05-30 13:51:04.692 +08:00 [INF]     - Volo.Abp.PermissionManagement.HttpApi.AbpPermissionManagementHttpApiModule
+2022-05-30 13:51:04.692 +08:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2022-05-30 13:51:04.692 +08:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2022-05-30 13:51:04.692 +08:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2022-05-30 13:51:04.692 +08:00 [INF]           - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2022-05-30 13:51:04.692 +08:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementHttpApiModule
+2022-05-30 13:51:04.692 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2022-05-30 13:51:04.692 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2022-05-30 13:51:04.692 +08:00 [INF]   - Volo.Abp.Caching.StackExchangeRedis.AbpCachingStackExchangeRedisModule
+2022-05-30 13:51:04.692 +08:00 [INF]     - Volo.Abp.Caching.AbpCachingModule
+2022-05-30 13:51:04.692 +08:00 [INF]       - Volo.Abp.Serialization.AbpSerializationModule
+2022-05-30 13:51:04.692 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2022-05-30 13:51:04.692 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2022-05-30 13:51:04.692 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2022-05-30 13:51:04.692 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2022-05-30 13:51:04.692 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2022-05-30 13:51:04.692 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2022-05-30 13:51:04.692 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2022-05-30 13:51:04.692 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2022-05-30 13:51:04.692 +08:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2022-05-30 13:51:04.692 +08:00 [INF]   - Mars.Application.MarsApplicationModule
+2022-05-30 13:51:04.692 +08:00 [INF]     - Mars.Domain.MarsDomainModule
+2022-05-30 13:51:04.692 +08:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainModule
+2022-05-30 13:51:04.692 +08:00 [INF]         - Volo.Abp.Users.AbpUsersDomainModule
+2022-05-30 13:51:04.692 +08:00 [INF]         - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2022-05-30 13:51:04.692 +08:00 [INF]       - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+2022-05-30 13:51:04.692 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2022-05-30 13:51:04.692 +08:00 [INF]       - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2022-05-30 13:51:04.692 +08:00 [INF]       - Volo.Abp.PermissionManagement.IdentityServer.AbpPermissionManagementDomainIdentityServerModule
+2022-05-30 13:51:04.692 +08:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2022-05-30 13:51:04.692 +08:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2022-05-30 13:51:04.692 +08:00 [INF]     - Volo.Abp.Account.AbpAccountApplicationModule
+2022-05-30 13:51:04.692 +08:00 [INF]       - Volo.Abp.Identity.AbpIdentityApplicationModule
+2022-05-30 13:51:04.692 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2022-05-30 13:51:04.692 +08:00 [INF]       - Volo.Abp.Emailing.AbpEmailingModule
+2022-05-30 13:51:04.692 +08:00 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2022-05-30 13:51:04.692 +08:00 [INF]         - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2022-05-30 13:51:04.692 +08:00 [INF]           - Volo.Abp.TextTemplating.Scriban.AbpTextTemplatingScribanModule
+2022-05-30 13:51:04.692 +08:00 [INF]             - Volo.Abp.TextTemplating.AbpTextTemplatingCoreModule
+2022-05-30 13:51:04.692 +08:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementApplicationModule
+2022-05-30 13:51:04.692 +08:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementApplicationModule
+2022-05-30 13:51:04.692 +08:00 [INF]   - Mars.EntityFrameworkCore.MarsEntityFrameworkCoreModule
+2022-05-30 13:51:04.692 +08:00 [INF]     - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2022-05-30 13:51:04.692 +08:00 [INF]       - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2022-05-30 13:51:04.692 +08:00 [INF]         - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2022-05-30 13:51:04.692 +08:00 [INF]     - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+2022-05-30 13:51:04.692 +08:00 [INF]     - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2022-05-30 13:51:04.692 +08:00 [INF]     - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2022-05-30 13:51:04.692 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2022-05-30 13:51:04.692 +08:00 [INF]     - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2022-05-30 13:51:04.692 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2022-05-30 13:51:04.692 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2022-05-30 13:51:04.753 +08:00 [DBG] Started background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2022-05-30 13:51:04.938 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-05-30 13:51:05.003 +08:00 [INF] Initialized all ABP modules.
+2022-05-30 13:51:05.049 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-30 13:51:05.049 +08:00 [INF] Hosting environment: Development
+2022-05-30 13:51:05.049 +08:00 [INF] Content root path: E:\JYGProject\Mars\src\Mars.HttpApi.Host\
+2022-05-30 13:51:05.066 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/index.html - -
+2022-05-30 13:51:06.190 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_vs/browserLink - -
+2022-05-30 13:51:06.192 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - -
+2022-05-30 13:51:06.193 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/index.html - - - 200 - text/html;charset=utf-8 1126.9523ms
+2022-05-30 13:51:06.195 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 2.6551ms
+2022-05-30 13:51:06.222 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 31.5263ms
+2022-05-30 13:51:06.394 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - -
+2022-05-30 13:51:06.550 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 156.3453ms
+2022-05-30 13:51:10.389 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/index.html - -
+2022-05-30 13:51:10.401 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/index.html - - - 200 - text/html;charset=utf-8 11.6659ms
+2022-05-30 13:51:10.414 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - -
+2022-05-30 13:51:10.414 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_vs/browserLink - -
+2022-05-30 13:51:10.415 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 0.8839ms
+2022-05-30 13:51:10.439 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.8985ms
+2022-05-30 13:51:10.578 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - -
+2022-05-30 13:51:10.636 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 57.5911ms

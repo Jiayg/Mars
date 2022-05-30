@@ -35,8 +35,7 @@ public class MarsDbContext :
         builder.ConfigurePermissionManagement();
         builder.ConfigureSettingManagement();
         builder.ConfigureIdentity();
-        builder.ConfigureIdentityServer();
-        builder.ConfigureFeatureManagement();
+        builder.ConfigureIdentityServer(); 
         builder.ConfigureTenantManagement();
         
         // 当前解决方案

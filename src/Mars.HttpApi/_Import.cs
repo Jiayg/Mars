@@ -2,11 +2,10 @@
 global using Mars.Application.Contracts;
 global using Mars.Domain.Shared.Localization;
 global using Volo.Abp.Account;
-global using Volo.Abp.FeatureManagement;
+global using Volo.Abp.AspNetCore.Mvc;
 global using Volo.Abp.Identity;
 global using Volo.Abp.Localization;
 global using Volo.Abp.Modularity;
 global using Volo.Abp.PermissionManagement.HttpApi;
 global using Volo.Abp.SettingManagement;
 global using Volo.Abp.TenantManagement;
-global using Volo.Abp.AspNetCore.Mvc;

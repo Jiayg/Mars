@@ -1,28 +1,27 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <Import Project="..\..\build\common.props" />
+	<Import Project="..\..\build\common.props" />
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <RootNamespace>Mars.HttpApi.Client</RootNamespace>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<RootNamespace>Mars.HttpApi.Client</RootNamespace>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Mars.Application.Contracts\Mars.Application.Contracts.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\..\modules\Volo.Abp.SettingManagement\Volo.Abp.SettingManagement.HttpApi.Client\Volo.Abp.SettingManagement.HttpApi.Client.csproj" />
+		<ProjectReference Include="..\..\modules\Volo.Abp.TenantManagement\Volo.Abp.TenantManagement.HttpApi.Client\Volo.Abp.TenantManagement.HttpApi.Client.csproj" />
+		<ProjectReference Include="..\Mars.Application.Contracts\Mars.Application.Contracts.csproj" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Volo.Abp.Account.HttpApi.Client" Version="5.2.2" />
-    <PackageReference Include="Volo.Abp.Identity.HttpApi.Client" Version="5.2.2" />
-    <PackageReference Include="Volo.Abp.PermissionManagement.HttpApi.Client" Version="5.2.2" />
-    <PackageReference Include="Volo.Abp.TenantManagement.HttpApi.Client" Version="5.2.2" />
-    <PackageReference Include="Volo.Abp.FeatureManagement.HttpApi.Client" Version="5.2.2" />
-    <PackageReference Include="Volo.Abp.SettingManagement.HttpApi.Client" Version="5.2.2" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.Account.HttpApi.Client" Version="5.2.2" />
+		<PackageReference Include="Volo.Abp.Identity.HttpApi.Client" Version="5.2.2" />
+		<PackageReference Include="Volo.Abp.PermissionManagement.HttpApi.Client" Version="5.2.2" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <EmbeddedResource Include="**\*generate-proxy.json" />
-    <Content Remove="**\*generate-proxy.json" />
-  </ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Include="**\*generate-proxy.json" />
+		<Content Remove="**\*generate-proxy.json" />
+	</ItemGroup>
 
 </Project>

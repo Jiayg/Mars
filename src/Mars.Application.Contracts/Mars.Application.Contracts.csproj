@@ -1,24 +1,23 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <Import Project="..\..\build\common.props" />
+	<Import Project="..\..\build\common.props" />
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <RootNamespace>Mars.Application.Contracts</RootNamespace>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<RootNamespace>Mars.Application.Contracts</RootNamespace>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Mars.Domain.Shared\Mars.Domain.Shared.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\..\modules\Volo.Abp.SettingManagement\Volo.Abp.SettingManagement.Application.Contracts\Volo.Abp.SettingManagement.Application.Contracts.csproj" />
+		<ProjectReference Include="..\..\modules\Volo.Abp.TenantManagement\Volo.Abp.TenantManagement.Application.Contracts\Volo.Abp.TenantManagement.Application.Contracts.csproj" />
+		<ProjectReference Include="..\Mars.Domain.Shared\Mars.Domain.Shared.csproj" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Volo.Abp.ObjectExtending" Version="5.2.2" />
-    <PackageReference Include="Volo.Abp.Account.Application.Contracts" Version="5.2.2" />
-    <PackageReference Include="Volo.Abp.Identity.Application.Contracts" Version="5.2.2" />
-    <PackageReference Include="Volo.Abp.PermissionManagement.Application.Contracts" Version="5.2.2" />
-    <PackageReference Include="Volo.Abp.TenantManagement.Application.Contracts" Version="5.2.2" />
-    <PackageReference Include="Volo.Abp.FeatureManagement.Application.Contracts" Version="5.2.2" />
-    <PackageReference Include="Volo.Abp.SettingManagement.Application.Contracts" Version="5.2.2" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.ObjectExtending" Version="5.2.2" />
+		<PackageReference Include="Volo.Abp.Account.Application.Contracts" Version="5.2.2" />
+		<PackageReference Include="Volo.Abp.Identity.Application.Contracts" Version="5.2.2" />
+		<PackageReference Include="Volo.Abp.PermissionManagement.Application.Contracts" Version="5.2.2" /> 
+	</ItemGroup>
 
 </Project>

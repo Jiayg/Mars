@@ -7,8 +7,7 @@
     typeof(AbpPermissionManagementEntityFrameworkCoreModule),
     typeof(AbpSettingManagementEntityFrameworkCoreModule),
     typeof(AbpEntityFrameworkCoreMySQLModule),
-    typeof(AbpTenantManagementEntityFrameworkCoreModule),
-    typeof(AbpFeatureManagementEntityFrameworkCoreModule)
+    typeof(AbpTenantManagementEntityFrameworkCoreModule) 
     )]
 public class MarsEntityFrameworkCoreModule : AbpModule
 {

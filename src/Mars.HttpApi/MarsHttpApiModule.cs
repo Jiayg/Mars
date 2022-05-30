@@ -5,8 +5,7 @@
     typeof(AbpAccountHttpApiModule),
     typeof(AbpIdentityHttpApiModule),
     typeof(AbpPermissionManagementHttpApiModule),
-    typeof(AbpTenantManagementHttpApiModule),
-    typeof(AbpFeatureManagementHttpApiModule),
+    typeof(AbpTenantManagementHttpApiModule), 
     typeof(AbpSettingManagementHttpApiModule)
     )]
 public class MarsHttpApiModule : AbpModule

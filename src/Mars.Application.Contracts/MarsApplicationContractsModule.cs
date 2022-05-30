@@ -2,8 +2,7 @@
 
 [DependsOn(
     typeof(MarsDomainSharedModule),
-    typeof(AbpAccountApplicationContractsModule),
-    typeof(AbpFeatureManagementApplicationContractsModule),
+    typeof(AbpAccountApplicationContractsModule), 
     typeof(AbpIdentityApplicationContractsModule),
     typeof(AbpPermissionManagementApplicationContractsModule),
     typeof(AbpSettingManagementApplicationContractsModule),
