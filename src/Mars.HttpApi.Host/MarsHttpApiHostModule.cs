@@ -58,10 +58,11 @@ public class MarsHttpApiHostModule : AbpModule
 
     private void ConfigureConventionalControllers()
     {
-        Configure<AbpAspNetCoreMvcOptions>(options =>
-        {
-            options.ConventionalControllers.Create(typeof(MarsApplicationModule).Assembly);
-        });
+        // 动态api
+        //Configure<AbpAspNetCoreMvcOptions>(options =>
+        //{
+        //    options.ConventionalControllers.Create(typeof(MarsApplicationModule).Assembly);
+        //});
     }
 
     private void ConfigureAuthentication(ServiceConfigurationContext context, IConfiguration configuration)

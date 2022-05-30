@@ -2,8 +2,8 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Volo.Abp.Emailing;
-using Volo.Abp.MultiTenancy;
 using Volo.Abp.Features;
+using Volo.Abp.MultiTenancy;
 
 namespace Volo.Abp.SettingManagement;
 
@@ -63,7 +63,6 @@ public class EmailSettingsAppService : SettingManagementAppServiceBase, IEmailSe
         await SettingManager.SetForTenantOrGlobalAsync(CurrentTenant.Id, EmailSettingNames.DefaultFromDisplayName, input.DefaultFromDisplayName);
     }
 
-    [Authorize(SettingManagementPermissions.EmailingTest)]
     public virtual async Task SendTestEmailAsync(SendTestEmailInput input)
     {
         await CheckFeatureAsync();

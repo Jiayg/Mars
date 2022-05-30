@@ -49,6 +49,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{71FE2733
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SettingManagement", "SettingManagement", "{97810C79-5A55-4C83-8A3A-FCD67E516C6B}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Volo.Abp.SettingManagement.Application", "modules\SettingManagement\Volo.Abp.SettingManagement.Application\Volo.Abp.SettingManagement.Application.csproj", "{56566D9D-EBB9-478C-A43A-9332EC5DDCC3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Volo.Abp.SettingManagement.Application.Contracts", "modules\SettingManagement\Volo.Abp.SettingManagement.Application.Contracts\Volo.Abp.SettingManagement.Application.Contracts.csproj", "{75BC0FF0-7CF8-430E-9E8E-37E811FF8FBA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Volo.Abp.SettingManagement.HttpApi", "modules\SettingManagement\Volo.Abp.SettingManagement.HttpApi\Volo.Abp.SettingManagement.HttpApi.csproj", "{A91DA2D3-CDC6-45E7-A767-F235A43A2624}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Volo.Abp.SettingManagement.HttpApi.Client", "modules\SettingManagement\Volo.Abp.SettingManagement.HttpApi.Client\Volo.Abp.SettingManagement.HttpApi.Client.csproj", "{19439C9F-0927-4FCD-A01C-D543C14E60CF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FeatureManagement", "FeatureManagement", "{F610F5E8-2524-4187-BAE2-D115EE43E6CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -115,6 +125,22 @@ Global
 		{AA94D832-1CCC-4715-95A9-A483F23A1A5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA94D832-1CCC-4715-95A9-A483F23A1A5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA94D832-1CCC-4715-95A9-A483F23A1A5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56566D9D-EBB9-478C-A43A-9332EC5DDCC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56566D9D-EBB9-478C-A43A-9332EC5DDCC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56566D9D-EBB9-478C-A43A-9332EC5DDCC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56566D9D-EBB9-478C-A43A-9332EC5DDCC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75BC0FF0-7CF8-430E-9E8E-37E811FF8FBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75BC0FF0-7CF8-430E-9E8E-37E811FF8FBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75BC0FF0-7CF8-430E-9E8E-37E811FF8FBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75BC0FF0-7CF8-430E-9E8E-37E811FF8FBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A91DA2D3-CDC6-45E7-A767-F235A43A2624}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A91DA2D3-CDC6-45E7-A767-F235A43A2624}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A91DA2D3-CDC6-45E7-A767-F235A43A2624}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A91DA2D3-CDC6-45E7-A767-F235A43A2624}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19439C9F-0927-4FCD-A01C-D543C14E60CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19439C9F-0927-4FCD-A01C-D543C14E60CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19439C9F-0927-4FCD-A01C-D543C14E60CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19439C9F-0927-4FCD-A01C-D543C14E60CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -136,6 +162,11 @@ Global
 		{EF480016-9127-4916-8735-D2466BDBC582} = {04DBDB01-70F4-4E06-B468-8F87850B22BE}
 		{AA94D832-1CCC-4715-95A9-A483F23A1A5D} = {DCFB2033-B671-4A08-8C83-35BC7833C7E9}
 		{97810C79-5A55-4C83-8A3A-FCD67E516C6B} = {81FE1559-872E-4F5C-AE4C-25EFEDD811DC}
+		{56566D9D-EBB9-478C-A43A-9332EC5DDCC3} = {97810C79-5A55-4C83-8A3A-FCD67E516C6B}
+		{75BC0FF0-7CF8-430E-9E8E-37E811FF8FBA} = {97810C79-5A55-4C83-8A3A-FCD67E516C6B}
+		{A91DA2D3-CDC6-45E7-A767-F235A43A2624} = {97810C79-5A55-4C83-8A3A-FCD67E516C6B}
+		{19439C9F-0927-4FCD-A01C-D543C14E60CF} = {97810C79-5A55-4C83-8A3A-FCD67E516C6B}
+		{F610F5E8-2524-4187-BAE2-D115EE43E6CE} = {81FE1559-872E-4F5C-AE4C-25EFEDD811DC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {28315BFD-90E7-4E14-A2EA-F3D23AF4126F}

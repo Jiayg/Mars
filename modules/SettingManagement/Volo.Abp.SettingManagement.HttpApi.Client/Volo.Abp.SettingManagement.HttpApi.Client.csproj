@@ -1,16 +1,17 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
-    <Import Project="..\..\..\..\configureawait.props" />
-    <Import Project="..\..\..\..\common.props" />
+	<PropertyGroup>
+		<LangVersion>latest</LangVersion>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<RootNamespace />
+	</PropertyGroup>
 
-    <PropertyGroup>
-        <TargetFramework>netstandard2.0</TargetFramework>
-        <RootNamespace />
-    </PropertyGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Volo.Abp.SettingManagement.Application.Contracts\Volo.Abp.SettingManagement.Application.Contracts.csproj" />
+		<!--<ProjectReference Include="..\..\..\..\framework\src\Volo.Abp.Http.Client\Volo.Abp.Http.Client.csproj" />-->
+	</ItemGroup>
 
-    <ItemGroup>
-        <ProjectReference Include="..\Volo.Abp.SettingManagement.Application.Contracts\Volo.Abp.SettingManagement.Application.Contracts.csproj" />
-        <ProjectReference Include="..\..\..\..\framework\src\Volo.Abp.Http.Client\Volo.Abp.Http.Client.csproj" />
-    </ItemGroup>
-
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.Http.Client" Version="5.2.2" />
+	</ItemGroup>
 </Project>
