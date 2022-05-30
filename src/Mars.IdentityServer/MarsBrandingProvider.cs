@@ -1,7 +1,4 @@
-﻿using Volo.Abp.Ui.Branding;
-using Volo.Abp.DependencyInjection;
-
-namespace Mars;
+﻿namespace Mars.IdentityServer;
 
 [Dependency(ReplaceServices = true)]
 public class MarsBrandingProvider : DefaultBrandingProvider

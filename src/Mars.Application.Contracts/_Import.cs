@@ -2,6 +2,7 @@
 global using Mars.Domain.Shared.Localization;
 global using Volo.Abp.Account;
 global using Volo.Abp.Authorization.Permissions;
+global using Volo.Abp.FeatureManagement;
 global using Volo.Abp.Identity;
 global using Volo.Abp.Localization;
 global using Volo.Abp.Modularity;

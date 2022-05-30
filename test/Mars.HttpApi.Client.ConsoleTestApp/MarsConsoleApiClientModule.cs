@@ -1,5 +1,4 @@
 ﻿using System;
-using Mars.HttpApi.Client;
 using Microsoft.Extensions.DependencyInjection;
 using Polly;
 using Volo.Abp.Autofac;

@@ -1,4 +1,4 @@
-namespace Mars;
+namespace Mars.IdentityServer;
 
 [DependsOn(
     typeof(AbpAutofacModule),

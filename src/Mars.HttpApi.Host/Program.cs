@@ -1,12 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Serilog;
-using Serilog.Events;
-
-namespace Mars.HttpApi.Host;
+﻿namespace Mars.HttpApi.Host;
 
 public class Program
 {

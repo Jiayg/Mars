@@ -2,7 +2,8 @@
 
 [DependsOn(
     typeof(MarsDomainSharedModule),
-    typeof(AbpAccountApplicationContractsModule), 
+    typeof(AbpAccountApplicationContractsModule),
+    typeof(AbpFeatureManagementApplicationContractsModule),
     typeof(AbpIdentityApplicationContractsModule),
     typeof(AbpPermissionManagementApplicationContractsModule),
     typeof(AbpSettingManagementApplicationContractsModule),
@@ -12,7 +13,6 @@
 public class MarsApplicationContractsModule : AbpModule
 {
     public override void PreConfigureServices(ServiceConfigurationContext context)
-    {
-        //MarsDtoExtensions.Configure();
+    { 
     }
 }

@@ -2,6 +2,7 @@
 global using System.Collections.Generic;
 global using System.IO;
 global using System.Linq;
+global using System.Threading.Tasks;
 global using Mars.Application;
 global using Mars.Application.Contracts;
 global using Mars.Domain;
@@ -18,6 +19,8 @@ global using Microsoft.Extensions.Configuration;
 global using Microsoft.Extensions.DependencyInjection;
 global using Microsoft.Extensions.Hosting;
 global using Microsoft.OpenApi.Models;
+global using Serilog;
+global using Serilog.Events;
 global using StackExchange.Redis;
 global using Volo.Abp;
 global using Volo.Abp.AspNetCore.Mvc;

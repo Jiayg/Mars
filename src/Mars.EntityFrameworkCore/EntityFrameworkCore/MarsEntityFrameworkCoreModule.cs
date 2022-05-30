@@ -7,7 +7,8 @@
     typeof(AbpPermissionManagementEntityFrameworkCoreModule),
     typeof(AbpSettingManagementEntityFrameworkCoreModule),
     typeof(AbpEntityFrameworkCoreMySQLModule),
-    typeof(AbpTenantManagementEntityFrameworkCoreModule) 
+    typeof(AbpTenantManagementEntityFrameworkCoreModule),
+    typeof(AbpFeatureManagementEntityFrameworkCoreModule)
     )]
 public class MarsEntityFrameworkCoreModule : AbpModule
 {
@@ -15,7 +16,8 @@ public class MarsEntityFrameworkCoreModule : AbpModule
     {
         context.Services.AddAbpDbContext<MarsDbContext>(options =>
         {
-            // default repositories only for aggregate roots 
+            /* Remove "includeAllEntities: true" to create
+             * default repositories only for aggregate roots */
             options.AddDefaultRepositories(includeAllEntities: true);
         });
 

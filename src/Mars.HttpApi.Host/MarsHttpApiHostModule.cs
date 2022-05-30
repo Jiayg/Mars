@@ -10,7 +10,6 @@ namespace Mars.HttpApi.Host;
     typeof(AbpAspNetCoreSerilogModule),
     typeof(AbpSwashbuckleModule)
 )]
-
 public class MarsHttpApiHostModule : AbpModule
 {
     public override void ConfigureServices(ServiceConfigurationContext context)

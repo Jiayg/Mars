@@ -14,6 +14,7 @@ global using Volo.Abp.DependencyInjection;
 global using Volo.Abp.EntityFrameworkCore;
 global using Volo.Abp.EntityFrameworkCore.Modeling;
 global using Volo.Abp.EntityFrameworkCore.MySQL;
+global using Volo.Abp.FeatureManagement.EntityFrameworkCore;
 global using Volo.Abp.Identity;
 global using Volo.Abp.Identity.EntityFrameworkCore;
 global using Volo.Abp.IdentityServer.EntityFrameworkCore;

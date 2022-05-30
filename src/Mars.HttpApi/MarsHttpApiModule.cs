@@ -1,11 +1,14 @@
-﻿namespace Mars.HttpApi;
+﻿using Volo.Abp.FeatureManagement;
+
+namespace Mars.HttpApi;
 
 [DependsOn(
     typeof(MarsApplicationContractsModule),
     typeof(AbpAccountHttpApiModule),
     typeof(AbpIdentityHttpApiModule),
     typeof(AbpPermissionManagementHttpApiModule),
-    typeof(AbpTenantManagementHttpApiModule), 
+    typeof(AbpTenantManagementHttpApiModule),
+    typeof(AbpFeatureManagementHttpApiModule),
     typeof(AbpSettingManagementHttpApiModule)
     )]
 public class MarsHttpApiModule : AbpModule

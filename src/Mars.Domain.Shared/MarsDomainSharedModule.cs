@@ -1,6 +1,7 @@
 ﻿namespace Mars.Domain.Shared;
 
-[DependsOn(  
+[DependsOn( 
+    typeof(AbpFeatureManagementDomainSharedModule),
     typeof(AbpIdentityDomainSharedModule),
     typeof(AbpIdentityServerDomainSharedModule),
     typeof(AbpPermissionManagementDomainSharedModule),
@@ -8,7 +9,7 @@
     typeof(AbpTenantManagementDomainSharedModule)
     )]
 public class MarsDomainSharedModule : AbpModule
-{
+{ 
     public override void ConfigureServices(ServiceConfigurationContext context)
     {
         Configure<AbpVirtualFileSystemOptions>(options =>

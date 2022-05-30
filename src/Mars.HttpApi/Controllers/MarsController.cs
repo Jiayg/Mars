@@ -1,5 +1,7 @@
-﻿namespace Mars.HttpApi.Controllers;
+﻿namespace Mars.Controllers;
 
+/* Inherit your controllers from this class.
+ */
 public abstract class MarsController : AbpControllerBase
 {
     protected MarsController()

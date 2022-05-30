@@ -1,4 +1,4 @@
-﻿namespace Mars.HttpApi.Host.Controllers;
+﻿namespace Mars.Controllers;
 
 public class HomeController : AbpController
 {

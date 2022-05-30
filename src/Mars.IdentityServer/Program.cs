@@ -1,12 +1,4 @@
-﻿using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Serilog;
-using Serilog.Events;
-using System;
-using System.Threading.Tasks;
-
-namespace Mars;
+﻿namespace Mars.IdentityServer;
 
 public class Program
 {

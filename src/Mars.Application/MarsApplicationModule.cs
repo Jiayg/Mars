@@ -7,6 +7,7 @@
     typeof(AbpIdentityApplicationModule),
     typeof(AbpPermissionManagementApplicationModule),
     typeof(AbpTenantManagementApplicationModule),
+    typeof(AbpFeatureManagementApplicationModule),
     typeof(AbpSettingManagementApplicationModule)
     )]
 public class MarsApplicationModule : AbpModule
