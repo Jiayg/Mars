@@ -2710,3 +2710,543 @@ System.OperationCanceledException: The operation was canceled.
 2022-05-31 10:39:54.271 +08:00 [INF] Executed page /Index in 516.3311ms
 2022-05-31 10:39:54.272 +08:00 [INF] Executed endpoint '/Index'
 2022-05-31 10:39:54.292 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/ - - - 200 - text/html;+charset=utf-8 63118.2978ms
+2022-05-31 12:39:41.846 +08:00 [INF] Starting Mars.IdentityServer.
+2022-05-31 12:39:51.618 +08:00 [INF] Loaded ABP modules:
+2022-05-31 12:39:51.619 +08:00 [INF] - Mars.IdentityServer.MarsIdentityServerModule
+2022-05-31 12:39:51.619 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2022-05-31 12:39:51.619 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2022-05-31 12:39:51.619 +08:00 [INF]   - Volo.Abp.Caching.StackExchangeRedis.AbpCachingStackExchangeRedisModule
+2022-05-31 12:39:51.619 +08:00 [INF]     - Volo.Abp.Caching.AbpCachingModule
+2022-05-31 12:39:51.619 +08:00 [INF]       - Volo.Abp.Threading.AbpThreadingModule
+2022-05-31 12:39:51.619 +08:00 [INF]       - Volo.Abp.Serialization.AbpSerializationModule
+2022-05-31 12:39:51.619 +08:00 [INF]       - Volo.Abp.Uow.AbpUnitOfWorkModule
+2022-05-31 12:39:51.619 +08:00 [INF]       - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2022-05-31 12:39:51.619 +08:00 [INF]         - Volo.Abp.Data.AbpDataModule
+2022-05-31 12:39:51.619 +08:00 [INF]           - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2022-05-31 12:39:51.619 +08:00 [INF]             - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2022-05-31 12:39:51.619 +08:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2022-05-31 12:39:51.619 +08:00 [INF]           - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2022-05-31 12:39:51.619 +08:00 [INF]         - Volo.Abp.Security.AbpSecurityModule
+2022-05-31 12:39:51.619 +08:00 [INF]       - Volo.Abp.Json.AbpJsonModule
+2022-05-31 12:39:51.619 +08:00 [INF]         - Volo.Abp.Timing.AbpTimingModule
+2022-05-31 12:39:51.619 +08:00 [INF]           - Volo.Abp.Localization.AbpLocalizationModule
+2022-05-31 12:39:51.619 +08:00 [INF]             - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2022-05-31 12:39:51.619 +08:00 [INF]             - Volo.Abp.Settings.AbpSettingsModule
+2022-05-31 12:39:51.619 +08:00 [INF]   - Volo.Abp.Account.Web.AbpAccountWebIdentityServerModule
+2022-05-31 12:39:51.619 +08:00 [INF]     - Volo.Abp.Account.Web.AbpAccountWebModule
+2022-05-31 12:39:51.619 +08:00 [INF]       - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2022-05-31 12:39:51.619 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2022-05-31 12:39:51.619 +08:00 [INF]           - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2022-05-31 12:39:51.619 +08:00 [INF]             - Volo.Abp.Users.AbpUsersDomainSharedModule
+2022-05-31 12:39:51.619 +08:00 [INF]             - Volo.Abp.Validation.AbpValidationModule
+2022-05-31 12:39:51.619 +08:00 [INF]             - Volo.Abp.Features.AbpFeaturesModule
+2022-05-31 12:39:51.619 +08:00 [INF]               - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2022-05-31 12:39:51.619 +08:00 [INF]           - Volo.Abp.Users.AbpUsersAbstractionModule
+2022-05-31 12:39:51.619 +08:00 [INF]             - Volo.Abp.EventBus.AbpEventBusModule
+2022-05-31 12:39:51.619 +08:00 [INF]               - Volo.Abp.Guids.AbpGuidsModule
+2022-05-31 12:39:51.619 +08:00 [INF]               - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2022-05-31 12:39:51.619 +08:00 [INF]               - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2022-05-31 12:39:51.619 +08:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationModule
+2022-05-31 12:39:51.619 +08:00 [INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2022-05-31 12:39:51.619 +08:00 [INF]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+2022-05-31 12:39:51.619 +08:00 [INF]               - Volo.Abp.Auditing.AbpAuditingContractsModule
+2022-05-31 12:39:51.619 +08:00 [INF]             - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2022-05-31 12:39:51.619 +08:00 [INF]       - Volo.Abp.Identity.AspNetCore.AbpIdentityAspNetCoreModule
+2022-05-31 12:39:51.619 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityDomainModule
+2022-05-31 12:39:51.619 +08:00 [INF]           - Volo.Abp.Domain.AbpDddDomainModule
+2022-05-31 12:39:51.619 +08:00 [INF]             - Volo.Abp.Auditing.AbpAuditingModule
+2022-05-31 12:39:51.619 +08:00 [INF]             - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2022-05-31 12:39:51.619 +08:00 [INF]             - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2022-05-31 12:39:51.619 +08:00 [INF]             - Volo.Abp.Specifications.AbpSpecificationsModule
+2022-05-31 12:39:51.619 +08:00 [INF]           - Volo.Abp.Users.AbpUsersDomainModule
+2022-05-31 12:39:51.619 +08:00 [INF]           - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2022-05-31 12:39:51.619 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2022-05-31 12:39:51.619 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2022-05-31 12:39:51.619 +08:00 [INF]           - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2022-05-31 12:39:51.619 +08:00 [INF]             - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2022-05-31 12:39:51.619 +08:00 [INF]               - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2022-05-31 12:39:51.619 +08:00 [INF]                 - Volo.Abp.Http.AbpHttpModule
+2022-05-31 12:39:51.619 +08:00 [INF]                   - Volo.Abp.Http.AbpHttpAbstractionsModule
+2022-05-31 12:39:51.619 +08:00 [INF]                   - Volo.Abp.Minify.AbpMinifyModule
+2022-05-31 12:39:51.619 +08:00 [INF]               - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2022-05-31 12:39:51.619 +08:00 [INF]               - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2022-05-31 12:39:51.619 +08:00 [INF]               - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2022-05-31 12:39:51.619 +08:00 [INF]                 - Volo.Abp.UI.AbpUiModule
+2022-05-31 12:39:51.620 +08:00 [INF]               - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2022-05-31 12:39:51.620 +08:00 [INF]               - Volo.Abp.Application.AbpDddApplicationModule
+2022-05-31 12:39:51.620 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2022-05-31 12:39:51.620 +08:00 [INF]           - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2022-05-31 12:39:51.620 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2022-05-31 12:39:51.620 +08:00 [INF]           - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2022-05-31 12:39:51.620 +08:00 [INF]     - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2022-05-31 12:39:51.620 +08:00 [INF]       - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2022-05-31 12:39:51.620 +08:00 [INF]   - Volo.Abp.Account.AbpAccountApplicationModule
+2022-05-31 12:39:51.620 +08:00 [INF]     - Volo.Abp.Identity.AbpIdentityApplicationModule
+2022-05-31 12:39:51.620 +08:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2022-05-31 12:39:51.620 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2022-05-31 12:39:51.620 +08:00 [INF]     - Volo.Abp.Emailing.AbpEmailingModule
+2022-05-31 12:39:51.620 +08:00 [INF]       - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2022-05-31 12:39:51.620 +08:00 [INF]       - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2022-05-31 12:39:51.620 +08:00 [INF]         - Volo.Abp.TextTemplating.Scriban.AbpTextTemplatingScribanModule
+2022-05-31 12:39:51.620 +08:00 [INF]           - Volo.Abp.TextTemplating.AbpTextTemplatingCoreModule
+2022-05-31 12:39:51.620 +08:00 [INF]   - Volo.Abp.Account.AbpAccountHttpApiModule
+2022-05-31 12:39:51.620 +08:00 [INF]     - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2022-05-31 12:39:51.620 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.Theme.Basic.AbpAspNetCoreMvcUiBasicThemeModule
+2022-05-31 12:39:51.620 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2022-05-31 12:39:51.620 +08:00 [INF]       - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2022-05-31 12:39:51.620 +08:00 [INF]   - Mars.EntityFrameworkCore.MarsEntityFrameworkCoreModule
+2022-05-31 12:39:51.620 +08:00 [INF]     - Mars.Domain.MarsDomainModule
+2022-05-31 12:39:51.620 +08:00 [INF]       - Mars.Domain.Shared.MarsDomainSharedModule
+2022-05-31 12:39:51.620 +08:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2022-05-31 12:39:51.620 +08:00 [INF]         - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2022-05-31 12:39:51.620 +08:00 [INF]         - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2022-05-31 12:39:51.620 +08:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule
+2022-05-31 12:39:51.620 +08:00 [INF]       - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+2022-05-31 12:39:51.620 +08:00 [INF]       - Volo.Abp.PermissionManagement.IdentityServer.AbpPermissionManagementDomainIdentityServerModule
+2022-05-31 12:39:51.620 +08:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2022-05-31 12:39:51.620 +08:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2022-05-31 12:39:51.620 +08:00 [INF]     - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2022-05-31 12:39:51.620 +08:00 [INF]       - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2022-05-31 12:39:51.620 +08:00 [INF]         - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2022-05-31 12:39:51.620 +08:00 [INF]     - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+2022-05-31 12:39:51.620 +08:00 [INF]     - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2022-05-31 12:39:51.620 +08:00 [INF]     - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2022-05-31 12:39:51.620 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2022-05-31 12:39:51.620 +08:00 [INF]     - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2022-05-31 12:39:51.620 +08:00 [INF]     - Volo.Abp.FeatureManagement.EntityFrameworkCore.AbpFeatureManagementEntityFrameworkCoreModule
+2022-05-31 12:39:51.620 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2022-05-31 12:39:51.762 +08:00 [DBG] Started background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2022-05-31 12:39:51.780 +08:00 [INF] Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e
+2022-05-31 12:39:53.774 +08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2022-05-31 12:39:53.774 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2022-05-31 12:39:53.774 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2022-05-31 12:39:53.774 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2022-05-31 12:39:53.774 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2022-05-31 12:39:53.774 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2022-05-31 12:39:54.976 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-05-31 12:39:55.251 +08:00 [INF] Initialized all ABP modules.
+2022-05-31 12:39:55.330 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-31 12:39:55.331 +08:00 [INF] Hosting environment: Development
+2022-05-31 12:39:55.331 +08:00 [INF] Content root path: E:\JYGProject\Mars\src\Mars.IdentityServer\
+2022-05-31 12:39:55.389 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/ - -
+2022-05-31 12:40:13.903 +08:00 [DBG] Login Url: /Account/Login
+2022-05-31 12:40:13.903 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2022-05-31 12:40:13.903 +08:00 [DBG] Logout Url: /Account/Logout
+2022-05-31 12:40:13.903 +08:00 [DBG] ConsentUrl Url: /Consent
+2022-05-31 12:40:13.903 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2022-05-31 12:40:13.903 +08:00 [DBG] Error Url: /Account/Error
+2022-05-31 12:40:13.903 +08:00 [DBG] Error Id Parameter: errorId
+2022-05-31 12:40:13.921 +08:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2022-05-31 12:40:14.099 +08:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2022-05-31 12:40:14.104 +08:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2022-05-31 12:40:14.127 +08:00 [INF] Executing endpoint '/Index'
+2022-05-31 12:40:14.142 +08:00 [INF] Route matched with {page = "/Index", area = "", action = "", controller = ""}. Executing page /Index
+2022-05-31 12:40:14.144 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2022-05-31 12:40:14.185 +08:00 [INF] Executing handler method Mars.Pages.IndexModel.OnGet - ModelState is "Valid"
+2022-05-31 12:40:14.185 +08:00 [INF] Executed handler method OnGet, returned result .
+2022-05-31 12:40:14.189 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2022-05-31 12:40:14.189 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-05-31 12:40:14.454 +08:00 [DBG] Added bundle 'Basic.Global' to the page in 20.88 ms.
+2022-05-31 12:40:14.587 +08:00 [DBG] Added bundle 'Basic.Global' to the page in 8.21 ms.
+2022-05-31 12:40:14.659 +08:00 [INF] Executed page /Index in 512.8469ms
+2022-05-31 12:40:14.660 +08:00 [INF] Executed endpoint '/Index'
+2022-05-31 12:40:14.712 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/ - - - 200 - text/html;+charset=utf-8 19324.2279ms
+2022-05-31 12:40:14.940 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/Abp/ApplicationConfigurationScript - -
+2022-05-31 12:40:14.940 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/Abp/ServiceProxyScript - -
+2022-05-31 12:40:14.943 +08:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2022-05-31 12:40:14.943 +08:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2022-05-31 12:40:14.944 +08:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2022-05-31 12:40:14.944 +08:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2022-05-31 12:40:14.944 +08:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2022-05-31 12:40:14.944 +08:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2022-05-31 12:40:14.945 +08:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController.GetAll (Volo.Abp.AspNetCore.Mvc)'
+2022-05-31 12:40:14.945 +08:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController.Get (Volo.Abp.AspNetCore.Mvc)'
+2022-05-31 12:40:14.952 +08:00 [INF] Route matched with {area = "Abp", action = "Get", controller = "AbpApplicationConfigurationScript", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Get() on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController (Volo.Abp.AspNetCore.Mvc).
+2022-05-31 12:40:14.962 +08:00 [INF] Route matched with {area = "Abp", action = "GetAll", controller = "AbpServiceProxyScript", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAll(Volo.Abp.AspNetCore.Mvc.ProxyScripting.ServiceProxyGenerationModel) on controller Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController (Volo.Abp.AspNetCore.Mvc).
+2022-05-31 12:40:14.990 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_framework/aspnetcore-browser-refresh.js - -
+2022-05-31 12:40:14.995 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 3.3875ms
+2022-05-31 12:40:15.000 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_vs/browserLink - -
+2022-05-31 12:40:15.010 +08:00 [DBG] Executing AbpApplicationConfigurationAppService.GetAsync()...
+2022-05-31 12:40:15.036 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 35.8771ms
+2022-05-31 12:40:15.090 +08:00 [DBG] ActionApiDescriptionModel.Create: Account.RegisterAsyncByInput
+2022-05-31 12:40:15.122 +08:00 [DBG] ActionApiDescriptionModel.Create: Account.SendPasswordResetCodeAsyncByInput
+2022-05-31 12:40:15.123 +08:00 [DBG] ActionApiDescriptionModel.Create: Account.ResetPasswordAsyncByInput
+2022-05-31 12:40:15.124 +08:00 [DBG] ActionApiDescriptionModel.Create: Account.LoginByLogin
+2022-05-31 12:40:15.124 +08:00 [DBG] ActionApiDescriptionModel.Create: Account.Logout
+2022-05-31 12:40:15.124 +08:00 [DBG] ActionApiDescriptionModel.Create: Account.CheckPasswordByLogin
+2022-05-31 12:40:15.124 +08:00 [DBG] ActionApiDescriptionModel.Create: Profile.GetAsync
+2022-05-31 12:40:15.125 +08:00 [DBG] ActionApiDescriptionModel.Create: Profile.UpdateAsyncByInput
+2022-05-31 12:40:15.127 +08:00 [DBG] ActionApiDescriptionModel.Create: Profile.ChangePasswordAsyncByInput
+2022-05-31 12:40:15.127 +08:00 [DBG] ActionApiDescriptionModel.Create: AbpTenant.FindTenantByNameAsyncByName
+2022-05-31 12:40:15.127 +08:00 [DBG] ActionApiDescriptionModel.Create: AbpTenant.FindTenantByIdAsyncById
+2022-05-31 12:40:15.127 +08:00 [DBG] ActionApiDescriptionModel.Create: IdentityRole.GetAllListAsync
+2022-05-31 12:40:15.128 +08:00 [DBG] ActionApiDescriptionModel.Create: IdentityRole.GetListAsyncByInput
+2022-05-31 12:40:15.131 +08:00 [DBG] ActionApiDescriptionModel.Create: IdentityRole.GetAsyncById
+2022-05-31 12:40:15.131 +08:00 [DBG] ActionApiDescriptionModel.Create: IdentityRole.CreateAsyncByInput
+2022-05-31 12:40:15.131 +08:00 [DBG] ActionApiDescriptionModel.Create: IdentityRole.UpdateAsyncByIdAndInput
+2022-05-31 12:40:15.131 +08:00 [DBG] ActionApiDescriptionModel.Create: IdentityRole.DeleteAsyncById
+2022-05-31 12:40:15.131 +08:00 [DBG] ActionApiDescriptionModel.Create: IdentityUser.GetAsyncById
+2022-05-31 12:40:15.131 +08:00 [DBG] ActionApiDescriptionModel.Create: IdentityUser.GetListAsyncByInput
+2022-05-31 12:40:15.132 +08:00 [DBG] ActionApiDescriptionModel.Create: IdentityUser.CreateAsyncByInput
+2022-05-31 12:40:15.132 +08:00 [DBG] ActionApiDescriptionModel.Create: IdentityUser.UpdateAsyncByIdAndInput
+2022-05-31 12:40:15.132 +08:00 [DBG] ActionApiDescriptionModel.Create: IdentityUser.DeleteAsyncById
+2022-05-31 12:40:15.133 +08:00 [DBG] ActionApiDescriptionModel.Create: IdentityUser.GetRolesAsyncById
+2022-05-31 12:40:15.133 +08:00 [DBG] ActionApiDescriptionModel.Create: IdentityUser.GetAssignableRolesAsync
+2022-05-31 12:40:15.135 +08:00 [DBG] ActionApiDescriptionModel.Create: IdentityUser.UpdateRolesAsyncByIdAndInput
+2022-05-31 12:40:15.135 +08:00 [DBG] ActionApiDescriptionModel.Create: IdentityUser.FindByUserNameAsyncByUserName
+2022-05-31 12:40:15.135 +08:00 [DBG] ActionApiDescriptionModel.Create: IdentityUser.FindByEmailAsyncByEmail
+2022-05-31 12:40:15.135 +08:00 [DBG] ActionApiDescriptionModel.Create: IdentityUserLookup.FindByIdAsyncById
+2022-05-31 12:40:15.135 +08:00 [DBG] ActionApiDescriptionModel.Create: IdentityUserLookup.FindByUserNameAsyncByUserName
+2022-05-31 12:40:15.135 +08:00 [DBG] ActionApiDescriptionModel.Create: IdentityUserLookup.SearchAsyncByInput
+2022-05-31 12:40:15.136 +08:00 [DBG] ActionApiDescriptionModel.Create: IdentityUserLookup.GetCountAsyncByInput
+2022-05-31 12:40:15.136 +08:00 [DBG] ActionApiDescriptionModel.Create: AbpApplicationConfiguration.GetAsync
+2022-05-31 12:40:15.139 +08:00 [DBG] ActionApiDescriptionModel.Create: AbpApiDefinition.GetByModel
+2022-05-31 12:40:15.174 +08:00 [INF] Executing ContentResult with HTTP Response ContentType of application/javascript
+2022-05-31 12:40:15.176 +08:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController.GetAll (Volo.Abp.AspNetCore.Mvc) in 213.9566ms
+2022-05-31 12:40:15.176 +08:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController.GetAll (Volo.Abp.AspNetCore.Mvc)'
+2022-05-31 12:40:15.176 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/Abp/ServiceProxyScript - - - 200 8196 application/javascript 236.1767ms
+2022-05-31 12:40:15.887 +08:00 [DBG] Executed AbpApplicationConfigurationAppService.GetAsync().
+2022-05-31 12:40:15.924 +08:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-31 12:40:15.928 +08:00 [INF] Executing ContentResult with HTTP Response ContentType of application/javascript
+2022-05-31 12:40:15.933 +08:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController.Get (Volo.Abp.AspNetCore.Mvc) in 980.1006ms
+2022-05-31 12:40:15.933 +08:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController.Get (Volo.Abp.AspNetCore.Mvc)'
+2022-05-31 12:40:15.950 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/Abp/ApplicationConfigurationScript - - - 200 62973 application/javascript 1009.6484ms
+2022-05-31 12:40:22.206 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/Account/Login - -
+2022-05-31 12:40:22.219 +08:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2022-05-31 12:40:22.220 +08:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2022-05-31 12:40:22.220 +08:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2022-05-31 12:40:22.221 +08:00 [INF] Executing endpoint '/Account/Login'
+2022-05-31 12:40:22.227 +08:00 [INF] Route matched with {page = "/Account/Login", area = "", action = "", controller = ""}. Executing page /Account/Login
+2022-05-31 12:40:22.227 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2022-05-31 12:40:22.939 +08:00 [INF] Executing handler method Volo.Abp.Account.Web.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2022-05-31 12:40:23.018 +08:00 [INF] Executed handler method OnGetAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-05-31 12:40:23.173 +08:00 [DBG] Added bundle 'Basic.Global' to the page in 1.26 ms.
+2022-05-31 12:40:23.182 +08:00 [DBG] Added bundle 'Basic.Global' to the page in 2.07 ms.
+2022-05-31 12:40:23.192 +08:00 [INF] Executed page /Account/Login in 965.5135ms
+2022-05-31 12:40:23.192 +08:00 [INF] Executed endpoint '/Account/Login'
+2022-05-31 12:40:23.195 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/Account/Login - - - 200 - text/html;+charset=utf-8 989.6989ms
+2022-05-31 12:40:23.227 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/Abp/ApplicationConfigurationScript - -
+2022-05-31 12:40:23.227 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_framework/aspnetcore-browser-refresh.js - -
+2022-05-31 12:40:23.227 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/Abp/ServiceProxyScript - -
+2022-05-31 12:40:23.228 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 0.7416ms
+2022-05-31 12:40:23.231 +08:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2022-05-31 12:40:23.231 +08:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2022-05-31 12:40:23.232 +08:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2022-05-31 12:40:23.232 +08:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2022-05-31 12:40:23.232 +08:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2022-05-31 12:40:23.232 +08:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2022-05-31 12:40:23.232 +08:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController.GetAll (Volo.Abp.AspNetCore.Mvc)'
+2022-05-31 12:40:23.232 +08:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController.Get (Volo.Abp.AspNetCore.Mvc)'
+2022-05-31 12:40:23.232 +08:00 [INF] Route matched with {area = "Abp", action = "GetAll", controller = "AbpServiceProxyScript", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAll(Volo.Abp.AspNetCore.Mvc.ProxyScripting.ServiceProxyGenerationModel) on controller Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController (Volo.Abp.AspNetCore.Mvc).
+2022-05-31 12:40:23.232 +08:00 [INF] Route matched with {area = "Abp", action = "Get", controller = "AbpApplicationConfigurationScript", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Get() on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController (Volo.Abp.AspNetCore.Mvc).
+2022-05-31 12:40:23.233 +08:00 [DBG] Executing AbpApplicationConfigurationAppService.GetAsync()...
+2022-05-31 12:40:23.234 +08:00 [INF] Executing ContentResult with HTTP Response ContentType of application/javascript
+2022-05-31 12:40:23.235 +08:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController.GetAll (Volo.Abp.AspNetCore.Mvc) in 2.8334ms
+2022-05-31 12:40:23.235 +08:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController.GetAll (Volo.Abp.AspNetCore.Mvc)'
+2022-05-31 12:40:23.236 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/Abp/ServiceProxyScript - - - 200 8196 application/javascript 8.3981ms
+2022-05-31 12:40:23.268 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_vs/browserLink - -
+2022-05-31 12:40:23.298 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 30.0817ms
+2022-05-31 12:40:23.409 +08:00 [DBG] Executed AbpApplicationConfigurationAppService.GetAsync().
+2022-05-31 12:40:23.420 +08:00 [INF] Executing ContentResult with HTTP Response ContentType of application/javascript
+2022-05-31 12:40:23.422 +08:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController.Get (Volo.Abp.AspNetCore.Mvc) in 189.2108ms
+2022-05-31 12:40:23.422 +08:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController.Get (Volo.Abp.AspNetCore.Mvc)'
+2022-05-31 12:40:23.424 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/Abp/ApplicationConfigurationScript - - - 200 62973 application/javascript 197.1834ms
+2022-05-31 12:40:25.666 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44379/Account/Login application/x-www-form-urlencoded 291
+2022-05-31 12:40:25.676 +08:00 [INF] CORS policy execution failed.
+2022-05-31 12:40:25.676 +08:00 [INF] Request origin https://localhost:44379 does not have permission to access the resource.
+2022-05-31 12:40:25.678 +08:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2022-05-31 12:40:25.688 +08:00 [INF] No CORS policy found for the specified request.
+2022-05-31 12:40:25.688 +08:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2022-05-31 12:40:25.689 +08:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2022-05-31 12:40:25.689 +08:00 [INF] Executing endpoint '/Account/Login'
+2022-05-31 12:40:25.689 +08:00 [INF] Route matched with {page = "/Account/Login", area = "", action = "", controller = ""}. Executing page /Account/Login
+2022-05-31 12:40:25.689 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2022-05-31 12:40:25.739 +08:00 [INF] Executing handler method Volo.Abp.Account.Web.Pages.Account.LoginModel.OnPostAsync - ModelState is "Valid"
+2022-05-31 12:40:27.875 +08:00 [DBG] Augmenting SignInContext
+2022-05-31 12:40:27.876 +08:00 [DBG] Adding idp claim with value: local
+2022-05-31 12:40:27.877 +08:00 [DBG] Adding auth_time claim with value: 1653972027
+2022-05-31 12:40:27.879 +08:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2022-05-31 12:40:27.895 +08:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2022-05-31 12:40:28.470 +08:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-31 12:40:28.481 +08:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-31 12:40:28.519 +08:00 [INF] {"Username":"admin","Provider":null,"ProviderUserId":null,"SubjectId":"3a0425e2-08ef-1f5f-2170-cc7c4695b6ed","DisplayName":"admin","Endpoint":"UI","ClientId":null,"Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"80000059-0001-f900-b63f-84710c7967bb","TimeStamp":"2022-05-31T04:40:28.0000000Z","ProcessId":21840,"LocalIpAddress":"::1:44379","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2022-05-31 12:40:28.520 +08:00 [INF] Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.RedirectResult.
+2022-05-31 12:40:28.520 +08:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-31 12:40:28.520 +08:00 [INF] Executing RedirectResult, redirecting to /.
+2022-05-31 12:40:28.521 +08:00 [INF] Executed page /Account/Login in 2831.4694ms
+2022-05-31 12:40:28.521 +08:00 [INF] Executed endpoint '/Account/Login'
+2022-05-31 12:40:28.521 +08:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-31 12:40:28.529 +08:00 [INF] AUDIT LOG: [302: POST   ] /Account/Login
+- UserName - UserId                 :  - 
+- ClientIpAddress        : ::1
+- ExecutionDuration      : 2834
+- Actions:
+  - Volo.Abp.Account.Web.Pages.Account.LoginModel.OnPostAsync (2781 ms.)
+    {"action":"Login"}
+
+2022-05-31 12:40:28.554 +08:00 [INF] Request finished HTTP/2 POST https://localhost:44379/Account/Login application/x-www-form-urlencoded 291 - 302 - - 2887.6629ms
+2022-05-31 12:40:28.557 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/ - -
+2022-05-31 12:40:28.568 +08:00 [INF] Executing endpoint '/Index'
+2022-05-31 12:40:28.568 +08:00 [INF] Route matched with {page = "/Index", area = "", action = "", controller = ""}. Executing page /Index
+2022-05-31 12:40:28.568 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2022-05-31 12:40:28.569 +08:00 [INF] Executing handler method Mars.Pages.IndexModel.OnGet - ModelState is "Valid"
+2022-05-31 12:40:28.569 +08:00 [INF] Executed handler method OnGet, returned result .
+2022-05-31 12:40:28.569 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2022-05-31 12:40:28.569 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-05-31 12:40:28.577 +08:00 [DBG] Added bundle 'Basic.Global' to the page in 0.47 ms.
+2022-05-31 12:40:28.588 +08:00 [DBG] Added bundle 'Basic.Global' to the page in 1.35 ms.
+2022-05-31 12:40:28.598 +08:00 [INF] Executed page /Index in 29.5566ms
+2022-05-31 12:40:28.598 +08:00 [INF] Executed endpoint '/Index'
+2022-05-31 12:40:28.601 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/ - - - 200 - text/html;+charset=utf-8 44.7697ms
+2022-05-31 12:40:28.635 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_framework/aspnetcore-browser-refresh.js - -
+2022-05-31 12:40:28.639 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 3.8557ms
+2022-05-31 12:40:28.639 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/Abp/ApplicationConfigurationScript - -
+2022-05-31 12:40:28.646 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/Abp/ServiceProxyScript - -
+2022-05-31 12:40:28.646 +08:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController.Get (Volo.Abp.AspNetCore.Mvc)'
+2022-05-31 12:40:28.646 +08:00 [INF] Route matched with {area = "Abp", action = "Get", controller = "AbpApplicationConfigurationScript", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Get() on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController (Volo.Abp.AspNetCore.Mvc).
+2022-05-31 12:40:28.648 +08:00 [DBG] Executing AbpApplicationConfigurationAppService.GetAsync()...
+2022-05-31 12:40:28.651 +08:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController.GetAll (Volo.Abp.AspNetCore.Mvc)'
+2022-05-31 12:40:28.651 +08:00 [INF] Route matched with {area = "Abp", action = "GetAll", controller = "AbpServiceProxyScript", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAll(Volo.Abp.AspNetCore.Mvc.ProxyScripting.ServiceProxyGenerationModel) on controller Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController (Volo.Abp.AspNetCore.Mvc).
+2022-05-31 12:40:28.656 +08:00 [INF] Executing ContentResult with HTTP Response ContentType of application/javascript
+2022-05-31 12:40:28.656 +08:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController.GetAll (Volo.Abp.AspNetCore.Mvc) in 4.8892ms
+2022-05-31 12:40:28.656 +08:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController.GetAll (Volo.Abp.AspNetCore.Mvc)'
+2022-05-31 12:40:28.657 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/Abp/ServiceProxyScript - - - 200 8196 application/javascript 10.6493ms
+2022-05-31 12:40:28.659 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_vs/browserLink - -
+2022-05-31 12:40:28.665 +08:00 [DBG] PermissionStore.GetCacheItemAsync: pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.Create,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.Update,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.Delete,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.ManagePermissions,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.Create,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.Update,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.Delete,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.ManagePermissions
+2022-05-31 12:40:28.688 +08:00 [DBG] Not found in the cache: pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.Create,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.Update,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.Delete,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.ManagePermissions,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.Create,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.Update,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.Delete,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.ManagePermissions
+2022-05-31 12:40:28.693 +08:00 [DBG] Getting not cache granted permissions from the repository for this provider name,key: U,3a0425e2-08ef-1f5f-2170-cc7c4695b6ed
+2022-05-31 12:40:28.696 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 36.6649ms
+2022-05-31 12:40:28.785 +08:00 [DBG] Setting the cache items. Count: 10
+2022-05-31 12:40:28.808 +08:00 [DBG] Finished setting the cache items. Count: 10
+2022-05-31 12:40:28.810 +08:00 [DBG] PermissionStore.GetCacheItemAsync: pn:R,pk:admin,n:AbpIdentity.Roles,pn:R,pk:admin,n:AbpIdentity.Roles.Create,pn:R,pk:admin,n:AbpIdentity.Roles.Update,pn:R,pk:admin,n:AbpIdentity.Roles.Delete,pn:R,pk:admin,n:AbpIdentity.Roles.ManagePermissions,pn:R,pk:admin,n:AbpIdentity.Users,pn:R,pk:admin,n:AbpIdentity.Users.Create,pn:R,pk:admin,n:AbpIdentity.Users.Update,pn:R,pk:admin,n:AbpIdentity.Users.Delete,pn:R,pk:admin,n:AbpIdentity.Users.ManagePermissions
+2022-05-31 12:40:28.825 +08:00 [DBG] Not found in the cache: pn:R,pk:admin,n:AbpIdentity.Roles,pn:R,pk:admin,n:AbpIdentity.Roles.Create,pn:R,pk:admin,n:AbpIdentity.Roles.Update,pn:R,pk:admin,n:AbpIdentity.Roles.Delete,pn:R,pk:admin,n:AbpIdentity.Roles.ManagePermissions,pn:R,pk:admin,n:AbpIdentity.Users,pn:R,pk:admin,n:AbpIdentity.Users.Create,pn:R,pk:admin,n:AbpIdentity.Users.Update,pn:R,pk:admin,n:AbpIdentity.Users.Delete,pn:R,pk:admin,n:AbpIdentity.Users.ManagePermissions
+2022-05-31 12:40:28.826 +08:00 [DBG] Getting not cache granted permissions from the repository for this provider name,key: R,admin
+2022-05-31 12:40:28.888 +08:00 [DBG] Setting the cache items. Count: 10
+2022-05-31 12:40:28.903 +08:00 [DBG] Finished setting the cache items. Count: 10
+2022-05-31 12:40:29.204 +08:00 [DBG] Executed AbpApplicationConfigurationAppService.GetAsync().
+2022-05-31 12:40:29.242 +08:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-31 12:40:29.244 +08:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-31 12:40:29.244 +08:00 [INF] Executing ContentResult with HTTP Response ContentType of application/javascript
+2022-05-31 12:40:29.245 +08:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController.Get (Volo.Abp.AspNetCore.Mvc) in 598.8296ms
+2022-05-31 12:40:29.245 +08:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController.Get (Volo.Abp.AspNetCore.Mvc)'
+2022-05-31 12:40:29.266 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/Abp/ApplicationConfigurationScript - - - 200 63466 application/javascript 627.0152ms
+2022-05-31 12:40:31.228 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/Account/Manage - -
+2022-05-31 12:40:31.243 +08:00 [INF] Executing endpoint '/Account/Manage'
+2022-05-31 12:40:31.245 +08:00 [INF] Route matched with {page = "/Account/Manage", area = "", action = "", controller = ""}. Executing page /Account/Manage
+2022-05-31 12:40:31.246 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2022-05-31 12:40:31.252 +08:00 [INF] Executing handler method Volo.Abp.Account.Web.Pages.Account.ManageModel.OnGetAsync - ModelState is "Valid"
+2022-05-31 12:40:31.487 +08:00 [INF] Executed handler method OnGetAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-05-31 12:40:31.489 +08:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-31 12:40:32.404 +08:00 [DBG] Added bundle 'Basic.Global' to the page in 0.54 ms.
+2022-05-31 12:40:32.407 +08:00 [DBG] Added bundle 'Basic.Global' to the page in 1.49 ms.
+2022-05-31 12:40:32.410 +08:00 [DBG] Added bundle 'Volo.Abp.Account.Web.Pages.Account.ManageModel' to the page in 1.26 ms.
+2022-05-31 12:40:32.416 +08:00 [INF] Executed page /Account/Manage in 1170.467ms
+2022-05-31 12:40:32.416 +08:00 [INF] Executed endpoint '/Account/Manage'
+2022-05-31 12:40:32.421 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/Account/Manage - - - 200 - text/html;+charset=utf-8 1192.2437ms
+2022-05-31 12:40:32.453 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/Abp/ApplicationConfigurationScript - -
+2022-05-31 12:40:32.453 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/client-proxies/account-proxy.js?_v=637895687274106246 - -
+2022-05-31 12:40:32.454 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/Pages/Account/Components/ProfileManagementGroup/Password/Default.js?_v=637895687274106246 - -
+2022-05-31 12:40:32.457 +08:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController.Get (Volo.Abp.AspNetCore.Mvc)'
+2022-05-31 12:40:32.457 +08:00 [INF] Route matched with {area = "Abp", action = "Get", controller = "AbpApplicationConfigurationScript", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Get() on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController (Volo.Abp.AspNetCore.Mvc).
+2022-05-31 12:40:32.459 +08:00 [DBG] Executing AbpApplicationConfigurationAppService.GetAsync()...
+2022-05-31 12:40:32.460 +08:00 [DBG] PermissionStore.GetCacheItemAsync: pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.Create,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.Update,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.Delete,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.ManagePermissions,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.Create,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.Update,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.Delete,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.ManagePermissions
+2022-05-31 12:40:32.474 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_framework/aspnetcore-browser-refresh.js - -
+2022-05-31 12:40:32.474 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/Pages/Account/Components/ProfileManagementGroup/PersonalInfo/Default.js?_v=637895687274106246 - -
+2022-05-31 12:40:32.475 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 0.7198ms
+2022-05-31 12:40:32.475 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/Abp/ServiceProxyScript - -
+2022-05-31 12:40:32.478 +08:00 [INF] Sending file. Request path: '/Pages/Account/Components/ProfileManagementGroup/Password/Default.js'. Physical path: 'N/A'
+2022-05-31 12:40:32.479 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/Pages/Account/Components/ProfileManagementGroup/Password/Default.js?_v=637895687274106246 - - - 200 1048 application/javascript 24.1550ms
+2022-05-31 12:40:32.479 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_vs/browserLink - -
+2022-05-31 12:40:32.479 +08:00 [INF] Sending file. Request path: '/client-proxies/account-proxy.js'. Physical path: 'N/A'
+2022-05-31 12:40:32.479 +08:00 [INF] Sending file. Request path: '/Pages/Account/Components/ProfileManagementGroup/PersonalInfo/Default.js'. Physical path: 'N/A'
+2022-05-31 12:40:32.479 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/client-proxies/account-proxy.js?_v=637895687274106246 - - - 200 3114 application/javascript 25.4182ms
+2022-05-31 12:40:32.479 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/Pages/Account/Components/ProfileManagementGroup/PersonalInfo/Default.js?_v=637895687274106246 - - - 200 875 application/javascript 4.4539ms
+2022-05-31 12:40:32.486 +08:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController.GetAll (Volo.Abp.AspNetCore.Mvc)'
+2022-05-31 12:40:32.486 +08:00 [INF] Route matched with {area = "Abp", action = "GetAll", controller = "AbpServiceProxyScript", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAll(Volo.Abp.AspNetCore.Mvc.ProxyScripting.ServiceProxyGenerationModel) on controller Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController (Volo.Abp.AspNetCore.Mvc).
+2022-05-31 12:40:32.489 +08:00 [INF] Executing ContentResult with HTTP Response ContentType of application/javascript
+2022-05-31 12:40:32.489 +08:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController.GetAll (Volo.Abp.AspNetCore.Mvc) in 3.3467ms
+2022-05-31 12:40:32.489 +08:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController.GetAll (Volo.Abp.AspNetCore.Mvc)'
+2022-05-31 12:40:32.490 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/Abp/ServiceProxyScript - - - 200 8196 application/javascript 14.3230ms
+2022-05-31 12:40:32.496 +08:00 [DBG] Found in the cache: pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.Create,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.Update,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.Delete,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.ManagePermissions,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.Create,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.Update,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.Delete,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.ManagePermissions
+2022-05-31 12:40:32.496 +08:00 [DBG] PermissionStore.GetCacheItemAsync: pn:R,pk:admin,n:AbpIdentity.Roles,pn:R,pk:admin,n:AbpIdentity.Roles.Create,pn:R,pk:admin,n:AbpIdentity.Roles.Update,pn:R,pk:admin,n:AbpIdentity.Roles.Delete,pn:R,pk:admin,n:AbpIdentity.Roles.ManagePermissions,pn:R,pk:admin,n:AbpIdentity.Users,pn:R,pk:admin,n:AbpIdentity.Users.Create,pn:R,pk:admin,n:AbpIdentity.Users.Update,pn:R,pk:admin,n:AbpIdentity.Users.Delete,pn:R,pk:admin,n:AbpIdentity.Users.ManagePermissions
+2022-05-31 12:40:32.511 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 32.5396ms
+2022-05-31 12:40:32.527 +08:00 [DBG] Found in the cache: pn:R,pk:admin,n:AbpIdentity.Roles,pn:R,pk:admin,n:AbpIdentity.Roles.Create,pn:R,pk:admin,n:AbpIdentity.Roles.Update,pn:R,pk:admin,n:AbpIdentity.Roles.Delete,pn:R,pk:admin,n:AbpIdentity.Roles.ManagePermissions,pn:R,pk:admin,n:AbpIdentity.Users,pn:R,pk:admin,n:AbpIdentity.Users.Create,pn:R,pk:admin,n:AbpIdentity.Users.Update,pn:R,pk:admin,n:AbpIdentity.Users.Delete,pn:R,pk:admin,n:AbpIdentity.Users.ManagePermissions
+2022-05-31 12:40:32.765 +08:00 [DBG] Executed AbpApplicationConfigurationAppService.GetAsync().
+2022-05-31 12:40:32.777 +08:00 [INF] Executing ContentResult with HTTP Response ContentType of application/javascript
+2022-05-31 12:40:32.778 +08:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController.Get (Volo.Abp.AspNetCore.Mvc) in 320.2648ms
+2022-05-31 12:40:32.778 +08:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController.Get (Volo.Abp.AspNetCore.Mvc)'
+2022-05-31 12:40:32.781 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/Abp/ApplicationConfigurationScript - - - 200 63466 application/javascript 326.4332ms
+2022-05-31 12:41:20.141 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/Abp/Languages/Switch?culture=en&uiCulture=en&returnUrl=%2FAccount%2FManage - -
+2022-05-31 12:41:20.147 +08:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.Localization.AbpLanguagesController.Switch (Volo.Abp.AspNetCore.Mvc)'
+2022-05-31 12:41:20.152 +08:00 [INF] Route matched with {area = "Abp", action = "Switch", controller = "AbpLanguages", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Switch(System.String, System.String, System.String) on controller Volo.Abp.AspNetCore.Mvc.Localization.AbpLanguagesController (Volo.Abp.AspNetCore.Mvc).
+2022-05-31 12:41:20.157 +08:00 [INF] Executing RedirectResult, redirecting to /Account/Manage.
+2022-05-31 12:41:20.157 +08:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.Localization.AbpLanguagesController.Switch (Volo.Abp.AspNetCore.Mvc) in 5.0382ms
+2022-05-31 12:41:20.157 +08:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.Localization.AbpLanguagesController.Switch (Volo.Abp.AspNetCore.Mvc)'
+2022-05-31 12:41:20.157 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/Abp/Languages/Switch?culture=en&uiCulture=en&returnUrl=%2FAccount%2FManage - - - 302 - - 15.8202ms
+2022-05-31 12:41:20.163 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/Account/Manage - -
+2022-05-31 12:41:20.169 +08:00 [INF] Executing endpoint '/Account/Manage'
+2022-05-31 12:41:20.169 +08:00 [INF] Route matched with {page = "/Account/Manage", area = "", action = "", controller = ""}. Executing page /Account/Manage
+2022-05-31 12:41:20.169 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2022-05-31 12:41:20.172 +08:00 [INF] Executing handler method Volo.Abp.Account.Web.Pages.Account.ManageModel.OnGetAsync - ModelState is "Valid"
+2022-05-31 12:41:20.338 +08:00 [INF] Executed handler method OnGetAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-05-31 12:41:20.339 +08:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-31 12:41:20.796 +08:00 [DBG] Added bundle 'Basic.Global' to the page in 0.66 ms.
+2022-05-31 12:41:20.800 +08:00 [DBG] Added bundle 'Basic.Global' to the page in 2.90 ms.
+2022-05-31 12:41:20.801 +08:00 [DBG] Added bundle 'Volo.Abp.Account.Web.Pages.Account.ManageModel' to the page in 0.41 ms.
+2022-05-31 12:41:20.805 +08:00 [INF] Executed page /Account/Manage in 636.1688ms
+2022-05-31 12:41:20.805 +08:00 [INF] Executed endpoint '/Account/Manage'
+2022-05-31 12:41:20.808 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/Account/Manage - - - 200 - text/html;+charset=utf-8 646.1264ms
+2022-05-31 12:41:20.842 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/libs/timeago/locales/jquery.timeago.en.js?_v=637891447198030000 - -
+2022-05-31 12:41:20.844 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_framework/aspnetcore-browser-refresh.js - -
+2022-05-31 12:41:20.847 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/Abp/ApplicationConfigurationScript - -
+2022-05-31 12:41:20.847 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 2.9192ms
+2022-05-31 12:41:20.851 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/Abp/ServiceProxyScript - -
+2022-05-31 12:41:20.851 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/client-proxies/account-proxy.js?_v=637895687274106246 - -
+2022-05-31 12:41:20.852 +08:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController.Get (Volo.Abp.AspNetCore.Mvc)'
+2022-05-31 12:41:20.852 +08:00 [INF] Route matched with {area = "Abp", action = "Get", controller = "AbpApplicationConfigurationScript", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Get() on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController (Volo.Abp.AspNetCore.Mvc).
+2022-05-31 12:41:20.853 +08:00 [DBG] Executing AbpApplicationConfigurationAppService.GetAsync()...
+2022-05-31 12:41:20.853 +08:00 [DBG] PermissionStore.GetCacheItemAsync: pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.Create,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.Update,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.Delete,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.ManagePermissions,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.Create,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.Update,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.Delete,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.ManagePermissions
+2022-05-31 12:41:20.865 +08:00 [INF] The file /client-proxies/account-proxy.js was not modified
+2022-05-31 12:41:20.866 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/client-proxies/account-proxy.js?_v=637895687274106246 - - - 304 - application/javascript 15.4641ms
+2022-05-31 12:41:20.868 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/Pages/Account/Components/ProfileManagementGroup/PersonalInfo/Default.js?_v=637895687274106246 - -
+2022-05-31 12:41:20.868 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/Pages/Account/Components/ProfileManagementGroup/Password/Default.js?_v=637895687274106246 - -
+2022-05-31 12:41:20.868 +08:00 [INF] The file /Pages/Account/Components/ProfileManagementGroup/Password/Default.js was not modified
+2022-05-31 12:41:20.868 +08:00 [INF] The file /Pages/Account/Components/ProfileManagementGroup/PersonalInfo/Default.js was not modified
+2022-05-31 12:41:20.868 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/Pages/Account/Components/ProfileManagementGroup/PersonalInfo/Default.js?_v=637895687274106246 - - - 304 - application/javascript 0.5453ms
+2022-05-31 12:41:20.868 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/Pages/Account/Components/ProfileManagementGroup/Password/Default.js?_v=637895687274106246 - - - 304 - application/javascript 0.5523ms
+2022-05-31 12:41:20.870 +08:00 [INF] Sending file. Request path: '/libs/timeago/locales/jquery.timeago.en.js'. Physical path: 'E:\JYGProject\Mars\src\Mars.IdentityServer\wwwroot\libs\timeago\locales\jquery.timeago.en.js'
+2022-05-31 12:41:20.870 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/libs/timeago/locales/jquery.timeago.en.js?_v=637891447198030000 - - - 200 778 application/javascript 28.1257ms
+2022-05-31 12:41:20.873 +08:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController.GetAll (Volo.Abp.AspNetCore.Mvc)'
+2022-05-31 12:41:20.873 +08:00 [INF] Route matched with {area = "Abp", action = "GetAll", controller = "AbpServiceProxyScript", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAll(Volo.Abp.AspNetCore.Mvc.ProxyScripting.ServiceProxyGenerationModel) on controller Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController (Volo.Abp.AspNetCore.Mvc).
+2022-05-31 12:41:20.877 +08:00 [INF] Executing ContentResult with HTTP Response ContentType of application/javascript
+2022-05-31 12:41:20.877 +08:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController.GetAll (Volo.Abp.AspNetCore.Mvc) in 4.3172ms
+2022-05-31 12:41:20.878 +08:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController.GetAll (Volo.Abp.AspNetCore.Mvc)'
+2022-05-31 12:41:20.878 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/Abp/ServiceProxyScript - - - 200 8196 application/javascript 27.5120ms
+2022-05-31 12:41:20.883 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_vs/browserLink - -
+2022-05-31 12:41:20.890 +08:00 [DBG] Found in the cache: pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.Create,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.Update,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.Delete,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.ManagePermissions,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.Create,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.Update,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.Delete,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.ManagePermissions
+2022-05-31 12:41:20.890 +08:00 [DBG] PermissionStore.GetCacheItemAsync: pn:R,pk:admin,n:AbpIdentity.Roles,pn:R,pk:admin,n:AbpIdentity.Roles.Create,pn:R,pk:admin,n:AbpIdentity.Roles.Update,pn:R,pk:admin,n:AbpIdentity.Roles.Delete,pn:R,pk:admin,n:AbpIdentity.Roles.ManagePermissions,pn:R,pk:admin,n:AbpIdentity.Users,pn:R,pk:admin,n:AbpIdentity.Users.Create,pn:R,pk:admin,n:AbpIdentity.Users.Update,pn:R,pk:admin,n:AbpIdentity.Users.Delete,pn:R,pk:admin,n:AbpIdentity.Users.ManagePermissions
+2022-05-31 12:41:20.909 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 26.4260ms
+2022-05-31 12:41:20.920 +08:00 [DBG] Found in the cache: pn:R,pk:admin,n:AbpIdentity.Roles,pn:R,pk:admin,n:AbpIdentity.Roles.Create,pn:R,pk:admin,n:AbpIdentity.Roles.Update,pn:R,pk:admin,n:AbpIdentity.Roles.Delete,pn:R,pk:admin,n:AbpIdentity.Roles.ManagePermissions,pn:R,pk:admin,n:AbpIdentity.Users,pn:R,pk:admin,n:AbpIdentity.Users.Create,pn:R,pk:admin,n:AbpIdentity.Users.Update,pn:R,pk:admin,n:AbpIdentity.Users.Delete,pn:R,pk:admin,n:AbpIdentity.Users.ManagePermissions
+2022-05-31 12:41:21.157 +08:00 [DBG] Executed AbpApplicationConfigurationAppService.GetAsync().
+2022-05-31 12:41:21.173 +08:00 [INF] Executing ContentResult with HTTP Response ContentType of application/javascript
+2022-05-31 12:41:21.174 +08:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController.Get (Volo.Abp.AspNetCore.Mvc) in 322.205ms
+2022-05-31 12:41:21.174 +08:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController.Get (Volo.Abp.AspNetCore.Mvc)'
+2022-05-31 12:41:21.177 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/Abp/ApplicationConfigurationScript - - - 200 67912 application/javascript 330.5821ms
+2022-05-31 12:41:22.476 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/Abp/Languages/Switch?culture=zh-Hans&uiCulture=zh-Hans&returnUrl=%2FAccount%2FManage - -
+2022-05-31 12:41:22.480 +08:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.Localization.AbpLanguagesController.Switch (Volo.Abp.AspNetCore.Mvc)'
+2022-05-31 12:41:22.480 +08:00 [INF] Route matched with {area = "Abp", action = "Switch", controller = "AbpLanguages", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Switch(System.String, System.String, System.String) on controller Volo.Abp.AspNetCore.Mvc.Localization.AbpLanguagesController (Volo.Abp.AspNetCore.Mvc).
+2022-05-31 12:41:22.481 +08:00 [INF] Executing RedirectResult, redirecting to /Account/Manage.
+2022-05-31 12:41:22.481 +08:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.Localization.AbpLanguagesController.Switch (Volo.Abp.AspNetCore.Mvc) in 0.8314ms
+2022-05-31 12:41:22.481 +08:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.Localization.AbpLanguagesController.Switch (Volo.Abp.AspNetCore.Mvc)'
+2022-05-31 12:41:22.482 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/Abp/Languages/Switch?culture=zh-Hans&uiCulture=zh-Hans&returnUrl=%2FAccount%2FManage - - - 302 - - 5.7859ms
+2022-05-31 12:41:22.485 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/Account/Manage - -
+2022-05-31 12:41:22.488 +08:00 [INF] Executing endpoint '/Account/Manage'
+2022-05-31 12:41:22.488 +08:00 [INF] Route matched with {page = "/Account/Manage", area = "", action = "", controller = ""}. Executing page /Account/Manage
+2022-05-31 12:41:22.488 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2022-05-31 12:41:22.492 +08:00 [INF] Executing handler method Volo.Abp.Account.Web.Pages.Account.ManageModel.OnGetAsync - ModelState is "Valid"
+2022-05-31 12:41:22.654 +08:00 [INF] Executed handler method OnGetAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-05-31 12:41:22.654 +08:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-31 12:41:23.101 +08:00 [DBG] Added bundle 'Basic.Global' to the page in 0.54 ms.
+2022-05-31 12:41:23.104 +08:00 [DBG] Added bundle 'Basic.Global' to the page in 1.29 ms.
+2022-05-31 12:41:23.104 +08:00 [DBG] Added bundle 'Volo.Abp.Account.Web.Pages.Account.ManageModel' to the page in 0.45 ms.
+2022-05-31 12:41:23.108 +08:00 [INF] Executed page /Account/Manage in 619.7516ms
+2022-05-31 12:41:23.108 +08:00 [INF] Executed endpoint '/Account/Manage'
+2022-05-31 12:41:23.112 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/Account/Manage - - - 200 - text/html;+charset=utf-8 627.1353ms
+2022-05-31 12:41:23.143 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/Abp/ApplicationConfigurationScript - -
+2022-05-31 12:41:23.145 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_framework/aspnetcore-browser-refresh.js - -
+2022-05-31 12:41:23.146 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 0.7157ms
+2022-05-31 12:41:23.146 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/Abp/ServiceProxyScript - -
+2022-05-31 12:41:23.147 +08:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController.Get (Volo.Abp.AspNetCore.Mvc)'
+2022-05-31 12:41:23.147 +08:00 [INF] Route matched with {area = "Abp", action = "Get", controller = "AbpApplicationConfigurationScript", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Get() on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController (Volo.Abp.AspNetCore.Mvc).
+2022-05-31 12:41:23.148 +08:00 [DBG] Executing AbpApplicationConfigurationAppService.GetAsync()...
+2022-05-31 12:41:23.148 +08:00 [DBG] PermissionStore.GetCacheItemAsync: pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.Create,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.Update,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.Delete,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.ManagePermissions,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.Create,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.Update,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.Delete,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.ManagePermissions
+2022-05-31 12:41:23.161 +08:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController.GetAll (Volo.Abp.AspNetCore.Mvc)'
+2022-05-31 12:41:23.162 +08:00 [INF] Route matched with {area = "Abp", action = "GetAll", controller = "AbpServiceProxyScript", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAll(Volo.Abp.AspNetCore.Mvc.ProxyScripting.ServiceProxyGenerationModel) on controller Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController (Volo.Abp.AspNetCore.Mvc).
+2022-05-31 12:41:23.163 +08:00 [INF] Executing ContentResult with HTTP Response ContentType of application/javascript
+2022-05-31 12:41:23.164 +08:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController.GetAll (Volo.Abp.AspNetCore.Mvc) in 2.3972ms
+2022-05-31 12:41:23.164 +08:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController.GetAll (Volo.Abp.AspNetCore.Mvc)'
+2022-05-31 12:41:23.164 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/Abp/ServiceProxyScript - - - 200 8196 application/javascript 17.9917ms
+2022-05-31 12:41:23.170 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_vs/browserLink - -
+2022-05-31 12:41:23.180 +08:00 [DBG] Found in the cache: pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.Create,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.Update,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.Delete,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.ManagePermissions,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.Create,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.Update,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.Delete,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.ManagePermissions
+2022-05-31 12:41:23.180 +08:00 [DBG] PermissionStore.GetCacheItemAsync: pn:R,pk:admin,n:AbpIdentity.Roles,pn:R,pk:admin,n:AbpIdentity.Roles.Create,pn:R,pk:admin,n:AbpIdentity.Roles.Update,pn:R,pk:admin,n:AbpIdentity.Roles.Delete,pn:R,pk:admin,n:AbpIdentity.Roles.ManagePermissions,pn:R,pk:admin,n:AbpIdentity.Users,pn:R,pk:admin,n:AbpIdentity.Users.Create,pn:R,pk:admin,n:AbpIdentity.Users.Update,pn:R,pk:admin,n:AbpIdentity.Users.Delete,pn:R,pk:admin,n:AbpIdentity.Users.ManagePermissions
+2022-05-31 12:41:23.201 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 30.1483ms
+2022-05-31 12:41:23.210 +08:00 [DBG] Found in the cache: pn:R,pk:admin,n:AbpIdentity.Roles,pn:R,pk:admin,n:AbpIdentity.Roles.Create,pn:R,pk:admin,n:AbpIdentity.Roles.Update,pn:R,pk:admin,n:AbpIdentity.Roles.Delete,pn:R,pk:admin,n:AbpIdentity.Roles.ManagePermissions,pn:R,pk:admin,n:AbpIdentity.Users,pn:R,pk:admin,n:AbpIdentity.Users.Create,pn:R,pk:admin,n:AbpIdentity.Users.Update,pn:R,pk:admin,n:AbpIdentity.Users.Delete,pn:R,pk:admin,n:AbpIdentity.Users.ManagePermissions
+2022-05-31 12:41:23.956 +08:00 [DBG] Executed AbpApplicationConfigurationAppService.GetAsync().
+2022-05-31 12:41:23.971 +08:00 [INF] Executing ContentResult with HTTP Response ContentType of application/javascript
+2022-05-31 12:41:23.972 +08:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController.Get (Volo.Abp.AspNetCore.Mvc) in 824.3104ms
+2022-05-31 12:41:23.972 +08:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController.Get (Volo.Abp.AspNetCore.Mvc)'
+2022-05-31 12:41:23.980 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/Abp/ApplicationConfigurationScript - - - 200 63466 application/javascript 837.3705ms
+2022-05-31 12:41:26.716 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/Account/Manage - -
+2022-05-31 12:41:26.725 +08:00 [INF] Executing endpoint '/Account/Manage'
+2022-05-31 12:41:26.725 +08:00 [INF] Route matched with {page = "/Account/Manage", area = "", action = "", controller = ""}. Executing page /Account/Manage
+2022-05-31 12:41:26.725 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2022-05-31 12:41:26.727 +08:00 [INF] Executing handler method Volo.Abp.Account.Web.Pages.Account.ManageModel.OnGetAsync - ModelState is "Valid"
+2022-05-31 12:41:26.960 +08:00 [INF] Executed handler method OnGetAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-05-31 12:41:26.961 +08:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-31 12:41:27.801 +08:00 [DBG] Added bundle 'Basic.Global' to the page in 0.60 ms.
+2022-05-31 12:41:27.805 +08:00 [DBG] Added bundle 'Basic.Global' to the page in 1.89 ms.
+2022-05-31 12:41:27.806 +08:00 [DBG] Added bundle 'Volo.Abp.Account.Web.Pages.Account.ManageModel' to the page in 0.41 ms.
+2022-05-31 12:41:27.810 +08:00 [INF] Executed page /Account/Manage in 1084.651ms
+2022-05-31 12:41:27.810 +08:00 [INF] Executed endpoint '/Account/Manage'
+2022-05-31 12:41:27.813 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/Account/Manage - - - 200 - text/html;+charset=utf-8 1097.3251ms
+2022-05-31 12:41:27.840 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/Abp/ApplicationConfigurationScript - -
+2022-05-31 12:41:27.846 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_framework/aspnetcore-browser-refresh.js - -
+2022-05-31 12:41:27.847 +08:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController.Get (Volo.Abp.AspNetCore.Mvc)'
+2022-05-31 12:41:27.847 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/Abp/ServiceProxyScript - -
+2022-05-31 12:41:27.847 +08:00 [INF] Route matched with {area = "Abp", action = "Get", controller = "AbpApplicationConfigurationScript", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Get() on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController (Volo.Abp.AspNetCore.Mvc).
+2022-05-31 12:41:27.847 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 0.7026ms
+2022-05-31 12:41:27.848 +08:00 [DBG] Executing AbpApplicationConfigurationAppService.GetAsync()...
+2022-05-31 12:41:27.849 +08:00 [DBG] PermissionStore.GetCacheItemAsync: pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.Create,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.Update,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.Delete,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.ManagePermissions,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.Create,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.Update,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.Delete,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.ManagePermissions
+2022-05-31 12:41:27.862 +08:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController.GetAll (Volo.Abp.AspNetCore.Mvc)'
+2022-05-31 12:41:27.862 +08:00 [INF] Route matched with {area = "Abp", action = "GetAll", controller = "AbpServiceProxyScript", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAll(Volo.Abp.AspNetCore.Mvc.ProxyScripting.ServiceProxyGenerationModel) on controller Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController (Volo.Abp.AspNetCore.Mvc).
+2022-05-31 12:41:27.866 +08:00 [INF] Executing ContentResult with HTTP Response ContentType of application/javascript
+2022-05-31 12:41:27.867 +08:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController.GetAll (Volo.Abp.AspNetCore.Mvc) in 4.8122ms
+2022-05-31 12:41:27.867 +08:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController.GetAll (Volo.Abp.AspNetCore.Mvc)'
+2022-05-31 12:41:27.867 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/Abp/ServiceProxyScript - - - 200 8196 application/javascript 20.4821ms
+2022-05-31 12:41:27.868 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_vs/browserLink - -
+2022-05-31 12:41:27.891 +08:00 [DBG] Found in the cache: pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.Create,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.Update,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.Delete,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.ManagePermissions,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.Create,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.Update,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.Delete,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.ManagePermissions
+2022-05-31 12:41:27.891 +08:00 [DBG] PermissionStore.GetCacheItemAsync: pn:R,pk:admin,n:AbpIdentity.Roles,pn:R,pk:admin,n:AbpIdentity.Roles.Create,pn:R,pk:admin,n:AbpIdentity.Roles.Update,pn:R,pk:admin,n:AbpIdentity.Roles.Delete,pn:R,pk:admin,n:AbpIdentity.Roles.ManagePermissions,pn:R,pk:admin,n:AbpIdentity.Users,pn:R,pk:admin,n:AbpIdentity.Users.Create,pn:R,pk:admin,n:AbpIdentity.Users.Update,pn:R,pk:admin,n:AbpIdentity.Users.Delete,pn:R,pk:admin,n:AbpIdentity.Users.ManagePermissions
+2022-05-31 12:41:27.895 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 27.2777ms
+2022-05-31 12:41:27.921 +08:00 [DBG] Found in the cache: pn:R,pk:admin,n:AbpIdentity.Roles,pn:R,pk:admin,n:AbpIdentity.Roles.Create,pn:R,pk:admin,n:AbpIdentity.Roles.Update,pn:R,pk:admin,n:AbpIdentity.Roles.Delete,pn:R,pk:admin,n:AbpIdentity.Roles.ManagePermissions,pn:R,pk:admin,n:AbpIdentity.Users,pn:R,pk:admin,n:AbpIdentity.Users.Create,pn:R,pk:admin,n:AbpIdentity.Users.Update,pn:R,pk:admin,n:AbpIdentity.Users.Delete,pn:R,pk:admin,n:AbpIdentity.Users.ManagePermissions
+2022-05-31 12:41:28.187 +08:00 [DBG] Executed AbpApplicationConfigurationAppService.GetAsync().
+2022-05-31 12:41:28.215 +08:00 [INF] Executing ContentResult with HTTP Response ContentType of application/javascript
+2022-05-31 12:41:28.217 +08:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController.Get (Volo.Abp.AspNetCore.Mvc) in 370.0714ms
+2022-05-31 12:41:28.217 +08:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController.Get (Volo.Abp.AspNetCore.Mvc)'
+2022-05-31 12:41:28.221 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/Abp/ApplicationConfigurationScript - - - 200 63466 application/javascript 381.1396ms
+2022-05-31 12:41:29.164 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/ - -
+2022-05-31 12:41:29.169 +08:00 [INF] Executing endpoint '/Index'
+2022-05-31 12:41:29.169 +08:00 [INF] Route matched with {page = "/Index", area = "", action = "", controller = ""}. Executing page /Index
+2022-05-31 12:41:29.169 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2022-05-31 12:41:29.170 +08:00 [INF] Executing handler method Mars.Pages.IndexModel.OnGet - ModelState is "Valid"
+2022-05-31 12:41:29.170 +08:00 [INF] Executed handler method OnGet, returned result .
+2022-05-31 12:41:29.170 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2022-05-31 12:41:29.170 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-05-31 12:41:29.172 +08:00 [DBG] Added bundle 'Basic.Global' to the page in 0.42 ms.
+2022-05-31 12:41:29.175 +08:00 [DBG] Added bundle 'Basic.Global' to the page in 2.07 ms.
+2022-05-31 12:41:29.181 +08:00 [INF] Executed page /Index in 11.9321ms
+2022-05-31 12:41:29.181 +08:00 [INF] Executed endpoint '/Index'
+2022-05-31 12:41:29.184 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/ - - - 200 - text/html;+charset=utf-8 20.1002ms
+2022-05-31 12:41:29.211 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/Abp/ServiceProxyScript - -
+2022-05-31 12:41:29.212 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/Abp/ApplicationConfigurationScript - -
+2022-05-31 12:41:29.214 +08:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController.GetAll (Volo.Abp.AspNetCore.Mvc)'
+2022-05-31 12:41:29.214 +08:00 [INF] Route matched with {area = "Abp", action = "GetAll", controller = "AbpServiceProxyScript", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAll(Volo.Abp.AspNetCore.Mvc.ProxyScripting.ServiceProxyGenerationModel) on controller Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController (Volo.Abp.AspNetCore.Mvc).
+2022-05-31 12:41:29.215 +08:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController.Get (Volo.Abp.AspNetCore.Mvc)'
+2022-05-31 12:41:29.215 +08:00 [INF] Route matched with {area = "Abp", action = "Get", controller = "AbpApplicationConfigurationScript", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Get() on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController (Volo.Abp.AspNetCore.Mvc).
+2022-05-31 12:41:29.216 +08:00 [DBG] Executing AbpApplicationConfigurationAppService.GetAsync()...
+2022-05-31 12:41:29.216 +08:00 [DBG] PermissionStore.GetCacheItemAsync: pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.Create,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.Update,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.Delete,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.ManagePermissions,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.Create,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.Update,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.Delete,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.ManagePermissions
+2022-05-31 12:41:29.216 +08:00 [INF] Executing ContentResult with HTTP Response ContentType of application/javascript
+2022-05-31 12:41:29.220 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_framework/aspnetcore-browser-refresh.js - -
+2022-05-31 12:41:29.222 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 2.9037ms
+2022-05-31 12:41:29.232 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_vs/browserLink - -
+2022-05-31 12:41:29.232 +08:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController.GetAll (Volo.Abp.AspNetCore.Mvc) in 17.3605ms
+2022-05-31 12:41:29.232 +08:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController.GetAll (Volo.Abp.AspNetCore.Mvc)'
+2022-05-31 12:41:29.232 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/Abp/ServiceProxyScript - - - 200 8196 application/javascript 21.1684ms
+2022-05-31 12:41:29.256 +08:00 [DBG] Found in the cache: pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.Create,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.Update,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.Delete,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Roles.ManagePermissions,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.Create,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.Update,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.Delete,pn:U,pk:3a0425e2-08ef-1f5f-2170-cc7c4695b6ed,n:AbpIdentity.Users.ManagePermissions
+2022-05-31 12:41:29.256 +08:00 [DBG] PermissionStore.GetCacheItemAsync: pn:R,pk:admin,n:AbpIdentity.Roles,pn:R,pk:admin,n:AbpIdentity.Roles.Create,pn:R,pk:admin,n:AbpIdentity.Roles.Update,pn:R,pk:admin,n:AbpIdentity.Roles.Delete,pn:R,pk:admin,n:AbpIdentity.Roles.ManagePermissions,pn:R,pk:admin,n:AbpIdentity.Users,pn:R,pk:admin,n:AbpIdentity.Users.Create,pn:R,pk:admin,n:AbpIdentity.Users.Update,pn:R,pk:admin,n:AbpIdentity.Users.Delete,pn:R,pk:admin,n:AbpIdentity.Users.ManagePermissions
+2022-05-31 12:41:29.265 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 33.3950ms
+2022-05-31 12:41:29.286 +08:00 [DBG] Found in the cache: pn:R,pk:admin,n:AbpIdentity.Roles,pn:R,pk:admin,n:AbpIdentity.Roles.Create,pn:R,pk:admin,n:AbpIdentity.Roles.Update,pn:R,pk:admin,n:AbpIdentity.Roles.Delete,pn:R,pk:admin,n:AbpIdentity.Roles.ManagePermissions,pn:R,pk:admin,n:AbpIdentity.Users,pn:R,pk:admin,n:AbpIdentity.Users.Create,pn:R,pk:admin,n:AbpIdentity.Users.Update,pn:R,pk:admin,n:AbpIdentity.Users.Delete,pn:R,pk:admin,n:AbpIdentity.Users.ManagePermissions
+2022-05-31 12:41:29.527 +08:00 [DBG] Executed AbpApplicationConfigurationAppService.GetAsync().
+2022-05-31 12:41:29.536 +08:00 [INF] Executing ContentResult with HTTP Response ContentType of application/javascript
+2022-05-31 12:41:29.537 +08:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController.Get (Volo.Abp.AspNetCore.Mvc) in 322.4634ms
+2022-05-31 12:41:29.538 +08:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController.Get (Volo.Abp.AspNetCore.Mvc)'
+2022-05-31 12:41:29.540 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44379/Abp/ApplicationConfigurationScript - - - 200 63466 application/javascript 327.3049ms
