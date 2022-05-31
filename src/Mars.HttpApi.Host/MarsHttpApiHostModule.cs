@@ -105,10 +105,22 @@ public class MarsHttpApiHostModule : AbpModule
                 options.SwaggerDoc("v1", new OpenApiInfo { Title = "Mars API", Version = "v1" });
                 options.DocInclusionPredicate((docName, description) => true);
                 options.CustomSchemaIds(type => type.FullName);
+
                 options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Mars.HttpApi.xml"));
                 options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Mars.Application.Contracts.xml"));
+
+                options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Volo.Abp.Account.HttpApi.xml"));
+                options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Volo.Abp.Account.Application.Contracts.xml"));
                 options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Volo.Abp.FeatureManagement.HttpApi.xml"));
                 options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Volo.Abp.FeatureManagement.Application.Contracts.xml"));
+                options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Volo.Abp.Identity.HttpApi.xml"));
+                options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Volo.Abp.Identity.Application.Contracts.xml"));
+                options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Volo.Abp.PermissionManagement.HttpApi.xml"));
+                options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Volo.Abp.PermissionManagement.Application.Contracts.xml"));
+                options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Volo.Abp.SettingManagement.HttpApi.xml"));
+                options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Volo.Abp.SettingManagement.Application.Contracts.xml"));
+                options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Volo.Abp.TenantManagement.HttpApi.xml"));
+                options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Volo.Abp.TenantManagement.Application.Contracts.xml"));
             });
     }
 
