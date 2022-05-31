@@ -1,13 +1,4 @@
-﻿using System.Threading;
-using System.Threading.Tasks;
-using Mars.Domain.Data;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Serilog;
-using Volo.Abp;
-
-namespace Mars.DbMigrator;
+﻿namespace Mars.DbMigrator;
 
 public class DbMigratorHostedService : IHostedService
 {
@@ -22,24 +13,22 @@ public class DbMigratorHostedService : IHostedService
 
     public async Task StartAsync(CancellationToken cancellationToken)
     {
-        using (var application = await AbpApplicationFactory.CreateAsync<MarsDbMigratorModule>(options =>
+        using var application = await AbpApplicationFactory.CreateAsync<MarsDbMigratorModule>(options =>
         {
-           options.Services.ReplaceConfiguration(_configuration);
-           options.UseAutofac();
-           options.Services.AddLogging(c => c.AddSerilog());
-        }))
-        {
-            await application.InitializeAsync();
+            options.Services.ReplaceConfiguration(_configuration);
+            options.UseAutofac();
+            options.Services.AddLogging(c => c.AddSerilog());
+        });
+        await application.InitializeAsync();
 
-            await application
-                .ServiceProvider
-                .GetRequiredService<MarsDbMigrationService>()
-                .MigrateAsync();
+        await application
+            .ServiceProvider
+            .GetRequiredService<MarsDbMigrationService>()
+            .MigrateAsync();
 
-            await application.ShutdownAsync();
+        await application.ShutdownAsync();
 
-            _hostApplicationLifetime.StopApplication();
-        }
+        _hostApplicationLifetime.StopApplication();
     }
 
     public Task StopAsync(CancellationToken cancellationToken)

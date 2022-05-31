@@ -1,10 +1,4 @@
-﻿using Mars.Application.Contracts;
-using Mars.EntityFrameworkCore;
-using Volo.Abp.Autofac;
-using Volo.Abp.BackgroundJobs;
-using Volo.Abp.Modularity;
-
-namespace Mars.DbMigrator;
+﻿namespace Mars.DbMigrator;
 
 [DependsOn(
     typeof(AbpAutofacModule),
@@ -13,6 +7,16 @@ namespace Mars.DbMigrator;
     )]
 public class MarsDbMigratorModule : AbpModule
 {
+    //// 表前缀
+    //public override void PreConfigureServices(ServiceConfigurationContext context)
+    //{
+    //    AbpCommonDbProperties.DbTablePrefix = "mars_";
+    //    AbpPermissionManagementDbProperties.DbTablePrefix = "mars_";
+    //    AbpSettingManagementDbProperties.DbTablePrefix = "mars_";
+    //    AbpIdentityDbProperties.DbTablePrefix = "mars_";
+    //    AbpIdentityServerDbProperties.DbTablePrefix = "ids4_";
+    //}
+
     public override void ConfigureServices(ServiceConfigurationContext context)
     {
         Configure<AbpBackgroundJobOptions>(options => options.IsJobExecutionEnabled = false);
