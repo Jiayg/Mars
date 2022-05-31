@@ -1,6 +1,9 @@
-﻿global using Localization.Resources.AbpUi;
+﻿global using System.Threading.Tasks;
+global using Localization.Resources.AbpUi;
 global using Mars.Application.Contracts;
+global using Mars.Application.Contracts.Services;
 global using Mars.Domain.Shared.Localization;
+global using Microsoft.AspNetCore.Mvc;
 global using Volo.Abp.Account;
 global using Volo.Abp.AspNetCore.Mvc;
 global using Volo.Abp.Identity;

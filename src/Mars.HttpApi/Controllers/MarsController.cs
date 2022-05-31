@@ -1,4 +1,4 @@
-﻿namespace Mars.Controllers;
+﻿namespace Mars.HttpApi.Controllers;
 
 /* Inherit your controllers from this class.
  */

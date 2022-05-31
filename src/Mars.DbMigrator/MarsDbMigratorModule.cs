@@ -1,4 +1,10 @@
-﻿namespace Mars.DbMigrator;
+﻿using Volo.Abp.Data;
+using Volo.Abp.Identity;
+using Volo.Abp.IdentityServer;
+using Volo.Abp.PermissionManagement;
+using Volo.Abp.SettingManagement;
+
+namespace Mars.DbMigrator;
 
 [DependsOn(
     typeof(AbpAutofacModule),

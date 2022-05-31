@@ -105,6 +105,10 @@ public class MarsHttpApiHostModule : AbpModule
                 options.SwaggerDoc("v1", new OpenApiInfo { Title = "Mars API", Version = "v1" });
                 options.DocInclusionPredicate((docName, description) => true);
                 options.CustomSchemaIds(type => type.FullName);
+                options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Mars.HttpApi.xml"));
+                options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Mars.Application.Contracts.xml"));
+                options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Volo.Abp.FeatureManagement.HttpApi.xml"));
+                options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Volo.Abp.FeatureManagement.Application.Contracts.xml"));
             });
     }
 

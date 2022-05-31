@@ -8,6 +8,11 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <PackageReference Include="DistributedLock.Redis" Version="1.0.1" /> 
+	  <PackageReference Include="Volo.Abp.DistributedLocking" Version="5.2.2" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<ProjectReference Include="..\..\modules\AccountManagement\Volo.Abp.Account.Application\Volo.Abp.Account.Application.csproj" />
 		<ProjectReference Include="..\..\modules\IdentityManagement\Volo.Abp.Identity.Application\Volo.Abp.Identity.Application.csproj" />
 		<ProjectReference Include="..\..\modules\PermissionManagement\Volo.Abp.PermissionManagement.Application\Volo.Abp.PermissionManagement.Application.csproj" />

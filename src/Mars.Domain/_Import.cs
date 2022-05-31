@@ -31,5 +31,6 @@ global using Volo.Abp.PermissionManagement;
 global using Volo.Abp.PermissionManagement.Identity;
 global using Volo.Abp.PermissionManagement.IdentityServer;
 global using Volo.Abp.SettingManagement;
+global using Volo.Abp.Settings;
 global using Volo.Abp.TenantManagement;
 global using Volo.Abp.Uow;

@@ -1,4 +1,5 @@
-﻿global using Mars.Domain.Shared;
+﻿global using System.Threading.Tasks;
+global using Mars.Domain.Shared;
 global using Mars.Domain.Shared.Localization;
 global using Volo.Abp.Account;
 global using Volo.Abp.Authorization.Permissions;

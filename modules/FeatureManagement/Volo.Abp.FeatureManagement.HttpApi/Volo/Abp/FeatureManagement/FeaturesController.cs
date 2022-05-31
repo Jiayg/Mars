@@ -1,4 +1,5 @@
 ﻿using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Volo.Abp.AspNetCore.Mvc;
 using Volo.Abp.FeatureManagement.Dtos;
@@ -18,12 +19,25 @@ public class FeaturesController : AbpControllerBase, IFeatureAppService
         _featureAppService = featureAppService;
     }
 
+    /// <summary>
+    /// 查询特征
+    /// </summary>
+    /// <param name="providerName"></param>
+    /// <param name="providerKey"></param>
+    /// <returns></returns>
     [HttpGet]
     public virtual Task<GetFeatureListResultDto> GetAsync(string providerName, string providerKey)
     {
         return _featureAppService.GetAsync(providerName, providerKey);
     }
 
+    /// <summary>
+    /// 修改特征
+    /// </summary>
+    /// <param name="providerName"></param>
+    /// <param name="providerKey"></param>
+    /// <param name="input"></param>
+    /// <returns></returns>
     [HttpPut]
     public virtual Task UpdateAsync(string providerName, string providerKey, UpdateFeaturesDto input)
     {

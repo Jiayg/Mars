@@ -6,9 +6,11 @@
 		<AssemblyName>Volo.Abp.Identity.Application.Contracts</AssemblyName>
 		<PackageId>Volo.Abp.Identity.Application.Contracts</PackageId>
 		<AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
 		<GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
 		<GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
 		<GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+		<NoWarn>$(NoWarn);1591</NoWarn>
 		<RootNamespace />
 	</PropertyGroup>
 
