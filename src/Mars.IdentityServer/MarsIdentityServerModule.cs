@@ -74,13 +74,6 @@ public class MarsIdentityServerModule : AbpModule
             options.KeyPrefix = "Mars:";
         });
 
-        var dataProtectionBuilder = context.Services.AddDataProtection().SetApplicationName("Mars");
-        if (!hostingEnvironment.IsDevelopment())
-        {
-            var redis = ConnectionMultiplexer.Connect(configuration["Redis:Configuration"]);
-            dataProtectionBuilder.PersistKeysToStackExchangeRedis(redis, "Mars-Protection-Keys");
-        }
-
         context.Services.AddCors(options =>
         {
             options.AddDefaultPolicy(builder =>

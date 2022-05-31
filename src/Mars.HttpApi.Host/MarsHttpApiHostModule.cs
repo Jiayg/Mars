@@ -14,24 +14,28 @@ public class MarsHttpApiHostModule : AbpModule
 {
     public override void ConfigureServices(ServiceConfigurationContext context)
     {
-        var configuration = context.Services.GetConfiguration();
-        var hostingEnvironment = context.Services.GetHostingEnvironment();
+        var configuration = context.Services.GetConfiguration(); 
 
-        ConfigureConventionalControllers();
         ConfigureAuthentication(context, configuration);
         ConfigureLocalization();
-        ConfigureCache(configuration);
+        ConfigureCache();
         ConfigureVirtualFileSystem(context);
-        ConfigureDataProtection(context, configuration, hostingEnvironment);
         ConfigureCors(context, configuration);
         ConfigureSwaggerServices(context, configuration);
     }
 
-    private void ConfigureCache(IConfiguration configuration)
+    /// <summary>
+    /// 缓存前缀
+    /// </summary>
+    private void ConfigureCache()
     {
         Configure<AbpDistributedCacheOptions>(options => { options.KeyPrefix = "Mars:"; });
     }
 
+    /// <summary>
+    /// 虚拟文件
+    /// </summary>
+    /// <param name="context"></param>
     private void ConfigureVirtualFileSystem(ServiceConfigurationContext context)
     {
         var hostingEnvironment = context.Services.GetHostingEnvironment();
@@ -56,15 +60,22 @@ public class MarsHttpApiHostModule : AbpModule
         }
     }
 
+    /// <summary>
+    /// 动态api 废弃
+    /// </summary>
     private void ConfigureConventionalControllers()
     {
-        // 动态api
-        //Configure<AbpAspNetCoreMvcOptions>(options =>
-        //{
-        //    options.ConventionalControllers.Create(typeof(MarsApplicationModule).Assembly);
-        //});
+        Configure<AbpAspNetCoreMvcOptions>(options =>
+        {
+            options.ConventionalControllers.Create(typeof(MarsApplicationModule).Assembly);
+        });
     }
 
+    /// <summary>
+    /// 身份认证
+    /// </summary>
+    /// <param name="context"></param>
+    /// <param name="configuration"></param>
     private void ConfigureAuthentication(ServiceConfigurationContext context, IConfiguration configuration)
     {
         context.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -76,6 +87,11 @@ public class MarsHttpApiHostModule : AbpModule
             });
     }
 
+    /// <summary>
+    /// 接口文档
+    /// </summary>
+    /// <param name="context"></param>
+    /// <param name="configuration"></param>
     private static void ConfigureSwaggerServices(ServiceConfigurationContext context, IConfiguration configuration)
     {
         context.Services.AddAbpSwaggerGenWithOAuth(
@@ -92,6 +108,9 @@ public class MarsHttpApiHostModule : AbpModule
             });
     }
 
+    /// <summary>
+    /// 多语言
+    /// </summary>
     private void ConfigureLocalization()
     {
         Configure<AbpLocalizationOptions>(options =>
@@ -101,19 +120,11 @@ public class MarsHttpApiHostModule : AbpModule
         });
     }
 
-    private void ConfigureDataProtection(
-        ServiceConfigurationContext context,
-        IConfiguration configuration,
-        IWebHostEnvironment hostingEnvironment)
-    {
-        var dataProtectionBuilder = context.Services.AddDataProtection().SetApplicationName("Mars");
-        if (!hostingEnvironment.IsDevelopment())
-        {
-            var redis = ConnectionMultiplexer.Connect(configuration["Redis:Configuration"]);
-            dataProtectionBuilder.PersistKeysToStackExchangeRedis(redis, "Mars-Protection-Keys");
-        }
-    }
-
+    /// <summary>
+    /// 跨越
+    /// </summary>
+    /// <param name="context"></param>
+    /// <param name="configuration"></param>
     private void ConfigureCors(ServiceConfigurationContext context, IConfiguration configuration)
     {
         context.Services.AddCors(options =>
