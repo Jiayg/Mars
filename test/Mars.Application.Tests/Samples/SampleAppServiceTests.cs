@@ -1,6 +1,8 @@
 ﻿using Shouldly;
 using System.Threading.Tasks;
-using Volo.Abp.Identity;
+using Volo.Abp.Identity.Dtos;
+using Volo.Abp.Identity.Dtos.Users;
+using Volo.Abp.Identity.Services;
 using Xunit;
 
 namespace Mars.Samples;

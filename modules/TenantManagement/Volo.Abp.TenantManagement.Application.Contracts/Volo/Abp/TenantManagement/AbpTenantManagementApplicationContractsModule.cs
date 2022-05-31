@@ -3,6 +3,7 @@ using Volo.Abp.Authorization;
 using Volo.Abp.Modularity;
 using Volo.Abp.ObjectExtending;
 using Volo.Abp.ObjectExtending.Modularity;
+using Volo.Abp.TenantManagement.Dtos;
 using Volo.Abp.Threading;
 
 namespace Volo.Abp.TenantManagement;

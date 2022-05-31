@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Volo.Abp.Account;
+using Volo.Abp.Account.Services;
 using Volo.Abp.DependencyInjection;
 
 namespace Mars.HttpApi.Client.ConsoleTestApp;

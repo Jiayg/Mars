@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Threading.Tasks;
 using Volo.Abp.DependencyInjection;
+using Volo.Abp.Identity.Services;
 
 namespace Volo.Abp.Identity;
 

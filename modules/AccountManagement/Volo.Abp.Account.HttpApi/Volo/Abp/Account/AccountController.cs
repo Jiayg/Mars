@@ -1,7 +1,9 @@
 ﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Volo.Abp.Account.Dtos;
+using Volo.Abp.Account.Services;
 using Volo.Abp.AspNetCore.Mvc;
-using Volo.Abp.Identity;
+using Volo.Abp.Identity.Dtos.Users;
 
 namespace Volo.Abp.Account;
 

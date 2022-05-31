@@ -1,4 +1,4 @@
-namespace Mars;
+namespace Mars.HttpApi.Host;
 
 [DependsOn(
     typeof(MarsHttpApiModule),

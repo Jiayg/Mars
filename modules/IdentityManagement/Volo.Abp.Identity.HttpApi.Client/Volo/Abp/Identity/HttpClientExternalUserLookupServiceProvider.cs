@@ -4,6 +4,9 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Volo.Abp.DependencyInjection;
+using Volo.Abp.Identity.Dtos;
+using Volo.Abp.Identity.Dtos.UserLookups;
+using Volo.Abp.Identity.Services;
 using Volo.Abp.Users;
 
 namespace Volo.Abp.Identity;

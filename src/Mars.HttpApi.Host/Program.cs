@@ -1,8 +1,8 @@
-﻿namespace Mars;
+﻿namespace Mars.HttpApi.Host;
 
 public class Program
 {
-    public async static Task<int> Main(string[] args)
+    public async static Task Main(string[] args)
     {
         Log.Logger = new LoggerConfiguration()
 #if DEBUG
@@ -19,27 +19,26 @@ public class Program
 #endif
             .CreateLogger();
 
-        try
+        var builder = WebApplication.CreateBuilder(args);
+        builder.Host.ConfigureAppConfiguration((context, config) =>
         {
-            Log.Information("Starting Mars.HttpApi.Host.");
-            var builder = WebApplication.CreateBuilder(args);
-            builder.Host.AddAppSettingsSecretsJson()
-                .UseAutofac()
-                .UseSerilog();
-            await builder.AddApplicationAsync<MarsHttpApiHostModule>();
-            var app = builder.Build();
-            await app.InitializeApplicationAsync();
-            await app.RunAsync();
-            return 0;
-        }
-        catch (Exception ex)
-        {
-            Log.Fatal(ex, "Host terminated unexpectedly!");
-            return 1;
-        }
-        finally
-        {
-            Log.CloseAndFlush();
-        }
+            var env = context.HostingEnvironment;
+            //context.Configuration = config.Build();
+            //config.AddConsul(item,
+            //                options =>
+            //                {
+            //                    options.Optional = true;
+            //                    options.ReloadOnChange = true;
+            //                    options.OnLoadException = exceptionContext => { exceptionContext.Ignore = true; };
+            //                    options.ConsulConfigurationOptions = cco => { cco.Address = new Uri(consul_url); };
+            //                }).AddEnvironmentVariables();
+        })
+        .UseAutofac()
+        .UseSerilog();
+
+        await builder.AddApplicationAsync<MarsHttpApiHostModule>();
+        var app = builder.Build();
+        await app.InitializeApplicationAsync();
+        await app.RunAsync();
     }
 }

@@ -1,4 +1,5 @@
-﻿using Volo.Abp.AutoMapper;
+﻿using Volo.Abp.Account.AutoMapper;
+using Volo.Abp.AutoMapper;
 using Volo.Abp.Emailing;
 using Volo.Abp.Identity;
 using Volo.Abp.Modularity;

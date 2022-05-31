@@ -1,4 +1,5 @@
-﻿using Volo.Abp.Users;
+﻿using Volo.Abp.Identity.Dtos.Users;
+using Volo.Abp.Users;
 
 namespace Volo.Abp.Identity;
 

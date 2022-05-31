@@ -6,7 +6,8 @@ using Volo.Abp.Http.Client;
 using Volo.Abp.Http.Modeling;
 using Volo.Abp.DependencyInjection;
 using Volo.Abp.Http.Client.ClientProxying;
-using Volo.Abp.SettingManagement;
+using Volo.Abp.SettingManagement.Services;
+using Volo.Abp.SettingManagement.Dtos;
 
 // ReSharper disable once CheckNamespace
 namespace Volo.Abp.SettingManagement.ClientProxies;
