@@ -13,6 +13,5 @@ public abstract class TenantCreateOrUpdateDtoBase : ExtensibleObject
 
     public TenantCreateOrUpdateDtoBase() : base(false)
     {
-
     }
 }

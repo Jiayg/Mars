@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
@@ -14,8 +13,7 @@ namespace Mars.EntityFrameworkCore.Migrations
 
             migrationBuilder.CreateTable(
                 name: "AbpClaimTypes",
-                columns: table => new
-                {
+                columns: table => new {
                     Id = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     Name = table.Column<string>(type: "varchar(256)", maxLength: 256, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
@@ -41,8 +39,7 @@ namespace Mars.EntityFrameworkCore.Migrations
 
             migrationBuilder.CreateTable(
                 name: "AbpFeatureValues",
-                columns: table => new
-                {
+                columns: table => new {
                     Id = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     Name = table.Column<string>(type: "varchar(128)", maxLength: 128, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
@@ -61,8 +58,7 @@ namespace Mars.EntityFrameworkCore.Migrations
 
             migrationBuilder.CreateTable(
                 name: "AbpLinkUsers",
-                columns: table => new
-                {
+                columns: table => new {
                     Id = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     SourceUserId = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     SourceTenantId = table.Column<Guid>(type: "char(36)", nullable: true, collation: "ascii_general_ci"),
@@ -77,8 +73,7 @@ namespace Mars.EntityFrameworkCore.Migrations
 
             migrationBuilder.CreateTable(
                 name: "AbpOrganizationUnits",
-                columns: table => new
-                {
+                columns: table => new {
                     Id = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     TenantId = table.Column<Guid>(type: "char(36)", nullable: true, collation: "ascii_general_ci"),
                     ParentId = table.Column<Guid>(type: "char(36)", nullable: true, collation: "ascii_general_ci"),
@@ -111,8 +106,7 @@ namespace Mars.EntityFrameworkCore.Migrations
 
             migrationBuilder.CreateTable(
                 name: "AbpPermissionGrants",
-                columns: table => new
-                {
+                columns: table => new {
                     Id = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     TenantId = table.Column<Guid>(type: "char(36)", nullable: true, collation: "ascii_general_ci"),
                     Name = table.Column<string>(type: "varchar(128)", maxLength: 128, nullable: false)
@@ -130,8 +124,7 @@ namespace Mars.EntityFrameworkCore.Migrations
 
             migrationBuilder.CreateTable(
                 name: "AbpRoles",
-                columns: table => new
-                {
+                columns: table => new {
                     Id = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     TenantId = table.Column<Guid>(type: "char(36)", nullable: true, collation: "ascii_general_ci"),
                     Name = table.Column<string>(type: "varchar(256)", maxLength: 256, nullable: false)
@@ -154,8 +147,7 @@ namespace Mars.EntityFrameworkCore.Migrations
 
             migrationBuilder.CreateTable(
                 name: "AbpSecurityLogs",
-                columns: table => new
-                {
+                columns: table => new {
                     Id = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     TenantId = table.Column<Guid>(type: "char(36)", nullable: true, collation: "ascii_general_ci"),
                     ApplicationName = table.Column<string>(type: "varchar(96)", maxLength: 96, nullable: true)
@@ -191,8 +183,7 @@ namespace Mars.EntityFrameworkCore.Migrations
 
             migrationBuilder.CreateTable(
                 name: "AbpSettings",
-                columns: table => new
-                {
+                columns: table => new {
                     Id = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     Name = table.Column<string>(type: "varchar(128)", maxLength: 128, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
@@ -211,8 +202,7 @@ namespace Mars.EntityFrameworkCore.Migrations
 
             migrationBuilder.CreateTable(
                 name: "AbpTenants",
-                columns: table => new
-                {
+                columns: table => new {
                     Id = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     Name = table.Column<string>(type: "varchar(64)", maxLength: 64, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
@@ -236,8 +226,7 @@ namespace Mars.EntityFrameworkCore.Migrations
 
             migrationBuilder.CreateTable(
                 name: "AbpUsers",
-                columns: table => new
-                {
+                columns: table => new {
                     Id = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     TenantId = table.Column<Guid>(type: "char(36)", nullable: true, collation: "ascii_general_ci"),
                     UserName = table.Column<string>(type: "varchar(256)", maxLength: 256, nullable: false)
@@ -286,8 +275,7 @@ namespace Mars.EntityFrameworkCore.Migrations
 
             migrationBuilder.CreateTable(
                 name: "IdentityServerApiResources",
-                columns: table => new
-                {
+                columns: table => new {
                     Id = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     Name = table.Column<string>(type: "varchar(200)", maxLength: 200, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
@@ -319,8 +307,7 @@ namespace Mars.EntityFrameworkCore.Migrations
 
             migrationBuilder.CreateTable(
                 name: "IdentityServerApiScopes",
-                columns: table => new
-                {
+                columns: table => new {
                     Id = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     Enabled = table.Column<bool>(type: "tinyint(1)", nullable: false),
                     Name = table.Column<string>(type: "varchar(200)", maxLength: 200, nullable: false)
@@ -352,8 +339,7 @@ namespace Mars.EntityFrameworkCore.Migrations
 
             migrationBuilder.CreateTable(
                 name: "IdentityServerClients",
-                columns: table => new
-                {
+                columns: table => new {
                     Id = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     ClientId = table.Column<string>(type: "varchar(200)", maxLength: 200, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
@@ -426,8 +412,7 @@ namespace Mars.EntityFrameworkCore.Migrations
 
             migrationBuilder.CreateTable(
                 name: "IdentityServerDeviceFlowCodes",
-                columns: table => new
-                {
+                columns: table => new {
                     Id = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     DeviceCode = table.Column<string>(type: "varchar(200)", maxLength: 200, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
@@ -459,8 +444,7 @@ namespace Mars.EntityFrameworkCore.Migrations
 
             migrationBuilder.CreateTable(
                 name: "IdentityServerIdentityResources",
-                columns: table => new
-                {
+                columns: table => new {
                     Id = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     Name = table.Column<string>(type: "varchar(200)", maxLength: 200, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
@@ -492,8 +476,7 @@ namespace Mars.EntityFrameworkCore.Migrations
 
             migrationBuilder.CreateTable(
                 name: "IdentityServerPersistedGrants",
-                columns: table => new
-                {
+                columns: table => new {
                     Key = table.Column<string>(type: "varchar(200)", maxLength: 200, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Type = table.Column<string>(type: "varchar(50)", maxLength: 50, nullable: false)
@@ -525,8 +508,7 @@ namespace Mars.EntityFrameworkCore.Migrations
 
             migrationBuilder.CreateTable(
                 name: "AbpOrganizationUnitRoles",
-                columns: table => new
-                {
+                columns: table => new {
                     RoleId = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     OrganizationUnitId = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     TenantId = table.Column<Guid>(type: "char(36)", nullable: true, collation: "ascii_general_ci"),
@@ -553,8 +535,7 @@ namespace Mars.EntityFrameworkCore.Migrations
 
             migrationBuilder.CreateTable(
                 name: "AbpRoleClaims",
-                columns: table => new
-                {
+                columns: table => new {
                     Id = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     RoleId = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     TenantId = table.Column<Guid>(type: "char(36)", nullable: true, collation: "ascii_general_ci"),
@@ -577,8 +558,7 @@ namespace Mars.EntityFrameworkCore.Migrations
 
             migrationBuilder.CreateTable(
                 name: "AbpTenantConnectionStrings",
-                columns: table => new
-                {
+                columns: table => new {
                     TenantId = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     Name = table.Column<string>(type: "varchar(64)", maxLength: 64, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
@@ -599,8 +579,7 @@ namespace Mars.EntityFrameworkCore.Migrations
 
             migrationBuilder.CreateTable(
                 name: "AbpUserClaims",
-                columns: table => new
-                {
+                columns: table => new {
                     Id = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     UserId = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     TenantId = table.Column<Guid>(type: "char(36)", nullable: true, collation: "ascii_general_ci"),
@@ -623,8 +602,7 @@ namespace Mars.EntityFrameworkCore.Migrations
 
             migrationBuilder.CreateTable(
                 name: "AbpUserLogins",
-                columns: table => new
-                {
+                columns: table => new {
                     UserId = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     LoginProvider = table.Column<string>(type: "varchar(64)", maxLength: 64, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
@@ -648,8 +626,7 @@ namespace Mars.EntityFrameworkCore.Migrations
 
             migrationBuilder.CreateTable(
                 name: "AbpUserOrganizationUnits",
-                columns: table => new
-                {
+                columns: table => new {
                     UserId = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     OrganizationUnitId = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     TenantId = table.Column<Guid>(type: "char(36)", nullable: true, collation: "ascii_general_ci"),
@@ -676,8 +653,7 @@ namespace Mars.EntityFrameworkCore.Migrations
 
             migrationBuilder.CreateTable(
                 name: "AbpUserRoles",
-                columns: table => new
-                {
+                columns: table => new {
                     UserId = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     RoleId = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     TenantId = table.Column<Guid>(type: "char(36)", nullable: true, collation: "ascii_general_ci")
@@ -702,8 +678,7 @@ namespace Mars.EntityFrameworkCore.Migrations
 
             migrationBuilder.CreateTable(
                 name: "AbpUserTokens",
-                columns: table => new
-                {
+                columns: table => new {
                     UserId = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     LoginProvider = table.Column<string>(type: "varchar(64)", maxLength: 64, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
@@ -727,8 +702,7 @@ namespace Mars.EntityFrameworkCore.Migrations
 
             migrationBuilder.CreateTable(
                 name: "IdentityServerApiResourceClaims",
-                columns: table => new
-                {
+                columns: table => new {
                     Type = table.Column<string>(type: "varchar(200)", maxLength: 200, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     ApiResourceId = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci")
@@ -747,8 +721,7 @@ namespace Mars.EntityFrameworkCore.Migrations
 
             migrationBuilder.CreateTable(
                 name: "IdentityServerApiResourceProperties",
-                columns: table => new
-                {
+                columns: table => new {
                     ApiResourceId = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     Key = table.Column<string>(type: "varchar(250)", maxLength: 250, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
@@ -769,8 +742,7 @@ namespace Mars.EntityFrameworkCore.Migrations
 
             migrationBuilder.CreateTable(
                 name: "IdentityServerApiResourceScopes",
-                columns: table => new
-                {
+                columns: table => new {
                     ApiResourceId = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     Scope = table.Column<string>(type: "varchar(200)", maxLength: 200, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4")
@@ -789,8 +761,7 @@ namespace Mars.EntityFrameworkCore.Migrations
 
             migrationBuilder.CreateTable(
                 name: "IdentityServerApiResourceSecrets",
-                columns: table => new
-                {
+                columns: table => new {
                     Type = table.Column<string>(type: "varchar(250)", maxLength: 250, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Value = table.Column<string>(type: "varchar(300)", maxLength: 300, nullable: false)
@@ -814,8 +785,7 @@ namespace Mars.EntityFrameworkCore.Migrations
 
             migrationBuilder.CreateTable(
                 name: "IdentityServerApiScopeClaims",
-                columns: table => new
-                {
+                columns: table => new {
                     Type = table.Column<string>(type: "varchar(200)", maxLength: 200, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     ApiScopeId = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci")
@@ -834,8 +804,7 @@ namespace Mars.EntityFrameworkCore.Migrations
 
             migrationBuilder.CreateTable(
                 name: "IdentityServerApiScopeProperties",
-                columns: table => new
-                {
+                columns: table => new {
                     ApiScopeId = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     Key = table.Column<string>(type: "varchar(250)", maxLength: 250, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
@@ -856,8 +825,7 @@ namespace Mars.EntityFrameworkCore.Migrations
 
             migrationBuilder.CreateTable(
                 name: "IdentityServerClientClaims",
-                columns: table => new
-                {
+                columns: table => new {
                     ClientId = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     Type = table.Column<string>(type: "varchar(250)", maxLength: 250, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
@@ -878,8 +846,7 @@ namespace Mars.EntityFrameworkCore.Migrations
 
             migrationBuilder.CreateTable(
                 name: "IdentityServerClientCorsOrigins",
-                columns: table => new
-                {
+                columns: table => new {
                     ClientId = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     Origin = table.Column<string>(type: "varchar(150)", maxLength: 150, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4")
@@ -898,8 +865,7 @@ namespace Mars.EntityFrameworkCore.Migrations
 
             migrationBuilder.CreateTable(
                 name: "IdentityServerClientGrantTypes",
-                columns: table => new
-                {
+                columns: table => new {
                     ClientId = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     GrantType = table.Column<string>(type: "varchar(250)", maxLength: 250, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4")
@@ -918,8 +884,7 @@ namespace Mars.EntityFrameworkCore.Migrations
 
             migrationBuilder.CreateTable(
                 name: "IdentityServerClientIdPRestrictions",
-                columns: table => new
-                {
+                columns: table => new {
                     ClientId = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     Provider = table.Column<string>(type: "varchar(200)", maxLength: 200, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4")
@@ -938,8 +903,7 @@ namespace Mars.EntityFrameworkCore.Migrations
 
             migrationBuilder.CreateTable(
                 name: "IdentityServerClientPostLogoutRedirectUris",
-                columns: table => new
-                {
+                columns: table => new {
                     ClientId = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     PostLogoutRedirectUri = table.Column<string>(type: "varchar(300)", maxLength: 300, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4")
@@ -958,8 +922,7 @@ namespace Mars.EntityFrameworkCore.Migrations
 
             migrationBuilder.CreateTable(
                 name: "IdentityServerClientProperties",
-                columns: table => new
-                {
+                columns: table => new {
                     ClientId = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     Key = table.Column<string>(type: "varchar(250)", maxLength: 250, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
@@ -980,8 +943,7 @@ namespace Mars.EntityFrameworkCore.Migrations
 
             migrationBuilder.CreateTable(
                 name: "IdentityServerClientRedirectUris",
-                columns: table => new
-                {
+                columns: table => new {
                     ClientId = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     RedirectUri = table.Column<string>(type: "varchar(300)", maxLength: 300, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4")
@@ -1000,8 +962,7 @@ namespace Mars.EntityFrameworkCore.Migrations
 
             migrationBuilder.CreateTable(
                 name: "IdentityServerClientScopes",
-                columns: table => new
-                {
+                columns: table => new {
                     ClientId = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     Scope = table.Column<string>(type: "varchar(200)", maxLength: 200, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4")
@@ -1020,8 +981,7 @@ namespace Mars.EntityFrameworkCore.Migrations
 
             migrationBuilder.CreateTable(
                 name: "IdentityServerClientSecrets",
-                columns: table => new
-                {
+                columns: table => new {
                     Type = table.Column<string>(type: "varchar(250)", maxLength: 250, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Value = table.Column<string>(type: "varchar(300)", maxLength: 300, nullable: false)
@@ -1045,8 +1005,7 @@ namespace Mars.EntityFrameworkCore.Migrations
 
             migrationBuilder.CreateTable(
                 name: "IdentityServerIdentityResourceClaims",
-                columns: table => new
-                {
+                columns: table => new {
                     Type = table.Column<string>(type: "varchar(200)", maxLength: 200, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     IdentityResourceId = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci")
@@ -1065,8 +1024,7 @@ namespace Mars.EntityFrameworkCore.Migrations
 
             migrationBuilder.CreateTable(
                 name: "IdentityServerIdentityResourceProperties",
-                columns: table => new
-                {
+                columns: table => new {
                     IdentityResourceId = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     Key = table.Column<string>(type: "varchar(250)", maxLength: 250, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),

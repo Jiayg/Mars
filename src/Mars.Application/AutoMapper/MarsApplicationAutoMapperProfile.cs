@@ -1,4 +1,4 @@
-﻿namespace Mars.Application;
+﻿namespace Mars.Application.AutoMapper;
 
 public class MarsApplicationAutoMapperProfile : Profile
 {

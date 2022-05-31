@@ -1,4 +1,4 @@
-﻿namespace Mars.Domain.Data;
+﻿namespace Mars.Domain.DataSeed;
 
 public class MarsDbMigrationService : ITransientDependency
 {

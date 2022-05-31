@@ -1,6 +1,5 @@
-﻿using Shouldly;
-using System.Threading.Tasks;
-using Volo.Abp.Identity.Dtos;
+﻿using System.Threading.Tasks;
+using Shouldly;
 using Volo.Abp.Identity.Dtos.Users;
 using Volo.Abp.Identity.Services;
 using Xunit;
@@ -12,6 +11,7 @@ namespace Mars.Samples;
  * (like IIdentityUserAppService here).
  * Only test your own application services.
  */
+
 public class SampleAppServiceTests : MarsApplicationTestBase
 {
     private readonly IIdentityUserAppService _userAppService;

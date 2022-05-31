@@ -93,6 +93,5 @@ public class AbpAccountWebModule : AbpModule
                         configuration.AddFiles("/Pages/Account/Components/ProfileManagementGroup/PersonalInfo/Default.js");
                     });
         });
-
     }
 }

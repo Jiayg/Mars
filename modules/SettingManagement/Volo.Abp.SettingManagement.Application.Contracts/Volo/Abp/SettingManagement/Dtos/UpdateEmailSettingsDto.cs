@@ -34,4 +34,3 @@ public class UpdateEmailSettingsDto
     [Required]
     public string DefaultFromDisplayName { get; set; }
 }
-

@@ -19,7 +19,6 @@ namespace Volo.Abp.Account.Web.Pages.Account;
 
 public class RegisterModel : AccountPageModel
 {
-
     [BindProperty(SupportsGet = true)]
     public string ReturnUrl { get; set; }
 

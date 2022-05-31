@@ -1,8 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Shouldly;
-using System;
+﻿using System;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using Shouldly;
 using Volo.Abp.Domain.Repositories;
 using Volo.Abp.Identity;
 using Xunit;
@@ -14,6 +14,7 @@ namespace Mars.EntityFrameworkCore.Samples;
  * (like default AppUser repository IRepository<AppUser, Guid> here).
  * Only test your custom repository methods.
  */
+
 public class SampleRepositoryTests : MarsEntityFrameworkCoreTestBase
 {
     private readonly IRepository<IdentityUser, Guid> _appUserRepository;
@@ -31,13 +32,13 @@ public class SampleRepositoryTests : MarsEntityFrameworkCoreTestBase
          */
         await WithUnitOfWorkAsync(async () =>
         {
-                //Act
-                var adminUser = await (await _appUserRepository.GetQueryableAsync())
-                .Where(u => u.UserName == "admin")
-                .FirstOrDefaultAsync();
+            //Act
+            var adminUser = await (await _appUserRepository.GetQueryableAsync())
+            .Where(u => u.UserName == "admin")
+            .FirstOrDefaultAsync();
 
-                //Assert
-                adminUser.ShouldNotBeNull();
+            //Assert
+            adminUser.ShouldNotBeNull();
         });
     }
 }

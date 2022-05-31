@@ -16,6 +16,5 @@ public class IdentityRoleCreateOrUpdateDtoBase : ExtensibleObject
 
     protected IdentityRoleCreateOrUpdateDtoBase() : base(false)
     {
-
     }
 }

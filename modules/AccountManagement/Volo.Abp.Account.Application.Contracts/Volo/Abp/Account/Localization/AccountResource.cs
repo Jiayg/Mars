@@ -5,5 +5,4 @@ namespace Volo.Abp.Account.Localization;
 [LocalizationResourceName("AbpAccount")]
 public class AccountResource
 {
-
 }

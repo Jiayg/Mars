@@ -1,5 +1,4 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using Volo.Abp.Auditing;
 
 namespace Volo.Abp.Account.Web.Areas.Account.Controllers.Models;

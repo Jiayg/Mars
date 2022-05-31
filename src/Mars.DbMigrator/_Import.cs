@@ -1,7 +1,7 @@
 ﻿global using System.Threading;
 global using System.Threading.Tasks;
 global using Mars.Application.Contracts;
-global using Mars.Domain.Data;
+global using Mars.Domain.DataSeed;
 global using Mars.EntityFrameworkCore;
 global using Microsoft.Extensions.Configuration;
 global using Microsoft.Extensions.DependencyInjection;

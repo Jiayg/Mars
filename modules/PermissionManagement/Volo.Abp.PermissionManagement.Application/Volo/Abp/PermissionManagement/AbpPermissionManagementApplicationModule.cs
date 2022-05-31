@@ -10,5 +10,4 @@ namespace Volo.Abp.PermissionManagement;
     )]
 public class AbpPermissionManagementApplicationModule : AbpModule
 {
-
 }

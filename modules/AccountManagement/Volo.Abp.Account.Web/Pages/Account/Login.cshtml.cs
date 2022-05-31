@@ -1,15 +1,15 @@
-﻿using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Diagnostics;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 using Volo.Abp.Account.Settings;
 using Volo.Abp.Auditing;
 using Volo.Abp.Identity;
@@ -18,7 +18,6 @@ using Volo.Abp.Security.Claims;
 using Volo.Abp.Settings;
 using Volo.Abp.Validation;
 using IdentityUser = Volo.Abp.Identity.IdentityUser;
-using SignInResult = Microsoft.AspNetCore.Identity.SignInResult;
 
 namespace Volo.Abp.Account.Web.Pages.Account;
 
@@ -39,6 +38,7 @@ public class LoginModel : AccountPageModel
 
     //TODO: Why there is an ExternalProviders if only the VisibleExternalProviders is used.
     public IEnumerable<ExternalProviderModel> ExternalProviders { get; set; }
+
     public IEnumerable<ExternalProviderModel> VisibleExternalProviders => ExternalProviders.Where(x => !String.IsNullOrWhiteSpace(x.DisplayName));
 
     public bool IsExternalLoginOnly => EnableLocalLogin == false && ExternalProviders?.Count() == 1;

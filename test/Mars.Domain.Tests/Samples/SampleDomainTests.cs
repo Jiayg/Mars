@@ -10,6 +10,7 @@ namespace Mars.Samples;
  * (like IdentityUserManager here).
  * Only test your own domain services.
  */
+
 public class SampleDomainTests : MarsDomainTestBase
 {
     private readonly IIdentityUserRepository _identityUserRepository;

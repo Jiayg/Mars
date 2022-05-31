@@ -13,6 +13,6 @@
 public class MarsApplicationContractsModule : AbpModule
 {
     public override void PreConfigureServices(ServiceConfigurationContext context)
-    { 
+    {
     }
 }

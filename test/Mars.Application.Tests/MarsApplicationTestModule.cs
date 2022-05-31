@@ -9,5 +9,4 @@ namespace Mars;
     )]
 public class MarsApplicationTestModule : AbpModule
 {
-
 }

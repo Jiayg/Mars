@@ -1,7 +1,5 @@
 ﻿using System.Threading.Tasks;
 using Localization.Resources.AbpUi;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Localization;
 using Volo.Abp.Account.Localization;
 using Volo.Abp.UI.Navigation;
 

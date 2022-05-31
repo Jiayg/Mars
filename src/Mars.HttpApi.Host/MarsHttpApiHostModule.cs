@@ -14,7 +14,7 @@ public class MarsHttpApiHostModule : AbpModule
 {
     public override void ConfigureServices(ServiceConfigurationContext context)
     {
-        var configuration = context.Services.GetConfiguration(); 
+        var configuration = context.Services.GetConfiguration();
 
         ConfigureAuthentication(context, configuration);
         ConfigureLocalization();

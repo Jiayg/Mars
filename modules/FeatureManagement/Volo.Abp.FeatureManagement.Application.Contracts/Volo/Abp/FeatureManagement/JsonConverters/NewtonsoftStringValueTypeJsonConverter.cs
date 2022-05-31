@@ -20,7 +20,7 @@ public class NewtonsoftStringValueTypeJsonConverter : JsonConverter, ITransientD
     {
         Options = options.Value;
     }
-    
+
     public override bool CanConvert(Type objectType)
     {
         return objectType == typeof(IStringValueType);

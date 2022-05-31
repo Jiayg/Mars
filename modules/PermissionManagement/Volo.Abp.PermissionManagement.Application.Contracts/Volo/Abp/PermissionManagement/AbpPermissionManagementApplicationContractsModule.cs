@@ -9,5 +9,4 @@ namespace Volo.Abp.PermissionManagement;
 [DependsOn(typeof(AbpAuthorizationAbstractionsModule))]
 public class AbpPermissionManagementApplicationContractsModule : AbpModule
 {
-
 }

@@ -22,7 +22,6 @@ public class AbpIdentityApplicationContractsModule : AbpModule
 
     public override void ConfigureServices(ServiceConfigurationContext context)
     {
-
     }
 
     public override void PostConfigureServices(ServiceConfigurationContext context)

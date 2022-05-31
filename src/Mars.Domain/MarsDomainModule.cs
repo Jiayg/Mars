@@ -1,7 +1,7 @@
 ﻿namespace Mars.Domain;
 
 [DependsOn(
-    typeof(MarsDomainSharedModule), 
+    typeof(MarsDomainSharedModule),
     typeof(AbpFeatureManagementDomainModule),
     typeof(AbpIdentityDomainModule),
     typeof(AbpPermissionManagementDomainIdentityModule),

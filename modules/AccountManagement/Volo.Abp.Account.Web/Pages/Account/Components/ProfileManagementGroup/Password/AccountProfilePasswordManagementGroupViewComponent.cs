@@ -3,7 +3,6 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Volo.Abp.Account.Services;
 using Volo.Abp.AspNetCore.Mvc;
-using Volo.Abp.AspNetCore.Mvc.UI.Widgets;
 using Volo.Abp.Auditing;
 using Volo.Abp.Identity;
 using Volo.Abp.Validation;

@@ -1,12 +1,9 @@
 ﻿using System;
-using System.ComponentModel.DataAnnotations;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http.Extensions;
-using Volo.Abp.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using Volo.Abp.Account.Web.ProfileManagement;
-using Volo.Abp.Validation;
 
 namespace Volo.Abp.Account.Web.Pages.Account;
 

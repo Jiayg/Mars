@@ -7,10 +7,10 @@ namespace Volo.Abp.FeatureManagement;
 public class AbpFeatureManagementApplicationContractsOptions
 {
     public HashSet<IValueValidatorFactory> ValueValidatorFactory { get; }
-    
+
     public AbpFeatureManagementApplicationContractsOptions()
     {
-        ValueValidatorFactory = new HashSet<IValueValidatorFactory> 
+        ValueValidatorFactory = new HashSet<IValueValidatorFactory>
         {
             new ValueValidatorFactory<AlwaysValidValueValidator>("NULL"),
             new ValueValidatorFactory<BooleanValueValidator>("BOOLEAN"),

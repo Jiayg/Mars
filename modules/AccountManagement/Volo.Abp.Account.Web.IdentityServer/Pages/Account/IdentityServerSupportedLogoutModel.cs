@@ -1,7 +1,7 @@
 ﻿using System.Security.Claims;
+using System.Threading.Tasks;
 using IdentityServer4.Services;
 using Microsoft.AspNetCore.Mvc;
-using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using Volo.Abp.DependencyInjection;
 using Volo.Abp.Identity;
@@ -18,7 +18,7 @@ public class IdentityServerSupportedLogoutModel : LogoutModel
         Interaction = interaction;
     }
 
-    public async override Task<IActionResult> OnGetAsync()
+    public override async Task<IActionResult> OnGetAsync()
     {
         await SignInManager.SignOutAsync();
 

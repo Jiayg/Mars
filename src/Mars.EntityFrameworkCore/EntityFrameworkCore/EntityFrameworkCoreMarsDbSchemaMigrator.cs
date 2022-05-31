@@ -1,7 +1,6 @@
 ﻿namespace Mars.EntityFrameworkCore;
 
-public class EntityFrameworkCoreMarsDbSchemaMigrator
-    : IMarsDbSchemaMigrator, ITransientDependency
+public class EntityFrameworkCoreMarsDbSchemaMigrator : IMarsDbSchemaMigrator, ITransientDependency
 {
     private readonly IServiceProvider _serviceProvider;
 

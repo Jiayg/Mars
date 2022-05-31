@@ -12,5 +12,3 @@ namespace Volo.Abp.SettingManagement;
 public class AbpSettingManagementApplicationContractsModule : AbpModule
 {
 }
-
-

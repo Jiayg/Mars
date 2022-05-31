@@ -1,10 +1,10 @@
 ﻿using Localization.Resources.AbpUi;
+using Microsoft.Extensions.DependencyInjection;
 using Volo.Abp.Account.Localization;
 using Volo.Abp.AspNetCore.Mvc;
 using Volo.Abp.Identity;
 using Volo.Abp.Localization;
 using Volo.Abp.Modularity;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace Volo.Abp.Account;
 

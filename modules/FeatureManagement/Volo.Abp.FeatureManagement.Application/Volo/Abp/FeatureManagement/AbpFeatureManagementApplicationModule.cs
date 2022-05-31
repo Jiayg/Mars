@@ -10,5 +10,4 @@ namespace Volo.Abp.FeatureManagement;
     )]
 public class AbpFeatureManagementApplicationModule : AbpModule
 {
-
 }

@@ -11,9 +11,9 @@ using Volo.Abp.Identity;
 using Volo.Abp.Identity.AspNetCore;
 using Volo.Abp.Settings;
 using Volo.Abp.Validation;
+using IdentityUser = Volo.Abp.Identity.IdentityUser;
 using SignInResult = Microsoft.AspNetCore.Identity.SignInResult;
 using UserLoginInfo = Volo.Abp.Account.Web.Areas.Account.Controllers.Models.UserLoginInfo;
-using IdentityUser = Volo.Abp.Identity.IdentityUser;
 
 namespace Volo.Abp.Account.Web.Areas.Account.Controllers;
 

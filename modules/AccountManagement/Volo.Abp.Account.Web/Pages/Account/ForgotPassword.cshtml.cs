@@ -37,7 +37,7 @@ public class ForgotPasswordModel : AccountPageModel
                 {
                     Email = Email,
                     AppName = "MVC", //TODO: Const!
-                        ReturnUrl = ReturnUrl,
+                    ReturnUrl = ReturnUrl,
                     ReturnUrlHash = ReturnUrlHash
                 }
             );
@@ -47,7 +47,6 @@ public class ForgotPasswordModel : AccountPageModel
             Alerts.Danger(GetLocalizeExceptionMessage(e));
             return Page();
         }
-
 
         return RedirectToPage(
             "./PasswordResetLinkSent",

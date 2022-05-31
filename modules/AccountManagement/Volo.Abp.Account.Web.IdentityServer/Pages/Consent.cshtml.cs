@@ -9,7 +9,6 @@ using IdentityServer4.Stores;
 using IdentityServer4.Validation;
 using Microsoft.AspNetCore.Mvc;
 using Volo.Abp.AspNetCore.Mvc.UI.RazorPages;
-using Volo.Abp.UI;
 
 namespace Volo.Abp.Account.Web.Pages;
 

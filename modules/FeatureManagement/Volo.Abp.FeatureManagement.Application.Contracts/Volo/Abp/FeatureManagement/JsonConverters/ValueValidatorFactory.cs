@@ -6,12 +6,12 @@ public class ValueValidatorFactory<TValueValidator> : IValueValidatorFactory
     where TValueValidator : IValueValidator, new()
 {
     protected readonly string Name;
-    
+
     public ValueValidatorFactory(string name)
     {
         Name = name;
     }
-    
+
     public bool CanCreate(string name)
     {
         return Name == name;

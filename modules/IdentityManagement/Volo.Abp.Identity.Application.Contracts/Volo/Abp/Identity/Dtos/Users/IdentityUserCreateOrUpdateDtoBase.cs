@@ -1,5 +1,4 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using JetBrains.Annotations;
 using Volo.Abp.ObjectExtending;
 using Volo.Abp.Validation;
@@ -35,6 +34,5 @@ public abstract class IdentityUserCreateOrUpdateDtoBase : ExtensibleObject
 
     protected IdentityUserCreateOrUpdateDtoBase() : base(false)
     {
-
     }
 }

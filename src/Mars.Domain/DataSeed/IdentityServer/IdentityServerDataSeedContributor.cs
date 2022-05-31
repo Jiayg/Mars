@@ -2,7 +2,7 @@ using ApiResource = Volo.Abp.IdentityServer.ApiResources.ApiResource;
 using ApiScope = Volo.Abp.IdentityServer.ApiScopes.ApiScope;
 using Client = Volo.Abp.IdentityServer.Clients.Client;
 
-namespace Mars.Domain.IdentityServer;
+namespace Mars.Domain.DataSeed.IdentityServer;
 
 public class IdentityServerDataSeedContributor : IDataSeedContributor, ITransientDependency
 {
@@ -126,7 +126,6 @@ public class IdentityServerDataSeedContributor : IDataSeedContributor, ITransien
 
         var configurationSection = _configuration.GetSection("IdentityServer:Clients");
 
-
         //Console Test / Angular Client
         var consoleAndAngularClientId = configurationSection["Mars_App:ClientId"];
         if (!consoleAndAngularClientId.IsNullOrWhiteSpace())
@@ -144,8 +143,6 @@ public class IdentityServerDataSeedContributor : IDataSeedContributor, ITransien
                 corsOrigins: new[] { webClientRootUrl.RemovePostFix("/") }
             );
         }
-
-
 
         // Swagger Client
         var swaggerClientId = configurationSection["Mars_Swagger:ClientId"];
@@ -193,8 +190,8 @@ public class IdentityServerDataSeedContributor : IDataSeedContributor, ITransien
                     AlwaysIncludeUserClaimsInIdToken = true,
                     AllowOfflineAccess = true,
                     AbsoluteRefreshTokenLifetime = 31536000, //365 days
-                        AccessTokenLifetime = 31536000, //365 days
-                        AuthorizationCodeLifetime = 300,
+                    AccessTokenLifetime = 31536000, //365 days
+                    AuthorizationCodeLifetime = 300,
                     IdentityTokenLifetime = 300,
                     RequireConsent = false,
                     FrontChannelLogoutUri = frontChannelLogoutUri,

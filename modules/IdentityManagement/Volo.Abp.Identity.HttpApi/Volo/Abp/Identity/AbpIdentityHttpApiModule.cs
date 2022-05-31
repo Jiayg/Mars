@@ -1,9 +1,9 @@
-﻿using Volo.Abp.AspNetCore.Mvc;
+﻿using Localization.Resources.AbpUi;
+using Microsoft.Extensions.DependencyInjection;
+using Volo.Abp.AspNetCore.Mvc;
 using Volo.Abp.Identity.Localization;
 using Volo.Abp.Localization;
 using Volo.Abp.Modularity;
-using Localization.Resources.AbpUi;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace Volo.Abp.Identity;
 
