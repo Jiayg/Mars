@@ -8,19 +8,13 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<ProjectReference Include="..\..\modules\AccountManagement\Volo.Abp.Account.HttpApi\Volo.Abp.Account.HttpApi.csproj" />
+		<ProjectReference Include="..\..\modules\IdentityManagement\Volo.Abp.Identity.HttpApi\Volo.Abp.Identity.HttpApi.csproj" />
+		<ProjectReference Include="..\..\modules\PermissionManagement\Volo.Abp.PermissionManagement.HttpApi\Volo.Abp.PermissionManagement.HttpApi.csproj" />
 		<ProjectReference Include="..\..\modules\TenantManagement\Volo.Abp.TenantManagement.HttpApi\Volo.Abp.TenantManagement.HttpApi.csproj" />
 		<ProjectReference Include="..\..\modules\FeatureManagement\Volo.Abp.FeatureManagement.HttpApi\Volo.Abp.FeatureManagement.HttpApi.csproj" />
 		<ProjectReference Include="..\..\modules\SettingManagement\Volo.Abp.SettingManagement.HttpApi\Volo.Abp.SettingManagement.HttpApi.csproj" />
 		<ProjectReference Include="..\Mars.Application.Contracts\Mars.Application.Contracts.csproj" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<PackageReference Include="Volo.Abp.Account.HttpApi" Version="5.2.2" />
-		<PackageReference Include="Volo.Abp.Identity.HttpApi" Version="5.2.2" />
-		<PackageReference Include="Volo.Abp.PermissionManagement.HttpApi" Version="5.2.2" />
-		<!--<PackageReference Include="Volo.Abp.TenantManagement.HttpApi" Version="5.2.2" />-->
-		<!--<PackageReference Include="Volo.Abp.FeatureManagement.HttpApi" Version="5.2.2" />-->
-		<!--<PackageReference Include="Volo.Abp.SettingManagement.HttpApi" Version="5.2.2" />-->
-	</ItemGroup>
+	</ItemGroup> 
 
 </Project>

@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<AssemblyName>Volo.Abp.Account.Application</AssemblyName>
+		<PackageId>Volo.Abp.Account.Application</PackageId>
+		<AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+		<GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+		<GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+		<GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+		<RootNamespace />
+	</PropertyGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Include="Volo\Abp\Account\Emailing\Templates\*.tpl" />
+		<None Remove="Volo\Abp\Account\Emailing\Templates\*.tpl" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Volo.Abp.Account.Application.Contracts\Volo.Abp.Account.Application.Contracts.csproj" />
+		<ProjectReference Include="..\..\IdentityManagement\Volo.Abp.Identity.Application\Volo.Abp.Identity.Application.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="System.Text.Encodings.Web" Version="6.0.0" />
+		<PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="6.0.5" />
+		<PackageReference Include="Volo.Abp.Emailing" Version="5.2.2" />
+		<PackageReference Include="Volo.Abp.UI.Navigation" Version="5.2.2" />
+	</ItemGroup>
+
+</Project>

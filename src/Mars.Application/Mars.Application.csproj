@@ -8,20 +8,14 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<ProjectReference Include="..\..\modules\AccountManagement\Volo.Abp.Account.Application\Volo.Abp.Account.Application.csproj" />
+		<ProjectReference Include="..\..\modules\IdentityManagement\Volo.Abp.Identity.Application\Volo.Abp.Identity.Application.csproj" />
+		<ProjectReference Include="..\..\modules\PermissionManagement\Volo.Abp.PermissionManagement.Application\Volo.Abp.PermissionManagement.Application.csproj" />
 		<ProjectReference Include="..\..\modules\TenantManagement\Volo.Abp.TenantManagement.Application\Volo.Abp.TenantManagement.Application.csproj" />
 		<ProjectReference Include="..\..\modules\FeatureManagement\Volo.Abp.FeatureManagement.Application\Volo.Abp.FeatureManagement.Application.csproj" />
 		<ProjectReference Include="..\..\modules\SettingManagement\Volo.Abp.SettingManagement.Application\Volo.Abp.SettingManagement.Application.csproj" />
 		<ProjectReference Include="..\Mars.Domain\Mars.Domain.csproj" />
 		<ProjectReference Include="..\Mars.Application.Contracts\Mars.Application.Contracts.csproj" />
 	</ItemGroup>
-
-	<ItemGroup>
-		<PackageReference Include="Volo.Abp.Account.Application" Version="5.2.2" />
-		<PackageReference Include="Volo.Abp.Identity.Application" Version="5.2.2" />
-		<PackageReference Include="Volo.Abp.PermissionManagement.Application" Version="5.2.2" />
-		<!--<PackageReference Include="Volo.Abp.TenantManagement.Application" Version="5.2.2" />-->
-		<!--<PackageReference Include="Volo.Abp.FeatureManagement.Application" Version="5.2.2" />-->
-		<!--<PackageReference Include="Volo.Abp.SettingManagement.Application" Version="5.2.2" />-->
-	</ItemGroup>
-
+ 
 </Project>
