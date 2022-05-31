@@ -9,6 +9,7 @@ global using Mars.Domain;
 global using Mars.Domain.Shared;
 global using Mars.Domain.Shared.MultiTenancy;
 global using Mars.EntityFrameworkCore;
+global using Mars.HttpApi;
 global using Microsoft.AspNetCore.Authentication.JwtBearer;
 global using Microsoft.AspNetCore.Builder;
 global using Microsoft.AspNetCore.Cors;

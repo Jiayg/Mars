@@ -1,4 +1,4 @@
-﻿namespace Mars.HttpApi.Host;
+﻿namespace Mars;
 
 public class Program
 {

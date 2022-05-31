@@ -8,6 +8,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<ProjectReference Include="..\..\modules\FeatureManagement\Volo.Abp.FeatureManagement.HttpApi.Client\Volo.Abp.FeatureManagement.HttpApi.Client.csproj" />
 		<ProjectReference Include="..\..\modules\SettingManagement\Volo.Abp.SettingManagement.HttpApi.Client\Volo.Abp.SettingManagement.HttpApi.Client.csproj" />
 		<ProjectReference Include="..\Mars.Application.Contracts\Mars.Application.Contracts.csproj" />
 	</ItemGroup>
@@ -17,7 +18,7 @@
 		<PackageReference Include="Volo.Abp.Identity.HttpApi.Client" Version="5.2.2" />
 		<PackageReference Include="Volo.Abp.PermissionManagement.HttpApi.Client" Version="5.2.2" />
 		<PackageReference Include="Volo.Abp.TenantManagement.HttpApi.Client" Version="5.2.2" />
-		<PackageReference Include="Volo.Abp.FeatureManagement.HttpApi.Client" Version="5.2.2" />
+		<!--<PackageReference Include="Volo.Abp.FeatureManagement.HttpApi.Client" Version="5.2.2" />-->
 		<!--<PackageReference Include="Volo.Abp.SettingManagement.HttpApi.Client" Version="5.2.2" />-->
 	</ItemGroup>
 

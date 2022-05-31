@@ -1,15 +1,18 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFramework>net6.0</TargetFramework>
+		<AssemblyName>Volo.Abp.SettingManagement.Application</AssemblyName>
+		<PackageId>Volo.Abp.SettingManagement.Application</PackageId>
+		<AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+		<GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+		<GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+		<GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
 		<RootNamespace />
 	</PropertyGroup>
 
 	<ItemGroup>
-		<!--<ProjectReference Include="..\..\..\..\framework\src\Volo.Abp.Emailing\Volo.Abp.Emailing.csproj" />-->
-		<!--<ProjectReference Include="..\..\..\..\framework\src\Volo.Abp.Ddd.Application\Volo.Abp.Ddd.Application.csproj" />-->
 		<ProjectReference Include="..\Volo.Abp.SettingManagement.Application.Contracts\Volo.Abp.SettingManagement.Application.Contracts.csproj" />
-		<!--<ProjectReference Include="..\Volo.Abp.SettingManagement.Domain\Volo.Abp.SettingManagement.Domain.csproj" />-->
 	</ItemGroup>
 
 	<ItemGroup>
