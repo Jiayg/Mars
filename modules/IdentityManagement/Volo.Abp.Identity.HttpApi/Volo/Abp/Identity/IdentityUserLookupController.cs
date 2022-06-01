@@ -22,6 +22,11 @@ public class IdentityUserLookupController : AbpControllerBase, IIdentityUserLook
         _lookupAppService = lookupAppService;
     }
 
+    /// <summary>
+    /// 查找用户
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns></returns>
     [HttpGet]
     [Route("{id}")]
     public virtual Task<UserData> FindByIdAsync(Guid id)
@@ -29,6 +34,11 @@ public class IdentityUserLookupController : AbpControllerBase, IIdentityUserLook
         return _lookupAppService.FindByIdAsync(id);
     }
 
+    /// <summary>
+    /// 根据用户名查找用户
+    /// </summary>
+    /// <param name="userName"></param>
+    /// <returns></returns>
     [HttpGet]
     [Route("by-username/{userName}")]
     public virtual Task<UserData> FindByUserNameAsync(string userName)
@@ -36,6 +46,11 @@ public class IdentityUserLookupController : AbpControllerBase, IIdentityUserLook
         return _lookupAppService.FindByUserNameAsync(userName);
     }
 
+    /// <summary>
+    /// 根据条件查找用户
+    /// </summary>
+    /// <param name="input"></param>
+    /// <returns></returns>
     [HttpGet]
     [Route("search")]
     public Task<ListResultDto<UserData>> SearchAsync(UserLookupSearchInputDto input)
@@ -43,6 +58,11 @@ public class IdentityUserLookupController : AbpControllerBase, IIdentityUserLook
         return _lookupAppService.SearchAsync(input);
     }
 
+    /// <summary>
+    /// 查找用户数量
+    /// </summary>
+    /// <param name="input"></param>
+    /// <returns></returns>
     [HttpGet]
     [Route("count")]
     public Task<long> GetCountAsync(UserLookupCountInputDto input)

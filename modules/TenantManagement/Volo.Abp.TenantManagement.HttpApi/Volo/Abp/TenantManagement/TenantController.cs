@@ -23,6 +23,11 @@ public class TenantController : AbpControllerBase, ITenantAppService //TODO: Thr
         _tenantAppService = tenantAppService;
     }
 
+    /// <summary>
+    /// 查询租户
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns></returns>
     [HttpGet]
     [Route("{id}")]
     public virtual Task<TenantDto> GetAsync(Guid id)
@@ -30,12 +35,22 @@ public class TenantController : AbpControllerBase, ITenantAppService //TODO: Thr
         return _tenantAppService.GetAsync(id);
     }
 
+    /// <summary>
+    /// 查询租户分页列表
+    /// </summary>
+    /// <param name="input"></param>
+    /// <returns></returns>
     [HttpGet]
     public virtual Task<PagedResultDto<TenantDto>> GetListAsync(GetTenantsInput input)
     {
         return _tenantAppService.GetListAsync(input);
     }
 
+    /// <summary>
+    /// 添加租户
+    /// </summary>
+    /// <param name="input"></param>
+    /// <returns></returns>
     [HttpPost]
     [Authorize(TenantManagementPermissions.Tenants.Create)]
     public virtual Task<TenantDto> CreateAsync(TenantCreateDto input)
@@ -44,6 +59,12 @@ public class TenantController : AbpControllerBase, ITenantAppService //TODO: Thr
         return _tenantAppService.CreateAsync(input);
     }
 
+    /// <summary>
+    /// 更新租户
+    /// </summary>
+    /// <param name="id"></param>
+    /// <param name="input"></param>
+    /// <returns></returns>
     [HttpPut]
     [Route("{id}")]
     [Authorize(TenantManagementPermissions.Tenants.Update)]
@@ -52,6 +73,11 @@ public class TenantController : AbpControllerBase, ITenantAppService //TODO: Thr
         return _tenantAppService.UpdateAsync(id, input);
     }
 
+    /// <summary>
+    /// 删除租户
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns></returns>
     [HttpDelete]
     [Route("{id}")]
     [Authorize(TenantManagementPermissions.Tenants.Delete)]
@@ -60,6 +86,11 @@ public class TenantController : AbpControllerBase, ITenantAppService //TODO: Thr
         return _tenantAppService.DeleteAsync(id);
     }
 
+    /// <summary>
+    /// 查询租户数据库链接字符串
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns></returns>
     [HttpGet]
     [Route("{id}/default-connection-string")]
     [Authorize(TenantManagementPermissions.Tenants.ManageConnectionStrings)]
@@ -68,6 +99,12 @@ public class TenantController : AbpControllerBase, ITenantAppService //TODO: Thr
         return _tenantAppService.GetDefaultConnectionStringAsync(id);
     }
 
+    /// <summary>
+    /// 更新租户数据库链接字符串
+    /// </summary>
+    /// <param name="id"></param>
+    /// <param name="defaultConnectionString"></param>
+    /// <returns></returns>
     [HttpPut]
     [Route("{id}/default-connection-string")]
     [Authorize(TenantManagementPermissions.Tenants.ManageConnectionStrings)]
@@ -76,6 +113,11 @@ public class TenantController : AbpControllerBase, ITenantAppService //TODO: Thr
         return _tenantAppService.UpdateDefaultConnectionStringAsync(id, defaultConnectionString);
     }
 
+    /// <summary>
+    /// 删除租户数据库链接字符串
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns></returns>
     [HttpDelete]
     [Route("{id}/default-connection-string")]
     [Authorize(TenantManagementPermissions.Tenants.ManageConnectionStrings)]

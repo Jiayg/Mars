@@ -20,18 +20,32 @@ public class EmailSettingsController : AbpControllerBase, IEmailSettingsAppServi
         _emailSettingsAppService = emailSettingsAppService;
     }
 
+    /// <summary>
+    /// 查询邮箱设置
+    /// </summary>
+    /// <returns></returns>
     [HttpGet]
     public Task<EmailSettingsDto> GetAsync()
     {
         return _emailSettingsAppService.GetAsync();
     }
 
+    /// <summary>
+    /// 更新邮箱设置
+    /// </summary>
+    /// <param name="input"></param>
+    /// <returns></returns>
     [HttpPost]
     public Task UpdateAsync(UpdateEmailSettingsDto input)
     {
         return _emailSettingsAppService.UpdateAsync(input);
     }
 
+    /// <summary>
+    /// 发送测试邮件
+    /// </summary>
+    /// <param name="input"></param>
+    /// <returns></returns>
     [HttpPost("send-test-email")]
     [Authorize(SettingManagementPermissions.EmailingTest)]
     public Task SendTestEmailAsync(SendTestEmailInput input)

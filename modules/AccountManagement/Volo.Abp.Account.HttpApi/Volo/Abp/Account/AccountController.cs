@@ -19,6 +19,11 @@ public class AccountController : AbpControllerBase, IAccountAppService
         _accountAppService = accountAppService;
     }
 
+    /// <summary>
+    /// 注册
+    /// </summary>
+    /// <param name="input"></param>
+    /// <returns></returns>
     [HttpPost]
     [Route("register")]
     public virtual Task<IdentityUserDto> RegisterAsync(RegisterDto input)
@@ -26,6 +31,11 @@ public class AccountController : AbpControllerBase, IAccountAppService
         return _accountAppService.RegisterAsync(input);
     }
 
+    /// <summary>
+    /// 发送重置密码code
+    /// </summary>
+    /// <param name="input"></param>
+    /// <returns></returns>
     [HttpPost]
     [Route("send-password-reset-code")]
     public virtual Task SendPasswordResetCodeAsync(SendPasswordResetCodeDto input)
@@ -33,6 +43,11 @@ public class AccountController : AbpControllerBase, IAccountAppService
         return _accountAppService.SendPasswordResetCodeAsync(input);
     }
 
+    /// <summary>
+    /// 重置密码
+    /// </summary>
+    /// <param name="input"></param>
+    /// <returns></returns>
     [HttpPost]
     [Route("reset-password")]
     public virtual Task ResetPasswordAsync(ResetPasswordDto input)

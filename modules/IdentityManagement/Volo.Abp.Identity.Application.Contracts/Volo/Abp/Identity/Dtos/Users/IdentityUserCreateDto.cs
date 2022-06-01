@@ -6,6 +6,9 @@ namespace Volo.Abp.Identity.Dtos.Users;
 
 public class IdentityUserCreateDto : IdentityUserCreateOrUpdateDtoBase
 {
+    /// <summary>
+    /// √‹¬Î
+    /// </summary>
     [DisableAuditing]
     [Required]
     [DynamicStringLength(typeof(IdentityUserConsts), nameof(IdentityUserConsts.MaxPasswordLength))]

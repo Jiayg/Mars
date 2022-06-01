@@ -75,6 +75,10 @@ public class EmailSettingsAppService : SettingManagementAppServiceBase, IEmailSe
         await EmailSender.SendAsync(input.SenderEmailAddress, input.TargetEmailAddress, input.Subject, input.Body);
     }
 
+    /// <summary>
+    /// 检查设置管理的特征
+    /// </summary>
+    /// <returns></returns>
     protected virtual async Task CheckFeatureAsync()
     {
         await FeatureChecker.CheckEnabledAsync(SettingManagementFeatures.Enable);

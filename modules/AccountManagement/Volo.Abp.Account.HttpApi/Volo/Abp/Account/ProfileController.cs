@@ -19,18 +19,32 @@ public class ProfileController : AbpControllerBase, IProfileAppService
         _profileAppService = profileAppService;
     }
 
+    /// <summary>
+    /// 查询用户信息
+    /// </summary>
+    /// <returns></returns>
     [HttpGet]
     public virtual Task<ProfileDto> GetAsync()
     {
         return _profileAppService.GetAsync();
     }
 
+    /// <summary>
+    /// 修改用户信息
+    /// </summary>
+    /// <param name="input"></param>
+    /// <returns></returns>
     [HttpPut]
     public virtual Task<ProfileDto> UpdateAsync(UpdateProfileDto input)
     {
         return _profileAppService.UpdateAsync(input);
     }
 
+    /// <summary>
+    /// 修改用户密码
+    /// </summary>
+    /// <param name="input"></param>
+    /// <returns></returns>
     [HttpPost]
     [Route("change-password")]
     public virtual Task ChangePasswordAsync(ChangePasswordInput input)
