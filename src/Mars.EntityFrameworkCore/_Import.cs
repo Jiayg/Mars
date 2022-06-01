@@ -4,6 +4,7 @@ global using System.Threading.Tasks;
 global using JetBrains.Annotations;
 global using Mars.Domain;
 global using Mars.Domain.DataSeed;
+global using Mars.Domain.Shared;
 global using Microsoft.EntityFrameworkCore;
 global using Microsoft.EntityFrameworkCore.Design;
 global using Microsoft.Extensions.Configuration;

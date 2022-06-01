@@ -5,9 +5,10 @@
 [ConnectionStringName("Default")]
 public class MarsDbContext : AbpDbContext<MarsDbContext>, IIdentityDbContext, ITenantManagementDbContext
 {
-    //Identity
+    // Identity
     public DbSet<IdentityUser> Users { get; set; }
 
+    public DbSet<IdentityDept> Depts { get; set; }
     public DbSet<IdentityRole> Roles { get; set; }
     public DbSet<IdentityClaimType> ClaimTypes { get; set; }
     public DbSet<OrganizationUnit> OrganizationUnits { get; set; }

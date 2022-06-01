@@ -1,7 +1,11 @@
-﻿global using System.Threading.Tasks;
+﻿global using System;
+global using System.Collections.Generic;
+global using System.Threading.Tasks;
 global using Mars.Domain.Shared;
+global using Mars.Domain.Shared.Dtos;
 global using Mars.Domain.Shared.Localization;
 global using Volo.Abp.Account;
+global using Volo.Abp.Application.Services;
 global using Volo.Abp.Authorization.Permissions;
 global using Volo.Abp.FeatureManagement;
 global using Volo.Abp.Identity;
@@ -11,3 +15,5 @@ global using Volo.Abp.ObjectExtending;
 global using Volo.Abp.PermissionManagement;
 global using Volo.Abp.SettingManagement;
 global using Volo.Abp.TenantManagement;
+global using Mars.Application.Contracts.IdentityDept.Dtos;
+global using Volo.Abp.Uow;

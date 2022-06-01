@@ -1,4 +1,4 @@
-﻿namespace Mars.Application.Services;
+﻿namespace Mars.Application;
 
 /* Inherit your application services from this class.
  */

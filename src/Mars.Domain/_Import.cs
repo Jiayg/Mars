@@ -16,6 +16,7 @@ global using Microsoft.Extensions.Logging.Abstractions;
 global using Volo.Abp.Authorization.Permissions;
 global using Volo.Abp.Data;
 global using Volo.Abp.DependencyInjection;
+global using Volo.Abp.Domain.Entities.Auditing;
 global using Volo.Abp.Emailing;
 global using Volo.Abp.FeatureManagement;
 global using Volo.Abp.Guids;

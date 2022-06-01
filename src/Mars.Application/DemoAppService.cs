@@ -6,7 +6,7 @@ using Volo.Abp;
 using Volo.Abp.DistributedLocking;
 using Volo.Abp.Features;
 
-namespace Mars.Application.Services;
+namespace Mars.Application;
 
 public class DemoAppService : MarsAppService, IDemoAppService
 {
@@ -29,7 +29,7 @@ public class DemoAppService : MarsAppService, IDemoAppService
     public async Task Lock()
     {
         //var userCount = (await FeatureChecker.GetOrNullAsync(MarsFeatures.UserCount)).To<int>();
-        var isPdfReporting = (await _featureChecker.GetAsync<bool>(MarsFeatures.PdfReporting));
+        var isPdfReporting = await _featureChecker.GetAsync<bool>(MarsFeatures.PdfReporting);
         if (isPdfReporting)
         {
             throw new UserFriendlyException(_localizer["Feature:UserCount.Maximum"]);

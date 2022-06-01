@@ -6,12 +6,14 @@ public static class MarsDbContextModelBuilderExtensions
     {
         Check.NotNull(builder, nameof(builder));
 
-        //builder.Entity<YourEntity>(b =>
-        //{
-        //    b.ToTable(MarsConsts.DbTablePrefix + "YourEntities", MarsConsts.DbSchema);
-        //    b.ConfigureByConvention(); //auto configure for the base class props
-        //    //...
-        //});
+        builder.Entity<IdentityDept>(b =>
+        {
+            b.Property(x => x.FullName).IsRequired().HasMaxLength(IdentityDeptConsts.FullName_MaxLength);
+            b.Property(x => x.SimpleName).IsRequired().HasMaxLength(IdentityDeptConsts.SimpleName_MaxLength);
+            b.Property(x => x.Tips).HasMaxLength(IdentityDeptConsts.Tips_MaxLength);
+            b.Property(x => x.Pids).HasMaxLength(IdentityDeptConsts.Pids_MaxLength);
+            b.ConfigureSoftDelete();
+        });
 
         builder.TryConfigureObjectExtensions<MarsDbContext>();
     }

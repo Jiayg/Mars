@@ -1,4 +1,6 @@
-﻿global using Mars.Domain.Shared.Localization;
+﻿global using System;
+global using System.ComponentModel.DataAnnotations;
+global using Mars.Domain.Shared.Localization;
 global using Volo.Abp.FeatureManagement;
 global using Volo.Abp.Identity;
 global using Volo.Abp.IdentityServer;

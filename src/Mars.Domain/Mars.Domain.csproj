@@ -8,6 +8,12 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <Compile Remove="Dtos\**" />
+	  <EmbeddedResource Remove="Dtos\**" />
+	  <None Remove="Dtos\**" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<ProjectReference Include="..\..\modules\IdentityManagement\Volo.Abp.Identity.Domain\Volo.Abp.Identity.Domain.csproj" />
 		<ProjectReference Include="..\..\modules\IdentityManagement\Volo.Abp.PermissionManagement.Domain.Identity\Volo.Abp.PermissionManagement.Domain.Identity.csproj" />
 		<ProjectReference Include="..\..\modules\IdentityServerManagement\Volo.Abp.IdentityServer.Domain\Volo.Abp.IdentityServer.Domain.csproj" />
