@@ -15,14 +15,17 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Volo.Abp.SettingManagement.Domain.Shared" Version="5.2.2" />
-		<PackageReference Include="Volo.Abp.Ddd.Application.Contracts" Version="5.2.2" />
-		<PackageReference Include="Volo.Abp.Authorization.Abstractions" Version="5.2.2" />
+		<EmbeddedResource Include="Volo\Abp\SettingManagement\Localization\ApplicationContracts\*.json" />
+		<Content Remove="Volo\Abp\SettingManagement\Localization\ApplicationContracts\*.json" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<EmbeddedResource Include="Volo\Abp\SettingManagement\Localization\ApplicationContracts\*.json" />
-		<Content Remove="Volo\Abp\SettingManagement\Localization\ApplicationContracts\*.json" />
+		<ProjectReference Include="..\Volo.Abp.SettingManagement.Domain.Shared\Volo.Abp.SettingManagement.Domain.Shared.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.Ddd.Application.Contracts" Version="5.2.2" />
+		<PackageReference Include="Volo.Abp.Authorization.Abstractions" Version="5.2.2" />
 	</ItemGroup>
 
 </Project>

@@ -13,12 +13,12 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\Volo.Abp.FeatureManagement.Application.Contracts\Volo.Abp.FeatureManagement.Application.Contracts.csproj" />
+		<ProjectReference Include="..\Volo.Abp.FeatureManagement.Domain\Volo.Abp.FeatureManagement.Domain.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Volo.Abp.Emailing" Version="5.2.2" />
 		<PackageReference Include="Volo.Abp.Ddd.Application" Version="5.2.2" />
-		<PackageReference Include="Volo.Abp.FeatureManagement.Domain" Version="5.2.2" />
 	</ItemGroup>
 
 </Project>

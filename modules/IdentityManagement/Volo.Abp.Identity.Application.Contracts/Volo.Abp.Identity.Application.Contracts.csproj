@@ -16,11 +16,11 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\..\PermissionManagement\Volo.Abp.PermissionManagement.Application.Contracts\Volo.Abp.PermissionManagement.Application.Contracts.csproj" />
+		<ProjectReference Include="..\Volo.Abp.Identity.Domain.Shared\Volo.Abp.Identity.Domain.Shared.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Volo.Abp.Authorization" Version="5.2.2" />
-		<PackageReference Include="Volo.Abp.Identity.Domain.Shared" Version="5.2.2" />
+		<PackageReference Include="Volo.Abp.Authorization" Version="5.2.2" /> 
 		<PackageReference Include="Volo.Abp.Users.Abstractions" Version="5.2.2" />
 	</ItemGroup>
 

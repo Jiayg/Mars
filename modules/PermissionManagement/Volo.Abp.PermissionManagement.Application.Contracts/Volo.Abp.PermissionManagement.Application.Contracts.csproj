@@ -15,13 +15,16 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Volo.Abp.Ddd.Application.Contracts" Version="5.2.2" />
-		<PackageReference Include="Volo.Abp.Authorization.Abstractions" Version="5.2.2" />
-		<PackageReference Include="Volo.Abp.PermissionManagement.Domain.Shared" Version="5.2.2" />
+		<Folder Include="Volo\Abp\PermissionManagement\Permissions\" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Volo\Abp\PermissionManagement\Permissions\" />
+		<ProjectReference Include="..\Volo.Abp.PermissionManagement.Domain.Shared\Volo.Abp.PermissionManagement.Domain.Shared.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.Ddd.Application.Contracts" Version="5.2.2" />
+		<PackageReference Include="Volo.Abp.Authorization.Abstractions" Version="5.2.2" />
 	</ItemGroup>
 
 </Project>

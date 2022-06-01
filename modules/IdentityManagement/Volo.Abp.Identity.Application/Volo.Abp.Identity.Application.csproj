@@ -14,11 +14,11 @@
 	<ItemGroup>
 		<ProjectReference Include="..\..\PermissionManagement\Volo.Abp.PermissionManagement.Application\Volo.Abp.PermissionManagement.Application.csproj" />
 		<ProjectReference Include="..\Volo.Abp.Identity.Application.Contracts\Volo.Abp.Identity.Application.Contracts.csproj" />
+		<ProjectReference Include="..\Volo.Abp.Identity.Domain\Volo.Abp.Identity.Domain.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Volo.Abp.AutoMapper" Version="5.2.2" />
-		<PackageReference Include="Volo.Abp.Identity.Domain" Version="5.2.2" />
 	</ItemGroup>
 
 </Project>

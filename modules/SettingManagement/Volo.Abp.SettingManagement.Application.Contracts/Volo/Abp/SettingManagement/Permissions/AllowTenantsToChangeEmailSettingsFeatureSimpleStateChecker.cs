@@ -3,6 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Volo.Abp.Authorization.Permissions;
 using Volo.Abp.Features;
 using Volo.Abp.MultiTenancy;
+using Volo.Abp.SettingManagement.Feature;
 using Volo.Abp.SimpleStateChecking;
 
 namespace Volo.Abp.SettingManagement.Permissions;

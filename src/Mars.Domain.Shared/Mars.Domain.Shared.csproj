@@ -7,15 +7,6 @@
 		<RootNamespace>Mars.Domain.Shared</RootNamespace>
 		<GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
 	</PropertyGroup>
-	
-	<ItemGroup>
-		<PackageReference Include="Volo.Abp.Identity.Domain.Shared" Version="5.2.2" />
-		<PackageReference Include="Volo.Abp.IdentityServer.Domain.Shared" Version="5.2.2" /> 
-		<PackageReference Include="Volo.Abp.TenantManagement.Domain.Shared" Version="5.2.2" />
-		<PackageReference Include="Volo.Abp.FeatureManagement.Domain.Shared" Version="5.2.2" />
-		<PackageReference Include="Volo.Abp.PermissionManagement.Domain.Shared" Version="5.2.2" />
-		<PackageReference Include="Volo.Abp.SettingManagement.Domain.Shared" Version="5.2.2" />
-	</ItemGroup>
 
 	<ItemGroup>
 		<EmbeddedResource Include="Localization\Mars\*.json" />
@@ -23,7 +14,22 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="6.0.0" />
+		<ProjectReference Include="..\..\modules\IdentityManagement\Volo.Abp.Identity.Domain.Shared\Volo.Abp.Identity.Domain.Shared.csproj" />
+		<ProjectReference Include="..\..\modules\IdentityServerManagement\Volo.Abp.IdentityServer.Domain.Shared\Volo.Abp.IdentityServer.Domain.Shared.csproj" />
+		<ProjectReference Include="..\..\modules\PermissionManagement\Volo.Abp.PermissionManagement.Domain.Shared\Volo.Abp.PermissionManagement.Domain.Shared.csproj" />
+		<ProjectReference Include="..\..\modules\SettingManagement\Volo.Abp.SettingManagement.Domain.Shared\Volo.Abp.SettingManagement.Domain.Shared.csproj" />
+		<ProjectReference Include="..\..\modules\TenantManagement\Volo.Abp.TenantManagement.Domain.Shared\Volo.Abp.TenantManagement.Domain.Shared.csproj" />
+		<ProjectReference Include="..\..\modules\FeatureManagement\Volo.Abp.FeatureManagement.Domain.Shared\Volo.Abp.FeatureManagement.Domain.Shared.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<!--<PackageReference Include="Volo.Abp.Identity.Domain.Shared" Version="5.2.2" />-->
+		<!--<PackageReference Include="Volo.Abp.IdentityServer.Domain.Shared" Version="5.2.2" />-->
+		<!--<PackageReference Include="Volo.Abp.TenantManagement.Domain.Shared" Version="5.2.2" />-->
+		<!--<PackageReference Include="Volo.Abp.FeatureManagement.Domain.Shared" Version="5.2.2" />-->
+		<!--<PackageReference Include="Volo.Abp.PermissionManagement.Domain.Shared" Version="5.2.2" />-->
+		<!--<PackageReference Include="Volo.Abp.SettingManagement.Domain.Shared" Version="5.2.2" />-->
+		<PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="6.0.5" />
 	</ItemGroup>
 
 </Project>

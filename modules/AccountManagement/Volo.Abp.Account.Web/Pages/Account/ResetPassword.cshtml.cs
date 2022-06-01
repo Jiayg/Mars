@@ -74,7 +74,7 @@ public class ResetPasswordModel : AccountPageModel
 
             throw;
         }
-        catch (AbpValidationException e)
+        catch (AbpValidationException)
         {
             return Page();
         }
